@@ -3,7 +3,7 @@ name: Build and Publish Storybook to GitHub Pages
 on:
   push:
     branches:
-      - "feat/button"
+      - ${{ github.ref_name }}
 
 permissions:
   contents: read
