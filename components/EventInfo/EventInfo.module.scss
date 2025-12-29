@@ -1,0 +1,88 @@
+.container {
+    --eventinfo-gap-default: var(--spacing-base-x);
+    --eventinfo-icon-size-width: var(--size-4x);
+    --eventinfo-icon-size-height: var(--size-4x);
+    --eventinfo-title-text-default: var(--typography-color-secondary-deepest);
+    --eventinfo-title-icon-default: var(--surface-priority-normal-normal);
+    --eventinfo-title-icon-high: var(--surface-priority-high-high);
+    --eventinfo-title-icon-critical: var(--surface-priority-critical-neutral);
+    --eventinfo-body-text-default: var(--typography-color-secondary-deepest);
+    --eventinfo-body-icon-default: var(--surface-secondary-deepest);
+
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--eventinfo-gap-default);
+    justify-content: flex-end;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--eventinfo-gap-default);
+    justify-content: center;
+    width: 100%;
+}
+
+.iconWrapper {
+    flex-shrink: 0;
+    width: var(--eventinfo-icon-size-width);
+    height: var(--eventinfo-icon-size-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.content {
+    flex: 1;
+}
+
+.title {
+    color: var(--eventinfo-title-text-default);
+
+    .iconWrapper {
+        color: var(--eventinfo-title-icon-default);
+    }
+}
+
+.body {
+    color: var(--eventinfo-body-text-default);
+
+    .iconWrapper {
+        color: var(--eventinfo-body-icon-default);
+    }
+}
+
+// Severity styles
+.normal {
+    .iconWrapper {
+        color: var(--eventinfo-title-icon-default);
+        svg {
+            fill: var(--typography-color-secondary-deepest);
+            path {
+                fill: var(--typography-color-secondary-deepest);
+            }
+        }
+    }
+}
+
+.critical {
+    .iconWrapper {
+        color: var(--eventinfo-title-icon-critical);
+    }
+}
+
+.high {
+    .iconWrapper {
+        color: var(--eventinfo-title-icon-high);
+    }
+}
+
+.muted {
+    opacity: 0.5;
+}

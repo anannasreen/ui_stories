@@ -1,0 +1,19 @@
+.multiToggleGroup {
+    --multi-toggle-padding-vertical: var(--spacing-padding-2x);
+    --multi-toggle-padding-horizontal: var(--spacing-padding-4x);
+    --multi-toggle-gap-vertical: var(--spacing-padding-4x);
+    --multi-toggle-gap-horizontal: var(--spacing-padding-2x);
+
+    display: inline-flex;
+    gap: var(--multi-toggle-gap-horizontal);
+    padding: var(--multi-toggle-padding-vertical) var(--multi-toggle-padding-horizontal);
+    margin: 0;
+    list-style: none;
+    border-radius: var(--border-radius-medium);
+
+    &[data-orientation='vertical'] {
+        flex-direction: column;
+        gap: var(--multi-toggle-gap-vertical);
+        padding: var(--multi-toggle-padding-horizontal) var(--multi-toggle-padding-vertical);
+    }
+}

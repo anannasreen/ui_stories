@@ -1,0 +1,123 @@
+.filterButton {
+    --filter-button-radius-number: var(--border-radius-rd);
+    --filter-button-color-bg-default: var(--color-secondary-transparent);
+    --filter-button-color-bg-hover: var(--surface-secondary-transparent);
+    --filter-button-color-bg-active: var(--surface-secondary-lightest);
+    --filter-button-color-bg-focus: var(--surface-secondary-lightest);
+    --filter-button-color-border-default: var(--border-color-secondary-soft-light);
+    --filter-button-color-border-hover: var(--border-color-secondary-darker);
+    --filter-button-color-border-active: var(--border-color-secondary-deepest);
+    --filter-button-color-border-focus: var(--border-color-secondary-deepest);
+    --filter-button-color-icon-default: var(--surface-secondary-deepest);
+    --filter-button-color-icon-hover: var(--surface-primary-deepest);
+    --filter-button-color-icon-active: var(--surface-primary-deepest);
+    --filter-button-color-icon-focus: var(--surface-primary-deepest);
+    --filter-button-color-text-default: var(--typography-color-secondary-deepest);
+    --filter-button-color-text-hover: var(--typography-color-primary-deepest);
+    --filter-button-color-text-active: var(--typography-color-secondary-deepest);
+    --filter-button-padding-vertical: var(--spacing-padding-2x);
+    --filter-button-color-text-focus: var(--typography-color-primary-deepest);
+    --filter-button-padding-horizontal: var(--spacing-padding-4x);
+    --filter-button-gap-horizontal: var(--spacing-padding-x);
+    --filter-button-icon-height: var(--size-4x);
+    --filter-button-icon-width: var(--size-4x);
+    --filter-button-border-width-default: var(--border-stroke-one);
+
+    display: inline-flex;
+    align-items: center;
+    border: var(--filter-button-border-width-default) solid var(--filter-button-color-border-default);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border-radius: var(--filter-button-radius-number);
+    padding: var(--filter-button-padding-vertical) var(--filter-button-padding-horizontal);
+    background-color: var(--filter-button-color-bg-default);
+    color: var(--filter-button-color-text-default);
+    gap: var(--filter-button-gap-horizontal);
+
+    .icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: var(--filter-button-icon-width);
+        height: var(--filter-button-icon-height);
+        color: var(--filter-button-color-icon-default);
+        transition: color 0.2s ease-in-out;
+    }
+
+    &:hover {
+        background-color: var(--filter-button-color-bg-hover);
+        border-color: var(--filter-button-color-border-hover);
+        color: var(--filter-button-color-text-hover);
+
+        .icon {
+            color: var(--filter-button-color-icon-hover);
+        }
+    }
+
+    &:focus {
+        background-color: var(--filter-button-color-bg-focus);
+        border-color: var(--filter-button-color-border-focus);
+        color: var(--filter-button-color-text-focus);
+
+        .icon {
+            color: var(--filter-button-color-icon-focus);
+        }
+    }
+
+    &.defaultStyle {
+        &:hover {
+            background-color: var(--filter-button-color-bg-hover);
+            border-color: var(--filter-button-color-border-hover);
+            color: var(--filter-button-color-text-hover);
+
+            .icon {
+                color: var(--filter-button-color-icon-hover);
+            }
+        }
+
+        &:active {
+            background-color: var(--filter-button-color-bg-active);
+            border-color: var(--filter-button-color-border-active);
+            color: var(--filter-button-color-text-active);
+
+            .icon {
+                color: var(--filter-button-color-icon-active);
+            }
+        }
+
+        &:focus {
+            background-color: var(--filter-button-color-bg-focus);
+            border-color: var(--filter-button-color-border-focus);
+            color: var(--filter-button-color-text-focus);
+
+            .icon {
+                color: var(--filter-button-color-icon-focus);
+            }
+        }
+    }
+
+    &.active {
+        background-color: var(--filter-button-color-bg-active);
+        border-color: var(--filter-button-color-border-active);
+        color: var(--filter-button-color-text-active);
+
+        .icon {
+            color: var(--filter-button-color-icon-active);
+        }
+
+        &:hover {
+            background-color: var(--filter-button-color-bg-focus);
+            border-color: var(--filter-button-color-border-focus);
+            color: var(--filter-button-color-text-focus);
+
+            .icon {
+                color: var(--filter-button-color-icon-focus);
+            }
+        }
+    }
+
+    &.disabled {
+        opacity: var(--opacity-50);
+        cursor: not-allowed;
+    }
+}

@@ -1,0 +1,8 @@
+@import '@cobalt/ui/styles/variables';
+
+.root {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: $base * 3;
+    width: 1080px;
+}

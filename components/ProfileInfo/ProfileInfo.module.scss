@@ -1,0 +1,35 @@
+.container {
+    --profile-info-color-text-deepest: var(--typography-color-secondary-deepest);
+    --profile-info-color-text-darker: var(--typography-color-secondary-darker);
+    --profile-info-padding-horizontal: var(--spacing-padding-3x);
+    --profile-info-padding-vertical: var(--spacing-padding-4x);
+    --profile-info-gap-horizontal: var(--spacing-padding-4x);
+    --profile-info-gap-vertical: var(--spacing-padding-x);
+
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    gap: var(--profile-info-gap-horizontal);
+    padding: var(--profile-info-padding-vertical) var(--profile-info-padding-horizontal);
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: var(--profile-info-gap-vertical);
+        min-width: 0;
+    }
+
+    .name {
+        color: var(--profile-info-color-text-deepest);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .email {
+        color: var(--profile-info-color-text-darker);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

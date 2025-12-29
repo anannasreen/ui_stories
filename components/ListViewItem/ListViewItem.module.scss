@@ -1,0 +1,94 @@
+.listViewItem {
+    --list-view-item-padding-vertical: var(--spacing-padding-3x);
+    --list-view-item-padding-horizontal: var(--spacing-padding-4x);
+    --list-view-item-border-stroke-default: var(--border-stroke-one);
+    --list-view-item-border-stroke-critical: var(--border-stroke-md);
+    --list-view-item-border-stroke-high: var(--border-stroke-md);
+    --list-view-item-gap-default: var(--spacing-padding-2x);
+    --list-view-item-default-bg-default: var(--surface-secondary-transparent);
+    --list-view-item-high-bg-default: var(--surface-secondary-transparent);
+    --list-view-item-high-bg-hover: var(--surface-secondary-light);
+    --list-view-item-default-bg-hover: var(--surface-secondary-light);
+    --list-view-item-critical-bg-default: var(--colors-transparent);
+    --list-view-item-critical-bg-hover: var(--surface-secondary-light);
+    --list-view-item-default-border-default: var(--border-color-secondary-soft-light);
+    --list-view-item-high-border-default: var(--border-color-priority-high);
+    --list-view-item-critical-border-default: var(--border-color-priority-critical);
+    --thumbnail-border-radius-xs: var(--border-radius-xs);
+    --thumbnail-size-md-height: var(--size-10x);
+    --thumbnail-size-md-width: var(--size-12x);
+
+    display: flex;
+    align-items: center;
+    padding: var(--list-view-item-padding-vertical) var(--list-view-item-padding-horizontal);
+    background-color: var(--list-view-item-default-bg-default);
+    border-bottom: var(--list-view-item-border-stroke-default) solid var(--list-view-item-default-border-default);
+    border-left: var(--list-view-item-border-stroke-high) solid transparent;
+
+    &:hover {
+        background-color: var(--list-view-item-default-bg-hover);
+    }
+}
+
+.priority {
+    &_high {
+        border-left: var(--list-view-item-border-stroke-high) solid var(--list-view-item-high-border-default);
+        background-color: var(--list-view-item-high-bg-default);
+
+        &:hover {
+            background-color: var(--list-view-item-high-bg-hover);
+        }
+    }
+
+    &_critical {
+        border-left: var(--list-view-item-border-stroke-critical) solid var(--list-view-item-critical-border-default);
+        background-color: var(--list-view-item-critical-bg-default);
+
+        &:hover {
+            background-color: var(--list-view-item-critical-bg-hover);
+        }
+    }
+}
+
+.imageContainer {
+    width: var(--thumbnail-size-md-width);
+    height: var(--thumbnail-size-md-height);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: var(--list-view-item-gap-default);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--thumbnail-border-radius-xs);
+}
+
+.mainContent {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    gap: var(--list-view-item-gap-default);
+}
+
+.gridStatus {
+    justify-self: center;
+    text-align: center;
+}
+
+.gridTimestamp {
+    justify-self: end;
+    text-align: right;
+}

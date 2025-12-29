@@ -1,0 +1,15 @@
+.spinner {
+    animation-name: Spinner_spin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Spinner_spin {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

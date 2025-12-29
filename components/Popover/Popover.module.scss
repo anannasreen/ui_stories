@@ -1,0 +1,43 @@
+.triggerContainer {
+    display: inline-block;
+    position: relative;
+}
+
+.popover {
+    z-index: 100;
+    max-width: 95vw;
+    max-height: 95vh;
+    outline: none;
+}
+
+.dialog {
+    background-color: var(--typography-color-secondary-lightest);
+    box-shadow: var(--shadow-m);
+    border-radius: var(--border-radius-sm);
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    border: var(--border-stroke-one) solid var(--border-color-secondary-light);
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: var(--spacing-padding-5x);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: var(--border-stroke-one) solid var(--border-color-secondary-lighter);
+
+    > * {
+        margin: 0;
+    }
+}
+
+.content {
+    padding: var(--spacing-padding-5x);
+    flex: 1;
+}

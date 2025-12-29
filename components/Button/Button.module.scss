@@ -1,0 +1,829 @@
+.button {
+    @media (prefers-color-scheme: light) {
+        --button-typography-font-family: var(--fonts-family-secondary);
+        --button-radius-default: var(--border-radius-sm);
+        --button-radius-rd: var(--border-radius-rd);
+        --button-radius-focus-ring: var(--border-radius-ten);
+        --button-border-width-default: var(--border-stroke-one);
+        --button-border-width-outline: var(--border-stroke-sm);
+        --button-border-width-focus-ring: var(--border-stroke-sm);
+        --button-gap-default: var(--spacing-2x);
+        --button-icon-width: var(--size-4x);
+        --button-icon-height: var(--size-4x);
+        --button-padding-md-horizontal: var(--spacing-padding-4x);
+        --button-padding-sm-horizontal: var(--spacing-padding-3x);
+        --button-padding-xs-horizontal: var(--spacing-padding-2x);
+        --button-padding-md-vertical: var(--spacing-padding-3x);
+        --button-padding-sm-vertical: var(--spacing-padding-2x);
+        --button-gap-sm: var(--spacing-2x);
+        --button-gap-extra-small: var(--spacing-base-x);
+        --button-padding-xs-vertical: var(--spacing-padding-x);
+        --button-primary-default-bg-default: var(--surface-primary-very-dark);
+        --button-primary-default-bg-hover: var(--surface-primary-dark);
+        --button-primary-default-bg-active: var(--surface-primary-darker);
+        --button-primary-default-bg-focused: var(--surface-primary-darkest);
+        --button-primary-default-bg-disabled: var(--surface-secondary-light);
+        --button-primary-default-border-default: var(--border-color-primary-very-dark);
+        --button-primary-default-border-hover: var(--border-color-primary-dark);
+        --button-primary-default-border-active: var(--border-color-primary-darker);
+        --button-primary-default-border-focused: var(--border-color-primary-very-dark);
+        --button-primary-default-border-disabled: var(--border-color-secondary-soft-light);
+        --button-primary-default-focus-ring-on-focus: var(--surface-primary-very-dark);
+        --button-primary-default-text-default: var(--typography-color-secondary-lightest);
+        --button-primary-default-text-hover: var(--typography-color-secondary-lightest);
+        --button-primary-default-text-active: var(--typography-color-secondary-lightest);
+        --button-primary-default-text-focused: var(--typography-color-secondary-lightest);
+        --button-primary-default-text-disabled: var(--typography-color-secondary-neutral);
+        --button-primary-default-icon-default: var(--surface-secondary-lightest);
+        --button-primary-default-icon-hover: var(--surface-secondary-lightest);
+        --button-primary-default-icon-active: var(--surface-secondary-lightest);
+        --button-primary-default-icon-focused: var(--surface-secondary-lightest);
+        --button-primary-default-icon-disabled: var(--surface-secondary-neutral);
+        --button-primary-outline-bg-2: var(--surface-primary-very-dark);
+        --button-primary-outline-bg-default: var(--surface-secondary-lightest);
+        --button-primary-outline-bg-hover: var(--surface-primary-lightest);
+        --button-primary-outline-bg-active: var(--surface-primary-very-dark);
+        --button-primary-outline-bg-focused: var(--surface-primary-lightest);
+        --button-primary-outline-bg-disabled: var(--surface-secondary-lightest);
+        --button-primary-outline-border-default: var(--border-color-primary-very-dark);
+        --button-primary-outline-border-hover: var(--border-color-primary-darkest);
+        --button-primary-outline-border-active: var(--border-color-primary-very-dark);
+        --button-primary-outline-border-focused: var(--border-color-primary-very-dark);
+        --button-primary-outline-border-disabled: var(--border-color-secondary-medium-dark);
+        --button-primary-outline-focus-ring-on-focus: var(--border-color-primary-very-dark);
+        --button-primary-outline-text-default: var(--typography-color-primary-very-dark);
+        --button-primary-outline-text-hover: var(--typography-color-primary-very-dark);
+        --button-primary-outline-text-active: var(--typography-color-secondary-lightest);
+        --button-primary-outline-text-focused: var(--typography-color-primary-very-dark);
+        --button-primary-outline-text-disabled: var(--typography-color-secondary-neutral);
+        --button-primary-outline-icon-default: var(--surface-primary-very-dark);
+        --button-primary-outline-icon-hover: var(--surface-primary-very-dark);
+        --button-primary-outline-icon-active: var(--surface-secondary-lightest);
+        --button-primary-outline-icon-focused: var(--surface-primary-very-dark);
+        --button-primary-outline-icon-disabled: var(--surface-secondary-neutral);
+        --button-primary-ghost-bg-default: var(--surface-secondary-transparent);
+        --button-primary-ghost-bg-hover: var(--surface-primary-lightest);
+        --button-primary-ghost-bg-active: var(--surface-primary-very-dark);
+        --button-primary-ghost-bg-focused: var(--surface-primary-lightest);
+        --button-primary-ghost-bg-disabled: var(--surface-secondary-lightest);
+        --button-primary-ghost-border-default: var(--border-color-primary-very-dark);
+        --button-primary-ghost-border-hover: var(--border-color-primary-very-dark);
+        --button-primary-ghost-border-active: var(--border-color-primary-very-dark);
+        --button-primary-ghost-border-focused: var(--border-color-primary-lightest);
+        --button-primary-ghost-border-disabled: var(--border-color-secondary-lightest);
+        --button-primary-ghost-focus-ring-on-focus: var(--border-color-primary-very-dark);
+        --button-primary-ghost-text-default: var(--typography-color-primary-very-dark);
+        --button-primary-ghost-text-hover: var(--typography-color-primary-very-dark);
+        --button-primary-ghost-text-active: var(--typography-color-secondary-lightest);
+        --button-primary-ghost-text-focused: var(--typography-color-primary-very-dark);
+        --button-primary-ghost-text-disabled: var(--typography-color-secondary-neutral);
+        --button-primary-ghost-icon-default: var(--surface-primary-very-dark);
+        --button-primary-ghost-icon-hover: var(--surface-primary-very-dark);
+        --button-primary-ghost-icon-active: var(--surface-secondary-lightest);
+        --button-primary-ghost-icon-focused: var(--surface-primary-very-dark);
+        --button-primary-ghost-icon-disabled: var(--surface-secondary-neutral);
+        --button-secondary-default-bg-default: var(--surface-secondary-deepest);
+        --button-secondary-default-bg-hover: var(--surface-secondary-darkest);
+        --button-secondary-default-bg-active: var(--surface-secondary-darkest);
+        --button-secondary-default-bg-focused: var(--surface-secondary-deepest);
+        --button-secondary-default-bg-disabled: var(--surface-secondary-lighter);
+        --button-secondary-default-border-default: var(--border-color-secondary-deepest);
+        --button-secondary-default-border-hover: var(--border-color-secondary-darkest);
+        --button-secondary-default-border-active: var(--border-color-secondary-darkest);
+        --button-secondary-default-border-focused: var(--border-color-secondary-deepest);
+        --button-secondary-default-border-disabled: var(--border-color-secondary-soft-light);
+        --button-secondary-default-focus-ring-on-focus: var(--border-color-secondary-deepest);
+        --button-secondary-default-text-default: var(--typography-color-secondary-lightest);
+        --button-secondary-default-text-hover: var(--typography-color-secondary-lightest);
+        --button-secondary-default-text-active: var(--typography-color-secondary-lightest);
+        --button-secondary-default-text-focused: var(--typography-color-secondary-lightest);
+        --button-secondary-default-text-disabled: var(--typography-color-secondary-neutral);
+        --button-secondary-default-icon-default: var(--surface-secondary-lightest);
+        --button-secondary-default-icon-hover: var(--surface-secondary-lightest);
+        --button-secondary-default-icon-active: var(--surface-secondary-lightest);
+        --button-secondary-default-icon-focused: var(--surface-secondary-lightest);
+        --button-secondary-default-icon-disabled: var(--surface-secondary-neutral);
+        --button-secondary-outline-bg-2: var(--surface-primary-very-dark);
+        --button-secondary-outline-bg-default: var(--surface-secondary-lightest);
+        --button-secondary-outline-bg-hover: var(--surface-secondary-lighter);
+        --button-secondary-outline-bg-active: var(--surface-secondary-deepest);
+        --button-secondary-outline-bg-focused: var(--surface-secondary-lighter);
+        --button-secondary-outline-bg-disabled: var(--surface-secondary-lightest);
+        --button-secondary-outline-border-default: var(--border-color-secondary-deepest);
+        --button-secondary-outline-border-hover: var(--border-color-secondary-deepest);
+        --button-secondary-outline-border-active: var(--border-color-secondary-deepest);
+        --button-secondary-outline-border-focused: var(--border-color-secondary-deepest);
+        --button-secondary-outline-border-disabled: var(--border-color-secondary-medium-dark);
+        --button-secondary-outline-focus-ring-on-focus: var(--border-color-secondary-deepest);
+        --button-secondary-outline-text-default: var(--typography-color-secondary-deepest);
+        --button-secondary-outline-text-hover: var(--typography-color-secondary-deepest);
+        --button-secondary-outline-text-active: var(--typography-color-secondary-lightest);
+        --button-secondary-outline-text-focused: var(--typography-color-secondary-deepest);
+        --button-secondary-outline-text-disabled: var(--typography-color-secondary-neutral);
+        --button-secondary-outline-icon-default: var(--surface-secondary-deepest);
+        --button-secondary-outline-icon-hover: var(--surface-secondary-deepest);
+        --button-secondary-outline-icon-active: var(--surface-secondary-lightest);
+        --button-secondary-outline-icon-focused: var(--surface-secondary-deepest);
+        --button-secondary-outline-icon-disabled: var(--surface-secondary-neutral);
+        --button-secondary-ghost-bg-default: var(--surface-secondary-transparent);
+        --button-secondary-ghost-bg-hover: var(--surface-secondary-lighter);
+        --button-secondary-ghost-bg-active: var(--surface-secondary-deepest);
+        --button-secondary-ghost-bg-focused: var(--surface-secondary-lighter);
+        --button-secondary-ghost-bg-disabled: var(--surface-secondary-lightest);
+        --button-secondary-ghost-border-default: var(--border-color-secondary-deepest);
+        --button-secondary-ghost-border-hover: var(--border-color-secondary-deepest);
+        --button-secondary-ghost-border-active: var(--border-color-secondary-deepest);
+        --button-secondary-ghost-border-focused: var(--border-color-secondary-lightest);
+        --button-secondary-ghost-border-disabled: var(--border-color-secondary-lightest);
+        --button-secondary-ghost-focus-ring-on-focus: var(--border-color-secondary-deepest);
+        --button-secondary-ghost-text-default: var(--typography-color-secondary-deepest);
+        --button-secondary-ghost-text-hover: var(--typography-color-secondary-deepest);
+        --button-secondary-ghost-text-active: var(--typography-color-secondary-lightest);
+        --button-secondary-ghost-text-focused: var(--typography-color-secondary-deepest);
+        --button-secondary-ghost-text-disabled: var(--typography-color-secondary-neutral);
+        --button-secondary-ghost-icon-default: var(--surface-secondary-deepest);
+        --button-secondary-ghost-icon-hover: var(--surface-secondary-deepest);
+        --button-secondary-ghost-icon-active: var(--surface-secondary-lightest);
+        --button-secondary-ghost-icon-focused: var(--surface-secondary-deepest);
+        --button-secondary-ghost-icon-disabled: var(--surface-secondary-neutral);
+        --button-destructive-default-bg-default: var(--surface-state-destructive);
+        --button-destructive-default-bg-hover: var(--color-state-destructive-dark);
+        --button-destructive-default-bg-active: var(--surface-state-destructive);
+        --button-destructive-default-bg-focused: var(--surface-state-destructive);
+        --button-destructive-default-bg-disabled: var(--surface-secondary-lighter);
+        --button-destructive-default-border-default: var(--border-color-state-destructive);
+        --button-destructive-default-border-hover: var(--color-state-destructive-dark);
+        --button-destructive-default-border-active: var(--border-color-state-destructive);
+        --button-destructive-default-border-focused: var(--border-color-state-destructive);
+        --button-destructive-default-border-disabled: var(--border-color-secondary-soft-light);
+        --button-destructive-default-focus-ring-on-focus: var(--border-color-state-destructive);
+        --button-destructive-default-text-default: var(--typography-color-secondary-lightest);
+        --button-destructive-default-text-hover: var(--typography-color-secondary-lightest);
+        --button-destructive-default-text-active: var(--typography-color-secondary-lightest);
+        --button-destructive-default-text-focused: var(--typography-color-secondary-lightest);
+        --button-destructive-default-text-disabled: var(--typography-color-secondary-neutral);
+        --button-destructive-default-icon-default: var(--surface-secondary-lightest);
+        --button-destructive-default-icon-hover: var(--surface-secondary-lightest);
+        --button-destructive-default-icon-active: var(--surface-secondary-lightest);
+        --button-destructive-default-icon-focused: var(--surface-secondary-lightest);
+        --button-destructive-default-icon-disabled: var(--surface-secondary-neutral);
+        --button-destructive-outline-bg-default: var(--color-secondary-lightest);
+        --button-destructive-outline-bg-hover: var(--color-state-destructive-light);
+        --button-destructive-outline-bg-active: var(--surface-state-destructive);
+        --button-destructive-outline-bg-focused: var(--color-state-destructive-light);
+        --button-destructive-outline-bg-disabled: var(--surface-secondary-lightest);
+        --button-destructive-outline-border-default: var(--border-color-state-destructive);
+        --button-destructive-outline-border-hover: var(--border-color-state-destructive);
+        --button-destructive-outline-border-active: var(--border-color-state-destructive);
+        --button-destructive-outline-border-focused: var(--border-color-state-destructive);
+        --button-destructive-outline-border-disabled: var(--border-color-secondary-neutral);
+        --button-destructive-outline-focus-ring-on-focus: var(--border-color-state-destructive);
+        --button-destructive-outline-text-default: var(--typography-color-state-destructive);
+        --button-destructive-outline-text-hover: var(--typography-color-state-destructive);
+        --button-destructive-outline-text-active: var(--typography-color-secondary-lightest);
+        --button-destructive-outline-text-focused: var(--typography-color-state-destructive);
+        --button-destructive-outline-text-disabled: var(--typography-color-secondary-neutral);
+        --button-destructive-outline-icon-default: var(--surface-state-destructive);
+        --button-destructive-outline-icon-hover: var(--surface-state-destructive);
+        --button-destructive-outline-icon-active: var(--surface-secondary-lightest);
+        --button-destructive-outline-icon-focused: var(--surface-state-destructive);
+        --button-destructive-outline-icon-disabled: var(--surface-secondary-neutral);
+        --button-destructive-ghost-bg-default: var(--surface-secondary-transparent);
+        --button-destructive-ghost-bg-hover: var(--color-state-destructive-light);
+        --button-destructive-ghost-bg-active: var(--surface-state-destructive);
+        --button-destructive-ghost-bg-focused: var(--color-state-destructive-light);
+        --button-destructive-ghost-bg-disabled: var(--surface-secondary-lightest);
+        --button-destructive-ghost-border-default: var(--border-color-state-destructive);
+        --button-destructive-ghost-border-hover: var(--border-color-state-destructive);
+        --button-destructive-ghost-border-active: var(--border-color-state-destructive);
+        --button-destructive-ghost-border-focused: var(--border-color-secondary-lightest);
+        --button-destructive-ghost-border-disabled: var(--border-color-secondary-lightest);
+        --button-destructive-ghost-focus-ring-on-focus: var(--border-color-state-destructive);
+        --button-destructive-ghost-text-default: var(--typography-color-state-destructive);
+        --button-destructive-ghost-text-hover: var(--typography-color-state-destructive);
+        --button-destructive-ghost-text-active: var(--typography-color-secondary-lightest);
+        --button-destructive-ghost-text-focused: var(--typography-color-state-destructive);
+        --button-destructive-ghost-text-disabled: var(--typography-color-secondary-neutral);
+        --button-destructive-ghost-icon-default: var(--surface-state-destructive);
+        --button-destructive-ghost-icon-hover: var(--surface-state-destructive);
+        --button-destructive-ghost-icon-active: var(--surface-secondary-lightest);
+        --button-destructive-ghost-icon-focused: var(--surface-state-destructive);
+        --button-destructive-ghost-icon-disabled: var(--surface-secondary-neutral);
+        --button-success-default-bg-default: var(--surface-state-success);
+        --button-success-default-bg-hover: var(--color-state-success-dark);
+        --button-success-default-bg-active: var(--surface-state-success);
+        --button-success-default-bg-focused: var(--surface-state-success);
+        --button-success-default-bg-disabled: var(--surface-secondary-lighter);
+        --button-success-default-border-default: var(--border-color-state-success);
+        --button-success-default-border-hover: var(--color-state-success-dark);
+        --button-success-default-border-active: var(--border-color-state-success);
+        --button-success-default-border-focused: var(--border-color-state-success);
+        --button-success-default-border-disabled: var(--border-color-secondary-soft-light);
+        --button-success-default-focus-ring-on-focus: var(--border-color-state-success);
+        --button-success-default-text-default: var(--typography-color-secondary-lightest);
+        --button-success-default-text-hover: var(--typography-color-secondary-lightest);
+        --button-success-default-text-active: var(--typography-color-secondary-lightest);
+        --button-success-default-text-focused: var(--typography-color-secondary-lightest);
+        --button-success-default-text-disabled: var(--typography-color-secondary-neutral);
+        --button-success-default-icon-default: var(--surface-secondary-lightest);
+        --button-success-default-icon-hover: var(--surface-secondary-lightest);
+        --button-success-default-icon-active: var(--surface-secondary-lightest);
+        --button-success-default-icon-focused: var(--surface-secondary-lightest);
+        --button-success-default-icon-disabled: var(--surface-secondary-neutral);
+        --button-success-outline-bg-default: var(--surface-secondary-lightest);
+        --button-success-outline-bg-hover: var(--color-state-success-lighter);
+        --button-success-outline-bg-active: var(--surface-state-success);
+        --button-success-outline-bg-focused: var(--color-state-success-lighter);
+        --button-success-outline-bg-disabled: var(--surface-secondary-lightest);
+        --button-success-outline-border-default: var(--border-color-state-success);
+        --button-success-outline-border-hover: var(--border-color-state-success);
+        --button-success-outline-border-active: var(--border-color-state-success);
+        --button-success-outline-border-focused: var(--border-color-state-success);
+        --button-success-outline-border-disabled: var(--border-color-secondary-neutral);
+        --button-success-outline-focus-ring-on-focus: var(--border-color-state-success);
+        --button-success-outline-text-default: var(--typography-color-state-success);
+        --button-success-outline-text-hover: var(--typography-color-state-success);
+        --button-success-outline-text-active: var(--typography-color-secondary-lightest);
+        --button-success-outline-text-focused: var(--typography-color-state-success);
+        --button-success-outline-text-disabled: var(--typography-color-secondary-neutral);
+        --button-success-outline-icon-default: var(--surface-state-success);
+        --button-success-outline-icon-hover: var(--surface-state-success);
+        --button-success-outline-icon-active: var(--surface-secondary-lightest);
+        --button-success-outline-icon-focused: var(--surface-state-success);
+        --button-success-outline-icon-disabled: var(--surface-secondary-neutral);
+        --button-success-ghost-bg-default: var(--surface-secondary-transparent);
+        --button-success-ghost-bg-hover: var(--surface-secondary-lighter);
+        --button-success-ghost-bg-active: var(--surface-state-success);
+        --button-success-ghost-bg-focused: var(--color-state-success-lighter);
+        --button-success-ghost-bg-disabled: var(--surface-secondary-lightest);
+        --button-success-ghost-border-default: var(--border-color-state-success);
+        --button-success-ghost-border-hover: var(--border-color-state-success);
+        --button-success-ghost-border-active: var(--border-color-state-success);
+        --button-success-ghost-border-focused: var(--border-color-secondary-lightest);
+        --button-success-ghost-border-disabled: var(--border-color-secondary-lightest);
+        --button-success-ghost-focus-ring-on-focus: var(--border-color-state-success);
+        --button-success-ghost-text-default: var(--typography-color-state-success);
+        --button-success-ghost-text-hover: var(--typography-color-state-success);
+        --button-success-ghost-text-active: var(--typography-color-secondary-lightest);
+        --button-success-ghost-text-focused: var(--typography-color-state-success);
+        --button-success-ghost-text-disabled: var(--typography-color-secondary-neutral);
+        --button-success-ghost-icon-default: var(--surface-state-success);
+        --button-success-ghost-icon-hover: var(--surface-state-success);
+        --button-success-ghost-icon-active: var(--surface-secondary-lightest);
+        --button-success-ghost-icon-focused: var(--surface-state-success);
+        --button-success-ghost-icon-disabled: var(--surface-secondary-neutral);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        --button-typography-font-family: var(--fonts-family-secondary);
+        --button-radius-default: var(--border-radius-sm);
+        --button-radius-rd: var(--border-radius-rd);
+        --button-radius-focus-ring: var(--border-radius-ten);
+        --button-border-width-default: var(--border-stroke-one);
+        --button-border-width-outline: var(--border-stroke-sm);
+        --button-border-width-focus-ring: var(--border-stroke-sm);
+        --button-gap-default: var(--spacing-2x);
+        --button-icon-width: var(--size-4x);
+        --button-icon-height: var(--size-4x);
+        --button-padding-md-horizontal: var(--spacing-padding-4x);
+        --button-padding-sm-horizontal: var(--spacing-padding-3x);
+        --button-padding-xs-horizontal: var(--spacing-padding-2x);
+        --button-padding-md-vertical: var(--spacing-padding-3x);
+        --button-padding-sm-vertical: var(--spacing-padding-2x);
+        --button-gap-sm: var(--spacing-2x);
+        --button-gap-extra-small: var(--spacing-base-x);
+        --button-padding-xs-vertical: var(--spacing-padding-x);
+        --button-primary-default-bg-default: var(--surface-primary-very-dark);
+        --button-primary-default-bg-hover: var(--surface-primary-very-dark);
+        --button-primary-default-bg-active: var(--surface-primary-very-dark);
+        --button-primary-default-bg-focused: var(--surface-primary-darkest);
+        --button-primary-default-bg-disabled: var(--surface-secondary-light);
+        --button-primary-default-border-default: var(--border-color-primary-very-dark);
+        --button-primary-default-border-hover: var(--border-color-primary-very-dark);
+        --button-primary-default-border-active: var(--border-color-primary-very-dark);
+        --button-primary-default-border-focused: var(--border-color-primary-very-dark);
+        --button-primary-default-border-disabled: var(--border-color-secondary-soft-light);
+        --button-primary-default-focus-ring-on-focus: var(--surface-primary-very-dark);
+        --button-primary-default-text-default: var(--typography-color-secondary-lightest);
+        --button-primary-default-text-hover: var(--typography-color-secondary-lightest);
+        --button-primary-default-text-active: var(--typography-color-secondary-lightest);
+        --button-primary-default-text-focused: var(--typography-color-secondary-lightest);
+        --button-primary-default-text-disabled: var(--typography-color-secondary-darker);
+        --button-primary-default-icon-default: var(--surface-secondary-lightest);
+        --button-primary-default-icon-hover: var(--surface-secondary-lightest);
+        --button-primary-default-icon-active: var(--surface-secondary-lightest);
+        --button-primary-default-icon-focused: var(--surface-secondary-lightest);
+        --button-primary-default-icon-disabled: var(--surface-secondary-darker);
+        --button-primary-outline-bg-2: var(--surface-primary-very-dark);
+        --button-primary-outline-bg-default: var(--surface-secondary-lightest);
+        --button-primary-outline-bg-hover: var(--surface-secondary-lightest);
+        --button-primary-outline-bg-active: var(--surface-primary-very-dark);
+        --button-primary-outline-bg-focused: var(--surface-secondary-lighter);
+        --button-primary-outline-bg-disabled: var(--surface-secondary-lightest);
+        --button-primary-outline-border-default: var(--border-color-primary-very-dark);
+        --button-primary-outline-border-hover: var(--border-color-primary-darkest);
+        --button-primary-outline-border-active: var(--border-color-primary-very-dark);
+        --button-primary-outline-border-focused: var(--border-color-primary-very-dark);
+        --button-primary-outline-border-disabled: var(--border-color-secondary-medium-dark);
+        --button-primary-outline-focus-ring-on-focus: var(--border-color-primary-very-dark);
+        --button-primary-outline-text-default: var(--typography-color-primary-very-dark);
+        --button-primary-outline-text-hover: var(--typography-color-primary-very-dark);
+        --button-primary-outline-text-active: var(--typography-color-secondary-lightest);
+        --button-primary-outline-text-focused: var(--typography-color-primary-very-dark);
+        --button-primary-outline-text-disabled: var(--typography-color-secondary-darker);
+        --button-primary-outline-icon-default: var(--surface-primary-very-dark);
+        --button-primary-outline-icon-hover: var(--surface-primary-very-dark);
+        --button-primary-outline-icon-active: var(--surface-secondary-lightest);
+        --button-primary-outline-icon-focused: var(--surface-primary-very-dark);
+        --button-primary-outline-icon-disabled: var(--surface-secondary-darker);
+        --button-primary-ghost-bg-default: var(--surface-secondary-transparent);
+        --button-primary-ghost-bg-hover: var(--surface-primary-lightest);
+        --button-primary-ghost-bg-active: var(--surface-primary-very-dark);
+        --button-primary-ghost-bg-focused: var(--surface-primary-lightest);
+        --button-primary-ghost-bg-disabled: var(--surface-secondary-lightest);
+        --button-primary-ghost-border-default: var(--border-color-primary-very-dark);
+        --button-primary-ghost-border-hover: var(--border-color-primary-very-dark);
+        --button-primary-ghost-border-active: var(--border-color-primary-very-dark);
+        --button-primary-ghost-border-focused: var(--border-color-primary-lightest);
+        --button-primary-ghost-border-disabled: var(--border-color-secondary-lightest);
+        --button-primary-ghost-focus-ring-on-focus: var(--border-color-primary-very-dark);
+        --button-primary-ghost-text-default: var(--typography-color-primary-very-dark);
+        --button-primary-ghost-text-hover: var(--typography-color-primary-very-dark);
+        --button-primary-ghost-text-active: var(--typography-color-secondary-lightest);
+        --button-primary-ghost-text-focused: var(--typography-color-primary-very-dark);
+        --button-primary-ghost-text-disabled: var(--typography-color-secondary-neutral);
+        --button-primary-ghost-icon-default: var(--surface-primary-very-dark);
+        --button-primary-ghost-icon-hover: var(--surface-primary-very-dark);
+        --button-primary-ghost-icon-active: var(--surface-secondary-lightest);
+        --button-primary-ghost-icon-focused: var(--surface-primary-very-dark);
+        --button-primary-ghost-icon-disabled: var(--surface-secondary-neutral);
+        --button-secondary-default-bg-default: var(--surface-secondary-deepest);
+        --button-secondary-default-bg-hover: var(--surface-secondary-darkest);
+        --button-secondary-default-bg-active: var(--surface-secondary-deepest);
+        --button-secondary-default-bg-focused: var(--surface-secondary-deepest);
+        --button-secondary-default-bg-disabled: var(--surface-secondary-lighter);
+        --button-secondary-default-border-default: var(--border-color-secondary-deepest);
+        --button-secondary-default-border-hover: var(--border-color-secondary-darkest);
+        --button-secondary-default-border-active: var(--border-color-secondary-deepest);
+        --button-secondary-default-border-focused: var(--border-color-secondary-deepest);
+        --button-secondary-default-border-disabled: var(--border-color-secondary-soft-light);
+        --button-secondary-default-focus-ring-on-focus: var(--border-color-secondary-deepest);
+        --button-secondary-default-text-default: var(--typography-color-secondary-lightest);
+        --button-secondary-default-text-hover: var(--typography-color-secondary-lightest);
+        --button-secondary-default-text-active: var(--typography-color-secondary-lightest);
+        --button-secondary-default-text-focused: var(--typography-color-secondary-lightest);
+        --button-secondary-default-text-disabled: var(--typography-color-secondary-darker);
+        --button-secondary-default-icon-default: var(--surface-secondary-lightest);
+        --button-secondary-default-icon-hover: var(--surface-secondary-lightest);
+        --button-secondary-default-icon-active: var(--surface-secondary-lightest);
+        --button-secondary-default-icon-focused: var(--surface-secondary-lightest);
+        --button-secondary-default-icon-disabled: var(--surface-secondary-darker);
+        --button-secondary-outline-bg-2: var(--surface-primary-very-dark);
+        --button-secondary-outline-bg-default: var(--surface-secondary-lightest);
+        --button-secondary-outline-bg-hover: var(--surface-secondary-lighter);
+        --button-secondary-outline-bg-active: var(--surface-secondary-deepest);
+        --button-secondary-outline-bg-focused: var(--surface-secondary-lighter);
+        --button-secondary-outline-bg-disabled: var(--surface-secondary-lightest);
+        --button-secondary-outline-border-default: var(--border-color-secondary-deepest);
+        --button-secondary-outline-border-hover: var(--border-color-secondary-deepest);
+        --button-secondary-outline-border-active: var(--border-color-secondary-deepest);
+        --button-secondary-outline-border-focused: var(--border-color-secondary-deepest);
+        --button-secondary-outline-border-disabled: var(--border-color-secondary-medium-dark);
+        --button-secondary-outline-focus-ring-on-focus: var(--border-color-secondary-deepest);
+        --button-secondary-outline-text-default: var(--typography-color-secondary-deepest);
+        --button-secondary-outline-text-hover: var(--typography-color-secondary-deepest);
+        --button-secondary-outline-text-active: var(--typography-color-secondary-lightest);
+        --button-secondary-outline-text-focused: var(--typography-color-secondary-deepest);
+        --button-secondary-outline-text-disabled: var(--typography-color-secondary-darker);
+        --button-secondary-outline-icon-default: var(--surface-secondary-deepest);
+        --button-secondary-outline-icon-hover: var(--surface-secondary-deepest);
+        --button-secondary-outline-icon-active: var(--surface-secondary-lightest);
+        --button-secondary-outline-icon-focused: var(--surface-secondary-deepest);
+        --button-secondary-outline-icon-disabled: var(--surface-secondary-darker);
+        --button-secondary-ghost-bg-default: var(--surface-secondary-transparent);
+        --button-secondary-ghost-bg-hover: var(--surface-secondary-lighter);
+        --button-secondary-ghost-bg-active: var(--surface-secondary-deepest);
+        --button-secondary-ghost-bg-focused: var(--surface-secondary-lighter);
+        --button-secondary-ghost-bg-disabled: var(--surface-secondary-lightest);
+        --button-secondary-ghost-border-default: var(--border-color-secondary-deepest);
+        --button-secondary-ghost-border-hover: var(--border-color-secondary-deepest);
+        --button-secondary-ghost-border-active: var(--border-color-secondary-deepest);
+        --button-secondary-ghost-border-focused: var(--border-color-secondary-lightest);
+        --button-secondary-ghost-border-disabled: var(--border-color-secondary-lightest);
+        --button-secondary-ghost-focus-ring-on-focus: var(--border-color-secondary-deepest);
+        --button-secondary-ghost-text-default: var(--typography-color-secondary-deepest);
+        --button-secondary-ghost-text-hover: var(--typography-color-secondary-deepest);
+        --button-secondary-ghost-text-active: var(--typography-color-secondary-lightest);
+        --button-secondary-ghost-text-focused: var(--typography-color-secondary-deepest);
+        --button-secondary-ghost-text-disabled: var(--typography-color-secondary-neutral);
+        --button-secondary-ghost-icon-default: var(--surface-secondary-deepest);
+        --button-secondary-ghost-icon-hover: var(--surface-secondary-deepest);
+        --button-secondary-ghost-icon-active: var(--surface-secondary-lightest);
+        --button-secondary-ghost-icon-focused: var(--surface-secondary-deepest);
+        --button-secondary-ghost-icon-disabled: var(--surface-secondary-neutral);
+        --button-destructive-default-bg-default: var(--surface-state-destructive);
+        --button-destructive-default-bg-hover: var(--surface-state-destructive);
+        --button-destructive-default-bg-active: var(--surface-state-destructive);
+        --button-destructive-default-bg-focused: var(--surface-state-destructive);
+        --button-destructive-default-bg-disabled: var(--surface-secondary-lighter);
+        --button-destructive-default-border-default: var(--border-color-state-destructive);
+        --button-destructive-default-border-hover: var(--border-color-state-destructive);
+        --button-destructive-default-border-active: var(--border-color-state-destructive);
+        --button-destructive-default-border-focused: var(--border-color-state-destructive);
+        --button-destructive-default-border-disabled: var(--border-color-secondary-soft-light);
+        --button-destructive-default-focus-ring-on-focus: var(--border-color-state-destructive);
+        --button-destructive-default-text-default: var(--typography-color-secondary-deepest);
+        --button-destructive-default-text-hover: var(--typography-color-secondary-deepest);
+        --button-destructive-default-text-active: var(--typography-color-secondary-deepest);
+        --button-destructive-default-text-focused: var(--typography-color-secondary-deepest);
+        --button-destructive-default-text-disabled: var(--typography-color-secondary-darker);
+        --button-destructive-default-icon-default: var(--surface-secondary-deepest);
+        --button-destructive-default-icon-hover: var(--surface-secondary-deepest);
+        --button-destructive-default-icon-active: var(--surface-secondary-deepest);
+        --button-destructive-default-icon-focused: var(--surface-secondary-deepest);
+        --button-destructive-default-icon-disabled: var(--surface-secondary-darker);
+        --button-destructive-outline-bg-default: var(--surface-secondary-lightest);
+        --button-destructive-outline-bg-hover: var(--surface-secondary-lighter);
+        --button-destructive-outline-bg-active: var(--surface-state-destructive);
+        --button-destructive-outline-bg-focused: var(--surface-secondary-lighter);
+        --button-destructive-outline-bg-disabled: var(--surface-secondary-lightest);
+        --button-destructive-outline-border-default: var(--border-color-state-destructive);
+        --button-destructive-outline-border-hover: var(--border-color-state-destructive);
+        --button-destructive-outline-border-active: var(--border-color-state-destructive);
+        --button-destructive-outline-border-focused: var(--border-color-state-destructive);
+        --button-destructive-outline-border-disabled: var(--border-color-secondary-darker);
+        --button-destructive-outline-focus-ring-on-focus: var(--border-color-state-destructive);
+        --button-destructive-outline-text-default: var(--typography-color-state-destructive);
+        --button-destructive-outline-text-hover: var(--typography-color-state-destructive);
+        --button-destructive-outline-text-active: var(--typography-color-secondary-deepest);
+        --button-destructive-outline-text-focused: var(--typography-color-state-destructive);
+        --button-destructive-outline-text-disabled: var(--typography-color-secondary-darker);
+        --button-destructive-outline-icon-default: var(--surface-state-destructive);
+        --button-destructive-outline-icon-hover: var(--surface-state-destructive);
+        --button-destructive-outline-icon-active: var(--surface-secondary-deepest);
+        --button-destructive-outline-icon-focused: var(--surface-state-destructive);
+        --button-destructive-outline-icon-disabled: var(--surface-secondary-darker);
+        --button-destructive-ghost-bg-default: var(--surface-secondary-transparent);
+        --button-destructive-ghost-bg-hover: var(--surface-secondary-lighter);
+        --button-destructive-ghost-bg-active: var(--surface-state-destructive);
+        --button-destructive-ghost-bg-focused: var(--surface-secondary-lighter);
+        --button-destructive-ghost-bg-disabled: var(--surface-secondary-lightest);
+        --button-destructive-ghost-border-default: var(--border-color-state-destructive);
+        --button-destructive-ghost-border-hover: var(--border-color-state-destructive);
+        --button-destructive-ghost-border-active: var(--border-color-state-destructive);
+        --button-destructive-ghost-border-focused: var(--border-color-secondary-lightest);
+        --button-destructive-ghost-border-disabled: var(--border-color-secondary-lightest);
+        --button-destructive-ghost-focus-ring-on-focus: var(--border-color-state-destructive);
+        --button-destructive-ghost-text-default: var(--typography-color-state-destructive);
+        --button-destructive-ghost-text-hover: var(--typography-color-state-destructive);
+        --button-destructive-ghost-text-active: var(--typography-color-secondary-deepest);
+        --button-destructive-ghost-text-focused: var(--typography-color-state-destructive);
+        --button-destructive-ghost-text-disabled: var(--typography-color-secondary-neutral);
+        --button-destructive-ghost-icon-default: var(--surface-state-destructive);
+        --button-destructive-ghost-icon-hover: var(--surface-state-destructive);
+        --button-destructive-ghost-icon-active: var(--surface-secondary-deepest);
+        --button-destructive-ghost-icon-focused: var(--surface-state-destructive);
+        --button-destructive-ghost-icon-disabled: var(--surface-secondary-neutral);
+        --button-success-default-bg-default: var(--surface-state-success);
+        --button-success-default-bg-hover: var(--surface-state-success);
+        --button-success-default-bg-active: var(--surface-state-success);
+        --button-success-default-bg-focused: var(--surface-state-success);
+        --button-success-default-bg-disabled: var(--surface-secondary-lighter);
+        --button-success-default-border-default: var(--border-color-state-success);
+        --button-success-default-border-hover: var(--border-color-state-success);
+        --button-success-default-border-active: var(--border-color-state-success);
+        --button-success-default-border-focused: var(--border-color-state-success);
+        --button-success-default-border-disabled: var(--border-color-secondary-soft-light);
+        --button-success-default-focus-ring-on-focus: var(--border-color-state-success);
+        --button-success-default-text-default: var(--typography-color-secondary-deepest);
+        --button-success-default-text-hover: var(--typography-color-secondary-deepest);
+        --button-success-default-text-active: var(--typography-color-secondary-deepest);
+        --button-success-default-text-focused: var(--typography-color-secondary-deepest);
+        --button-success-default-text-disabled: var(--typography-color-secondary-darker);
+        --button-success-default-icon-default: var(--surface-secondary-deepest);
+        --button-success-default-icon-hover: var(--surface-secondary-deepest);
+        --button-success-default-icon-active: var(--surface-secondary-deepest);
+        --button-success-default-icon-focused: var(--surface-secondary-deepest);
+        --button-success-default-icon-disabled: var(--surface-secondary-darker);
+        --button-success-outline-bg-default: var(--surface-secondary-lightest);
+        --button-success-outline-bg-hover: var(--surface-secondary-lighter);
+        --button-success-outline-bg-active: var(--surface-state-success);
+        --button-success-outline-bg-focused: var(--surface-secondary-lighter);
+        --button-success-outline-bg-disabled: var(--surface-secondary-lightest);
+        --button-success-outline-border-default: var(--border-color-state-success);
+        --button-success-outline-border-hover: var(--border-color-state-success);
+        --button-success-outline-border-active: var(--border-color-state-success);
+        --button-success-outline-border-focused: var(--border-color-state-success);
+        --button-success-outline-border-disabled: var(--border-color-secondary-darker);
+        --button-success-outline-focus-ring-on-focus: var(--border-color-state-success);
+        --button-success-outline-text-default: var(--typography-color-state-success);
+        --button-success-outline-text-hover: var(--typography-color-state-success);
+        --button-success-outline-text-active: var(--typography-color-secondary-deepest);
+        --button-success-outline-text-focused: var(--typography-color-state-success);
+        --button-success-outline-text-disabled: var(--typography-color-secondary-darker);
+        --button-success-outline-icon-default: var(--surface-state-success);
+        --button-success-outline-icon-hover: var(--surface-state-success);
+        --button-success-outline-icon-active: var(--surface-secondary-deepest);
+        --button-success-outline-icon-focused: var(--surface-state-success);
+        --button-success-outline-icon-disabled: var(--surface-secondary-darker);
+        --button-success-ghost-bg-default: var(--surface-secondary-transparent);
+        --button-success-ghost-bg-hover: var(--surface-secondary-lighter);
+        --button-success-ghost-bg-active: var(--surface-state-success);
+        --button-success-ghost-bg-focused: var(--surface-secondary-lighter);
+        --button-success-ghost-bg-disabled: var(--surface-secondary-lightest);
+        --button-success-ghost-border-default: var(--border-color-state-success);
+        --button-success-ghost-border-hover: var(--border-color-state-success);
+        --button-success-ghost-border-active: var(--border-color-state-success);
+        --button-success-ghost-border-focused: var(--border-color-secondary-lightest);
+        --button-success-ghost-border-disabled: var(--border-color-secondary-lightest);
+        --button-success-ghost-focus-ring-on-focus: var(--border-color-state-success);
+        --button-success-ghost-text-default: var(--typography-color-state-success);
+        --button-success-ghost-text-hover: var(--typography-color-state-success);
+        --button-success-ghost-text-active: var(--typography-color-secondary-lightest);
+        --button-success-ghost-text-focused: var(--typography-color-state-success);
+        --button-success-ghost-text-disabled: var(--typography-color-secondary-neutral);
+        --button-success-ghost-icon-default: var(--surface-state-success);
+        --button-success-ghost-icon-hover: var(--surface-state-success);
+        --button-success-ghost-icon-active: var(--surface-secondary-lightest);
+        --button-success-ghost-icon-focused: var(--surface-state-success);
+        --button-success-ghost-icon-disabled: var(--surface-secondary-neutral);
+    }
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--button-gap-default);
+    border: none;
+    border-radius: var(--button-radius-default);
+    cursor: pointer;
+    font-family: var(--typography-font-family);
+    font-size: var(--typography-font-size-body-md);
+    line-height: var(--typography-line-height-body-md);
+    font-weight: var(--typography-font-weight-regular);
+    color: var(--button-primary-default-text-default);
+
+    span {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &.medium {
+        padding: var(--button-padding-md-vertical) var(--button-padding-md-horizontal);
+        gap: var(--button-gap-default);
+    }
+
+    &.small {
+        padding: var(--button-padding-sm-vertical) var(--button-padding-sm-horizontal);
+        gap: var(--button-gap-sm);
+        font-size: var(--typography-font-size-body-sm);
+        line-height: var(--typography-line-height-body-sm);
+    }
+
+    &.xs {
+        padding: var(--button-padding-xs-vertical) var(--button-padding-xs-horizontal);
+        gap: var(--button-gap-extra-small);
+        font-size: var(--typography-font-size-body-xs);
+        line-height: var(--typography-line-height-body-xs);
+    }
+}
+
+@mixin button-default($variant) {
+    border-radius: var(--button-radius-default);
+    border: var(--button-border-width-default) solid var(--button-#{$variant}-default-border-default);
+    background: var(--button-#{$variant}-default-bg-default);
+    color: var(--button-#{$variant}-default-text-default);
+
+    .icon {
+        color: var(--button-#{$variant}-default-icon-default);
+    }
+
+    &:hover:not(:disabled) {
+        background-color: var(--button-#{$variant}-default-bg-hover);
+        color: var(--button-#{$variant}-default-text-hover);
+        border-color: var(--button-#{$variant}-default-border-hover) !important;
+
+        .icon {
+            color: var(--button-#{$variant}-default-icon-hover);
+        }
+    }
+
+    &:active:not(:disabled) {
+        margin: -1px;
+        background-color: var(--button-#{$variant}-default-bg-active);
+        color: var(--button-#{$variant}-default-text-active);
+        border: var(--button-border-width-default) solid var(--button-#{$variant}-default-border-active);
+        outline: none !important;
+
+        .icon {
+            color: var(--button-#{$variant}-default-icon-active);
+        }
+    }
+
+    &:focus:not(:disabled) {
+        margin: -1px;
+        background-color: var(--button-#{$variant}-default-bg-focused);
+        color: var(--button-#{$variant}-default-text-focused);
+        border: var(--button-border-width-focus-ring) solid var(--button-#{$variant}-default-border-focused);
+        outline: var(--button-#{$variant}-default-focus-ring-on-focus) solid var(--button-border-width-focus-ring);
+        outline-offset: 2px;
+
+        .icon {
+            color: var(--button-#{$variant}-default-icon-focused);
+        }
+
+        &:hover {
+            background-color: var(--button-#{$variant}-default-bg-hover);
+        }
+    }
+
+    &:disabled {
+        background-color: var(--button-#{$variant}-default-bg-disabled);
+        color: var(--button-#{$variant}-default-text-disabled);
+        border-color: var(--button-#{$variant}-default-border-disabled);
+        cursor: not-allowed;
+
+        .icon {
+            color: var(--button-#{$variant}-default-icon-disabled);
+        }
+    }
+}
+
+@mixin button-outline($variant) {
+    border-radius: var(--button-radius-default);
+    border: var(--button-border-width-default) solid var(--button-#{$variant}-outline-border-default);
+    background: var(--button-#{$variant}-outline-bg-default);
+    color: var(--button-#{$variant}-outline-text-default);
+
+    .icon {
+        color: var(--button-#{$variant}-outline-icon-default);
+    }
+
+    &:hover:not(:disabled) {
+        margin: -1px;
+        background-color: var(--button-#{$variant}-outline-bg-hover);
+        color: var(--button-#{$variant}-outline-text-hover);
+        border: var(--button-border-width-outline) solid var(--button-#{$variant}-outline-border-hover);
+
+        .icon {
+            color: var(--button-#{$variant}-outline-icon-hover);
+        }
+    }
+
+    &:active:not(:disabled) {
+        margin: 1px;
+        background-color: var(--button-#{$variant}-outline-bg-active) !important;
+        color: var(--button-#{$variant}-outline-text-active) !important;
+        border: var(--button-border-width-default) solid var(--button-#{$variant}-outline-border-active);
+
+        .icon {
+            color: var(--button-#{$variant}-outline-icon-active) !important;
+            svg {
+                color: var(--button-#{$variant}-outline-icon-active) !important;
+            }
+        }
+    }
+
+    &:focus:not(:disabled) {
+        margin: 1px;
+        background-color: var(--button-#{$variant}-outline-bg-focused);
+        color: var(--button-#{$variant}-outline-text-focused);
+        outline-offset: 2px;
+        outline: var(--button-border-width-focus-ring) solid var(--button-#{$variant}-outline-focus-ring-on-focus);
+        border: none;
+
+        .icon {
+            color: var(--button-#{$variant}-outline-icon-focused);
+        }
+    }
+
+    &:disabled {
+        background-color: var(--button-#{$variant}-outline-bg-disabled);
+        color: var(--button-#{$variant}-outline-text-disabled);
+        border: var(--button-border-width-default) solid var(--button-#{$variant}-outline-border-disabled);
+        cursor: not-allowed;
+
+        .icon {
+            color: var(--button-#{$variant}-outline-icon-disabled);
+        }
+    }
+}
+
+@mixin button-ghost($variant) {
+    border-radius: var(--button-radius-default);
+    border: var(--button-border-width-default) solid transparent;
+    color: var(--button-#{$variant}-ghost-text-default);
+    background-color: transparent;
+
+    .icon {
+        color: var(--button-#{$variant}-ghost-icon-default);
+    }
+
+    &:hover:not(:disabled) {
+        margin: 0;
+        background-color: var(--button-#{$variant}-ghost-bg-hover) !important;
+        color: var(--button-#{$variant}-ghost-text-hover);
+
+        .icon {
+            color: var(--button-#{$variant}-ghost-icon-hover);
+        }
+    }
+
+    &:active:not(:disabled) {
+        margin: 0px;
+        background-color: var(--button-#{$variant}-ghost-bg-active) !important;
+        color: var(--button-#{$variant}-ghost-text-active) !important;
+        border: var(--button-border-width-default) solid var(--button-#{$variant}-ghost-border-active);
+
+        .icon {
+            color: var(--button-#{$variant}-ghost-icon-active) !important;
+            svg {
+                color: var(--button-#{$variant}-ghost-icon-active) !important;
+            }
+        }
+    }
+
+    &:focus:not(:disabled) {
+        margin: 0px;
+        background-color: var(--button-#{$variant}-ghost-bg-focused);
+        color: var(--button-#{$variant}-ghost-text-focused);
+        outline-offset: 2px;
+        outline: var(--button-border-width-focus-ring) solid var(--button-#{$variant}-ghost-focus-ring-on-focus);
+
+        .icon {
+            color: var(--button-#{$variant}-ghost-icon-focused);
+        }
+    }
+
+    &:disabled {
+        background-color: var(--button-#{$variant}-ghost-bg-disabled);
+        color: var(--button-#{$variant}-ghost-text-disabled);
+        border-color: var(--button-#{$variant}-ghost-border-disabled);
+        cursor: not-allowed;
+
+        .icon {
+            color: var(--button-#{$variant}-ghost-icon-disabled);
+        }
+    }
+}
+
+// Primary buttons
+.primary {
+    &.default {
+        @include button-default('primary');
+    }
+    &.outline {
+        @include button-outline('primary');
+    }
+    &.ghost {
+        @include button-ghost('primary');
+    }
+}
+
+// Secondary buttons
+.secondary {
+    &.default {
+        @include button-default('secondary');
+    }
+    &.outline {
+        @include button-outline('secondary');
+    }
+    &.ghost {
+        @include button-ghost('secondary');
+    }
+}
+
+// Destructive buttons
+.destructive {
+    &.default {
+        @include button-default('destructive');
+    }
+    &.outline {
+        @include button-outline('destructive');
+    }
+    &.ghost {
+        @include button-ghost('destructive');
+    }
+}
+
+// Success buttons
+.success {
+    &.default {
+        @include button-default('success');
+    }
+    &.outline {
+        @include button-outline('success');
+    }
+    &.ghost {
+        @include button-ghost('success');
+    }
+}
+
+[data-icon-only='true'] {
+    padding: var(--button-padding-md-vertical) var(--button-padding-md-vertical) !important;
+}
+
+.fullscreen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

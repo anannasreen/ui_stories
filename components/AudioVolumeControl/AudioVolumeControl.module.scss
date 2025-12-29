@@ -1,0 +1,27 @@
+@import '@cobalt/ui/styles/variables.scss';
+
+.root {
+    align-items: center;
+    background-color: $bg1;
+    display: flex;
+    height: 100%;
+    max-width: 100%;
+    width: 300px;
+}
+
+.rootMuted {
+    @extend .root;
+    background-color: $red;
+}
+
+.volumeButton {
+    cursor: pointer;
+}
+
+.volumeIcon {
+    margin: 0 $base;
+}
+
+.volumeSlider {
+    flex: 1;
+}

@@ -1,0 +1,479 @@
+@import 'variables';
+@import 'utility';
+
+/* 01 Base - Mode 1 */
+@mixin light-theme-tokens {
+    // Theme variables from themes.scss
+    --fg: black;
+    --fg-subtle: #{rgba(black, 0.4)};
+    --layer0-bg: hsl(210deg 7% 84%);
+    --layer1-bg: hsl(200deg 5% 89%);
+    --layer2-bg: hsl(180deg 2% 94%);
+    --layer3-bg: hsl(180deg 1% 97%);
+    --layer4-bg: hsl(0deg 0% 100%);
+
+    --font-size-xs: 1.4rem;
+    --font-size-s: 1.6rem;
+    --font-size-m: 2rem;
+    --font-size-l: 2.2rem;
+    --font-size-xl: 2.6rem;
+    --font-size-xxl: 3.2rem;
+
+    --header-color: #{$darkBlue};
+
+    --rounding: 3px;
+
+    // Shadow definitions
+    --shadow-color: 0deg 0% 0%;
+    --shadow-s-alpha: 0.4;
+    --shadow-m-alpha: 0.16;
+    --shadow-l-alpha: 0.12;
+    --shadow-xl-alpha: 0.08;
+
+    --shadow-s: 1px 1px 2px hsl(var(--shadow-color) / var(--shadow-s-alpha));
+
+    --shadow-m: 1px 1px 2px hsl(var(--shadow-color) / var(--shadow-m-alpha)),
+        2px 2px 4px hsl(var(--shadow-color) / var(--shadow-m-alpha)),
+        3px 3px 8px hsl(var(--shadow-color) / var(--shadow-m-alpha));
+
+    --shadow-l: 1px 1px 2px hsl(var(--shadow-color) / var(--shadow-l-alpha)),
+        2px 2px 4px hsl(var(--shadow-color) / var(--shadow-l-alpha)),
+        4px 4px 8px hsl(var(--shadow-color) / var(--shadow-l-alpha)),
+        7px 7px 14px hsl(var(--shadow-color) / var(--shadow-l-alpha));
+
+    --shadow-xl: 1px 1px 2px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
+        2px 2px 4px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
+        4px 4px 8px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
+        8px 8px 16px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
+        16px 16px 32px hsl(var(--shadow-color) / var(--shadow-xl-alpha));
+
+    --colors-transparent: rgba(255, 255, 255, 0);
+    --colors-opacity-50: rgba(255, 255, 255, 0.5);
+    --colors-blue-0: rgba(201, 228, 245, 1);
+    --colors-blue-50: rgba(90, 142, 179, 1);
+    --colors-blue-100: rgba(60, 111, 157, 1);
+    --colors-blue-200: rgba(42, 90, 138, 1);
+    --colors-blue-300: rgba(22, 71, 115, 1);
+    --colors-blue-400: rgba(31, 72, 117, 1);
+    --colors-neutral-0: rgba(255, 255, 255, 1);
+    --colors-neutral-50: rgba(240, 240, 240, 1);
+    --colors-blue-500: rgba(26, 60, 106, 1);
+    --colors-blue-600: rgba(18, 38, 92, 1);
+    --colors-neutral-100: rgba(229, 229, 229, 1);
+    --colors-neutral-200: rgba(216, 216, 216, 1);
+    --colors-blue-700: rgba(16, 23, 72, 1);
+    --colors-blue-800: rgba(14, 17, 60, 1);
+    --colors-neutral-300: rgba(201, 201, 201, 1);
+    --colors-blue-900: rgba(10, 14, 42, 1);
+    --colors-neutral-400: rgba(179, 179, 179, 1);
+    --colors-neutral-500: rgba(165, 172, 186, 1);
+    --colors-blue-1000: rgba(7, 9, 32, 1);
+    --colors-neutral-600: rgba(156, 156, 156, 1);
+    --colors-neutral-700: rgba(110, 110, 110, 1);
+    --colors-neutral-800: rgba(85, 85, 85, 1);
+    --colors-neutral-900: rgba(51, 51, 51, 1);
+    --colors-sky-blue-100: rgba(237, 243, 251, 1);
+    --colors-neutral-1000: rgba(29, 29, 29, 1);
+    --colors-purple-50: rgba(255, 242, 253, 1);
+    --colors-purple-100: rgba(250, 223, 250, 1);
+    --colors-purple-200: rgba(244, 191, 243, 1);
+    --colors-purple-300: rgba(237, 160, 238, 1);
+    --colors-purple-400: rgba(230, 128, 232, 1);
+    --colors-purple-500: rgba(223, 98, 225, 1);
+    --colors-purple-600: rgba(191, 67, 219, 1);
+    --colors-purple-700: rgba(165, 58, 187, 1);
+    --colors-purple-800: rgba(139, 49, 154, 1);
+    --colors-purple-900: rgba(113, 39, 122, 1);
+    --colors-purple-1000: rgba(85, 30, 90, 1);
+    --colors-sky-blue-200: rgba(191, 216, 255, 1);
+    --colors-sky-blue-300: rgba(156, 196, 255, 1);
+    --colors-sky-blue-400: rgba(122, 174, 255, 1);
+    --colors-sky-blue-500: rgba(89, 147, 250, 1);
+    --colors-sky-blue-600: rgba(56, 121, 247, 1);
+    --colors-sky-blue-700: rgba(44, 101, 214, 1);
+    --colors-sky-blue-800: rgba(28, 80, 178, 1);
+    --colors-sky-blue-900: rgba(18, 48, 111, 1);
+    --colors-sky-blue-1000: rgba(10, 27, 71, 1);
+    --colors-orange-0: rgba(255, 237, 224, 1);
+    --colors-orange-50: rgba(253, 211, 183, 1);
+    --colors-orange-100: rgba(249, 180, 143, 1);
+    --colors-orange-200: rgba(245, 153, 108, 1);
+    --colors-orange-300: rgba(240, 122, 71, 1);
+    --colors-orange-400: rgba(232, 100, 40, 1);
+    --colors-orange-500: rgba(216, 87, 24, 1);
+    --colors-orange-600: rgba(186, 72, 12, 1);
+    --colors-orange-700: rgba(154, 58, 6, 1);
+    --colors-orange-800: rgba(122, 43, 0, 1);
+    --colors-orange-900: rgba(90, 31, 0, 1);
+    --colors-orange-1000: rgba(58, 19, 0, 1);
+    --colors-red-50: rgba(244, 216, 220, 1);
+    --colors-red-100: rgba(236, 169, 177, 1);
+    --colors-red-200: rgba(226, 125, 139, 1);
+    --colors-red-300: rgba(216, 91, 108, 1);
+    --colors-red-400: rgba(206, 58, 80, 1);
+    --colors-red-500: rgba(199, 34, 59, 1);
+    --colors-red-600: rgba(164, 28, 50, 1);
+    --colors-red-700: rgba(130, 22, 41, 1);
+    --colors-red-800: rgba(99, 16, 33, 1);
+    --colors-red-900: rgba(71, 11, 25, 1);
+    --colors-red-1000: rgba(46, 7, 17, 1);
+    --colors-yellow-100: rgba(245, 210, 58, 1);
+    --colors-yellow-200: rgba(244, 203, 52, 1);
+    --colors-yellow-300: rgba(241, 182, 38, 1);
+    --colors-yellow-400: rgba(219, 156, 10, 1);
+    --colors-yellow-500: rgba(188, 131, 0, 1);
+    --colors-yellow-600: rgba(158, 108, 0, 1);
+    --colors-yellow-700: rgba(129, 86, 0, 1);
+    --colors-yellow-800: rgba(101, 66, 0, 1);
+    --colors-yellow-900: rgba(74, 48, 0, 1);
+    --colors-yellow-1000: rgba(49, 32, 0, 1);
+    --colors-green-100: rgba(228, 254, 238, 1);
+    --colors-green-200: rgba(200, 250, 222, 1);
+    --colors-green-300: rgba(169, 244, 203, 1);
+    --colors-green-400: rgba(127, 234, 176, 1);
+    --colors-green-500: rgba(29, 151, 86, 1);
+    --colors-green-600: rgba(26, 134, 77, 1);
+    --colors-green-700: rgba(21, 114, 66, 1);
+    --colors-green-800: rgba(17, 93, 56, 1);
+    --colors-green-900: rgba(13, 73, 46, 1);
+    --colors-green-1000: rgba(9, 55, 35, 1);
+    --size-none: 0px;
+    --size-one: 1px;
+    --size-xxs: 2px;
+    --size-base-x: 4px;
+    --size-sm: 8px;
+    --size-ten: 10px;
+    --size-md-sm: 12px;
+    --size-fourteen: 14px;
+    --size-md: 16px;
+    --size-md-lg: 20px;
+    --size-lg: 24px;
+    --size-lg2: 28px;
+    --size-xl: 32px;
+    --size-xl2: 36px;
+    --size-xxl: 40px;
+    --size-xxl2: 44px;
+    --size-xxxl: 48px;
+    --size-xxxxl: 64px;
+    --size-huge: 80px;
+    --size-giant: 96px;
+    --size-massive: 128px;
+    --size-xl-massive: 144px;
+    --size-txt-10: 10px;
+    --size-txt-11: 11px;
+    --size-txt-13: 13px;
+    --size-txt-14: 14px;
+    --size-txt-15: 15px;
+    --size-fifty-x: 200px;
+    --size-ninety-x: 360px;
+    --size-rd: 999999px;
+    --none: 0px;
+    --base-x: 4px;
+    --2x: 8px;
+    --3x: 12px;
+    --4x: 16px;
+    --5x: 20px;
+    --6x: 24px;
+    --7x: 28px;
+    --8x: 32px;
+    --10x: 40px;
+    --12x: 48px;
+    --16x: 64px;
+    --20x: 80px;
+    --hude-x: 96px;
+    --giant-x: 128px;
+    --massive-x: 160px;
+    --spacing--8: -8px;
+    --spacing-none: 0px;
+    --spacing-half-x: 2px;
+    --spacing-base-x: 4px;
+    --spacing-2x: 8px;
+    --spacing-3x: 12px;
+    --spacing-4x: 16px;
+    --spacing-5x: 20px;
+    --spacing-6x: 24px;
+    --spacing-7x: 28px;
+    --spacing-8x: 32px;
+    --spacing-10x: 40px;
+    --spacing-12x: 48px;
+    --spacing-16x: 64px;
+    --spacing-20x: 80px;
+    --spacing-huge-x: 96px;
+    --spacing-giant-x: 128px;
+    --spacing-massive-x: 160px;
+    --colors-neutral-0-opacity-50: rgba(255, 255, 255, 0.5);
+    --colors-neutral-1000-opacity-50: rgba(29, 29, 29, 0.5);
+
+    // inherited styles
+    color: var(--fg);
+}
+
+@mixin dark-theme-tokens {
+    // Theme variables from themes.scss (cobalt-internal)
+    --fg: #{$grey5};
+    --fg-subtle: #{rgba($grey5, 0.5)};
+    --layer0-bg: #{$bg1};
+    --layer1-bg: #{$bg2};
+    --layer2-bg: #{$bg3};
+    --layer3-bg: #{$bg4};
+    --layer4-bg: #{$bg5};
+
+    --font-size-xs: 1.2rem;
+    --font-size-s: 1.4rem;
+    --font-size-m: 1.8rem;
+    --font-size-l: 2rem;
+    --font-size-xl: 2.4rem;
+    --font-size-xxl: 3rem;
+
+    --spacing: 6px;
+
+    --header-color: #{$grey5};
+
+    --rounding: 6px;
+
+    // Shadow definitions
+    --shadow-s: 1px 2px 4px hsl(var(--shadow-color) / var(--shadow-s-alpha));
+
+    --shadow-m-alpha: 0.14;
+    --shadow-m: 1px 2px 4px hsl(var(--shadow-color) / var(--shadow-m-alpha)),
+        2px 4px 8px hsl(var(--shadow-color) / var(--shadow-m-alpha)),
+        3px 6px 12px hsl(var(--shadow-color) / var(--shadow-m-alpha));
+
+    --shadow-l: 1px 2px 4px hsl(var(--shadow-color) / var(--shadow-l-alpha)),
+        2px 4px 8px hsl(var(--shadow-color) / var(--shadow-l-alpha)),
+        3px 6px 12px hsl(var(--shadow-color) / var(--shadow-l-alpha)),
+        8px 16px 32px hsl(var(--shadow-color) / var(--shadow-l-alpha));
+
+    --shadow-xl: 1px 2px 4px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
+        2px 4px 8px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
+        4px 8px 16px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
+        8px 16px 32px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
+        12px 24px 44px hsl(var(--shadow-color) / var(--shadow-xl-alpha));
+
+    // Themed scrollbars
+    --scrollbar-width: 16px;
+    --scrollbar-padding: 2px;
+
+    --scrollbar-track-color: var(--layer0-bg);
+    --scrollbar-thumb-color: var(--layer1-bg);
+    --scrollbar-thumb-highlighted-color: #373c4a;
+    --scrollbar-thumb-border-width: 2px;
+    --scrollbar-thumb-border-color: var(--scrollbar-thumb-highlighted-color);
+
+    *:not(:global(.unstyled-scrollbars)) {
+        &::-webkit-scrollbar {
+            width: var(--scrollbar-width) !important;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: var(--scrollbar-track-color);
+            background-clip: content-box;
+            border: var(--scrollbar-padding) solid transparent;
+            border-radius: calc(var(--scrollbar-width) / 2);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: var(--scrollbar-thumb-color);
+            background-clip: content-box;
+            border: var(--scrollbar-padding) solid transparent;
+            border-radius: calc(var(--scrollbar-width) / 2);
+
+            // The thumb width can't be set directly, so we have to use a transparent
+            // border to make it appear smaller. Since the border prop is already
+            // being used, the thumb outline is faked using an inset shadow with no blur.
+            box-shadow: inset 0 0 0 var(--scrollbar-thumb-border-width) var(--scrollbar-thumb-border-color);
+
+            &:hover {
+                --scrollbar-thumb-color: var(--scrollbar-thumb-highlighted-color);
+                --scrollbar-thumb-border-color: var(--scrollbar-thumb-highlighted-color);
+            }
+        }
+
+        &::-webkit-scrollbar-corner {
+            background: transparent;
+        }
+
+        // Firefox-specific styling
+        scrollbar-color: var(--scrollbar-thumb-highlighted-color) var(--scrollbar-track-color);
+        scrollbar-width: thin;
+    }
+
+    color: var(--fg);
+
+    --colors-transparent: rgba(255, 255, 255, 0);
+    --colors-opacity-50: rgba(255, 255, 255, 0.5);
+    --colors-blue-0: rgba(5, 8, 24, 1);
+    --colors-blue-50: rgba(8, 17, 32, 1);
+    --colors-blue-100: rgba(11, 28, 58, 1);
+    --colors-blue-200: rgba(14, 39, 70, 1);
+    --colors-blue-300: rgba(17, 76, 92, 1);
+    --colors-blue-400: rgba(21, 104, 116, 1);
+    --colors-neutral-0: rgba(26, 26, 26, 1);
+    --colors-neutral-50: rgba(35, 35, 35, 1);
+    --colors-blue-500: rgba(25, 129, 140, 1);
+    --colors-blue-600: rgba(28, 153, 162, 1);
+    --colors-neutral-100: rgba(44, 44, 44, 1);
+    --colors-neutral-200: rgba(63, 63, 63, 1);
+    --colors-blue-700: rgba(123, 180, 216, 1);
+    --colors-blue-800: rgba(245, 245, 245, 1);
+    --colors-neutral-300: rgba(62, 62, 62, 1);
+    --colors-blue-900: rgba(244, 247, 250, 1);
+    --colors-neutral-400: rgba(72, 72, 72, 1);
+    --colors-neutral-500: rgba(89, 89, 89, 1);
+    --colors-blue-1000: rgba(255, 255, 255, 1);
+    --colors-neutral-600: rgba(107, 107, 107, 1);
+    --colors-neutral-700: rgba(125, 125, 125, 1);
+    --colors-neutral-800: rgba(145, 145, 145, 1);
+    --colors-neutral-900: rgba(221, 221, 221, 1);
+    --colors-sky-blue-100: rgba(33, 33, 39, 1);
+    --colors-neutral-1000: rgba(255, 255, 255, 1);
+    --colors-purple-50: rgba(85, 30, 90, 1);
+    --colors-purple-100: rgba(113, 39, 122, 1);
+    --colors-purple-200: rgba(139, 49, 154, 1);
+    --colors-purple-300: rgba(165, 58, 187, 1);
+    --colors-purple-400: rgba(191, 67, 219, 1);
+    --colors-purple-500: rgba(223, 98, 225, 1);
+    --colors-purple-600: rgba(230, 128, 232, 1);
+    --colors-purple-700: rgba(237, 160, 238, 1);
+    --colors-purple-800: rgba(244, 191, 243, 1);
+    --colors-purple-900: rgba(250, 223, 250, 1);
+    --colors-purple-1000: rgba(255, 242, 253, 1);
+    --colors-sky-blue-200: rgba(42, 45, 61, 1);
+    --colors-sky-blue-300: rgba(52, 66, 91, 1);
+    --colors-sky-blue-400: rgba(64, 91, 133, 1);
+    --colors-sky-blue-500: rgba(81, 118, 190, 1);
+    --colors-sky-blue-600: rgba(91, 138, 241, 1);
+    --colors-sky-blue-700: rgba(98, 149, 251, 1);
+    --colors-sky-blue-800: rgba(132, 174, 252, 1);
+    --colors-sky-blue-900: rgba(167, 198, 253, 1);
+    --colors-sky-blue-1000: rgba(207, 224, 254, 1);
+    --colors-orange-0: rgba(255, 237, 224, 1);
+    --colors-orange-50: rgba(253, 211, 183, 1);
+    --colors-orange-100: rgba(249, 180, 143, 1);
+    --colors-orange-200: rgba(245, 153, 108, 1);
+    --colors-orange-300: rgba(240, 122, 71, 1);
+    --colors-orange-400: rgba(232, 100, 40, 1);
+    --colors-orange-500: rgba(216, 87, 24, 1);
+    --colors-orange-600: rgba(186, 72, 12, 1);
+    --colors-orange-700: rgba(154, 58, 6, 1);
+    --colors-orange-800: rgba(122, 43, 0, 1);
+    --colors-orange-900: rgba(90, 31, 0, 1);
+    --colors-orange-1000: rgba(58, 19, 0, 1);
+    --colors-red-50: rgba(244, 216, 220, 1);
+    --colors-red-100: rgba(236, 169, 177, 1);
+    --colors-red-200: rgba(226, 125, 139, 1);
+    --colors-red-300: rgba(216, 91, 108, 1);
+    --colors-red-400: rgba(206, 58, 80, 1);
+    --colors-red-500: rgba(199, 34, 59, 1);
+    --colors-red-600: rgba(164, 28, 50, 1);
+    --colors-red-700: rgba(130, 22, 41, 1);
+    --colors-red-800: rgba(99, 16, 33, 1);
+    --colors-red-900: rgba(71, 11, 25, 1);
+    --colors-red-1000: rgba(46, 7, 17, 1);
+    --colors-yellow-100: rgba(142, 125, 5, 1);
+    --colors-yellow-200: rgba(162, 131, 8, 1);
+    --colors-yellow-300: rgba(184, 138, 12, 1);
+    --colors-yellow-400: rgba(197, 144, 15, 1);
+    --colors-yellow-500: rgba(208, 151, 19, 1);
+    --colors-yellow-600: rgba(226, 156, 22, 1);
+    --colors-yellow-700: rgba(243, 171, 16, 1);
+    --colors-yellow-800: rgba(246, 182, 36, 1);
+    --colors-yellow-900: rgba(248, 201, 59, 1);
+    --colors-yellow-1000: rgba(249, 211, 78, 1);
+    --colors-green-100: rgba(216, 252, 230, 1);
+    --colors-green-200: rgba(152, 244, 192, 1);
+    --colors-green-300: rgba(79, 232, 145, 1);
+    --colors-green-400: rgba(2, 209, 99, 1);
+    --colors-green-500: rgba(29, 151, 86, 1);
+    --colors-green-600: rgba(4, 42, 23, 1);
+    --colors-green-700: rgba(4, 42, 23, 1);
+    --colors-green-800: rgba(4, 42, 23, 1);
+    --colors-green-900: rgba(4, 42, 23, 1);
+    --colors-green-1000: rgba(4, 42, 23, 1);
+    --size-none: 0px;
+    --size-one: 1px;
+    --size-xxs: 2px;
+    --size-base-x: 4px;
+    --size-sm: 8px;
+    --size-ten: 10px;
+    --size-md-sm: 12px;
+    --size-fourteen: 14px;
+    --size-md: 16px;
+    --size-md-lg: 20px;
+    --size-lg: 24px;
+    --size-lg2: 28px;
+    --size-xl: 32px;
+    --size-xl2: 36px;
+    --size-xxl: 40px;
+    --size-xxl2: 44px;
+    --size-xxxl: 48px;
+    --size-xxxxl: 64px;
+    --size-huge: 80px;
+    --size-giant: 96px;
+    --size-massive: 128px;
+    --size-xl-massive: 144px;
+    --size-txt-10: 10px;
+    --size-txt-11: 11px;
+    --size-txt-13: 13px;
+    --size-txt-14: 14px;
+    --size-txt-15: 15px;
+    --size-fifty-x: 200px;
+    --size-ninety-x: 360px;
+    --size-rd: 999999px;
+    --none: 0px;
+    --base-x: 4px;
+    --2x: 8px;
+    --3x: 12px;
+    --4x: 16px;
+    --5x: 20px;
+    --6x: 24px;
+    --7x: 28px;
+    --8x: 32px;
+    --10x: 40px;
+    --12x: 48px;
+    --16x: 64px;
+    --20x: 80px;
+    --hude-x: 96px;
+    --giant-x: 128px;
+    --massive-x: 160px;
+    --spacing--8: -8px;
+    --spacing-none: 0px;
+    --spacing-half-x: 2px;
+    --spacing-base-x: 4px;
+    --spacing-2x: 8px;
+    --spacing-3x: 12px;
+    --spacing-4x: 16px;
+    --spacing-5x: 20px;
+    --spacing-6x: 24px;
+    --spacing-7x: 28px;
+    --spacing-8x: 32px;
+    --spacing-10x: 40px;
+    --spacing-12x: 48px;
+    --spacing-16x: 64px;
+    --spacing-20x: 80px;
+    --spacing-huge-x: 96px;
+    --spacing-giant-x: 128px;
+    --spacing-massive-x: 160px;
+    --colors-neutral-0-opacity-50: rgba(255, 255, 255, 0.5);
+    --colors-neutral-1000-opacity-50: rgba(29, 29, 29, 0.5);
+}
+
+:root[data-theme='light'] {
+    @include light-theme-tokens;
+}
+
+:root[data-theme='dark'] {
+    @include dark-theme-tokens;
+}
+
+@media (prefers-color-scheme: light) {
+    :root:not([data-theme]) {
+        @include light-theme-tokens;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) {
+        @include dark-theme-tokens;
+    }
+}

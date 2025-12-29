@@ -1,0 +1,31 @@
+.Border {
+    --thickness: 0;
+    --visible: 0;
+
+    --t: var(--thickness);
+
+    --border-mask: linear-gradient(
+            to right,
+            white 0%,
+            white var(--t),
+            transparent var(--t),
+            transparent calc(100% - var(--t)),
+            white calc(100% - var(--t))
+        ),
+        linear-gradient(
+            to bottom,
+            white 0%,
+            white var(--t),
+            transparent var(--t),
+            transparent calc(100% - var(--t)),
+            white calc(100% - var(--t))
+        );
+
+    --border-mask-size: calc(100% + (1 - var(--visible, 0)) * 2 * var(--t))
+        calc(100% + (1 - var(--visible, 0)) * 2 * var(--t));
+
+    position: relative;
+
+    transition: all 0.25s ease-in-out;
+    z-index: 0;
+}

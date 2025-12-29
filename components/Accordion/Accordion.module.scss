@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+@import '../../styles/utility';
+
+.Disclosure {
+    .Button[slot='trigger'] {
+        background: none;
+        border: none;
+        box-shadow: none;
+        font-weight: bold;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        color: var(--fg);
+
+        svg {
+            rotate: 0deg;
+            transition:
+                rotate 200ms ease-in-out,
+                transform 200ms ease-in-out;
+            width: 12px;
+            height: 12px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 3px;
+        }
+    }
+
+    &[data-expanded] .Button[slot='trigger'] svg {
+        rotate: 90deg;
+    }
+
+    :disabled {
+        cursor: not-allowed;
+    }
+}
+
+.DisclosurePanel {
+    width: calc(100% - 32px);
+    margin-left: 32px;
+}

@@ -1,0 +1,117 @@
+@import '../../styles/variables.scss';
+
+.table {
+    background-color: var(--next-layer-bg);
+    border-radius: var(--rounding);
+    display: table;
+
+    thead {
+        background-color: var(--background);
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    th,
+    td {
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    th {
+        background-color: var(--next-layer-bg);
+
+        &:first-of-type {
+            border-top-left-radius: var(--rounding);
+        }
+        &:last-of-type {
+            border-top-right-radius: var(--rounding);
+        }
+    }
+
+    td {
+        padding: $base $base * 1.5;
+    }
+
+    // Zebra-stripe alternating rows
+    tbody tr:nth-of-type(odd) td {
+        background-color: var(--next-next-layer-bg);
+    }
+
+    tbody tr:last-of-type td {
+        &:first-of-type {
+            border-bottom-left-radius: var(--rounding);
+        }
+        &:last-of-type {
+            border-bottom-right-radius: var(--rounding);
+        }
+    }
+
+    tr.interactive {
+        cursor: pointer;
+    }
+
+    .empty,
+    .loading {
+        padding: 64px;
+    }
+
+    .empty {
+        color: var(--fg-subtle);
+        text-align: center;
+    }
+    .headerButton {
+        align-items: center;
+        background: transparent;
+        border: none;
+        color: inherit;
+        display: inline-flex;
+        font-size: var(--font-size-xs);
+        gap: $base * 0.25;
+        line-height: 1;
+        padding: $base * 2 $base * 1.5;
+        text-align: left;
+        text-transform: uppercase;
+        width: 100%;
+
+        &:not([disabled]) {
+            cursor: pointer;
+        }
+
+        &:hover,
+        &:focus {
+            outline: none;
+            .activeSort {
+                color: $lightningBlue;
+            }
+
+            .enableSort {
+                opacity: 1;
+            }
+        }
+    }
+
+    .loading {
+        align-items: center;
+        display: flex;
+        gap: $base;
+        justify-content: center;
+    }
+}
+
+.activeSort,
+.enableSort {
+    flex-shrink: 0;
+    margin-left: 0.1em;
+    transition:
+        color 0.1s ease-out,
+        opacity 0.1s ease-out;
+}
+
+.activeSort {
+    color: $skyBlue;
+}
+
+.enableSort {
+    opacity: 0.25;
+}

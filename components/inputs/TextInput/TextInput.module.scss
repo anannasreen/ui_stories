@@ -1,0 +1,123 @@
+.wrapper {
+    --input-colors-bg-default: var(--surface-secondary-lightest);
+    --input-colors-bg-hover: var(--surface-secondary-lightest);
+    --input-colors-bg-disabled: var(--surface-secondary-lightest);
+    --input-colors-border-default: var(--border-color-secondary-soft-light);
+    --input-colors-border-hover: var(--border-color-primary-very-dark);
+    --input-colors-border-selected: var(--border-color-primary-very-dark);
+    --input-colors-border-disabled: var(--border-color-secondary-medium-dark);
+    --input-colors-border-destructive: var(--color-state-destructive-neutral);
+    --input-gap-vertical: var(--spacing-padding-2x);
+    --input-padding-vertical: var(--spacing-padding-3x);
+    --input-padding-horizontal: var(--spacing-padding-3x);
+    --input-border-radius-default: var(--border-radius-xs);
+    --input-border-stroke-default: var(--border-stroke-one);
+    --input-icon-height: var(--size-4x);
+    --input-icon-width: var(--size-4x);
+    --input-label-selected: var(--typography-color-secondary-darker);
+    --input-label-disabled: var(--typography-color-secondary-medium-dark);
+    --input-label-destructive: var(--typography-color-state-destructive);
+
+    position: relative;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    padding: var(--input-padding-vertical) var(--input-padding-horizontal);
+    border: var(--input-border-stroke-default) solid var(--input-colors-border-default);
+    border-radius: var(--input-border-radius-default);
+    background: var(--input-colors-bg-default);
+    color: var(--typography-color-primary);
+    transition: all 0.2s ease;
+
+    &.withPrefixIcon {
+        padding-left: var(--input-padding-horizontal);
+        text-indent: calc(var(--input-icon-width) + var(--input-padding-horizontal));
+    }
+
+    &::placeholder {
+        color: var(--typography-color-secondary-darker);
+    }
+
+    &:hover:not(:disabled) {
+        border-color: var(--input-colors-border-hover);
+        background: var(--input-colors-bg-hover);
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--input-colors-border-selected);
+    }
+
+    &.error {
+        border-color: var(--input-colors-border-destructive);
+        color: var(--input-label-destructive);
+
+        &:hover:not(:disabled) {
+            border-color: var(--input-colors-border-destructive);
+        }
+
+        &:focus {
+            border-color: var(--input-colors-border-destructive);
+        }
+    }
+
+    &:disabled {
+        background: var(--input-colors-bg-disabled);
+        border-color: var(--input-colors-border-disabled);
+        color: var(--input-label-disabled);
+        cursor: not-allowed;
+    }
+}
+
+.prefixIcon {
+    position: absolute;
+    left: var(--input-padding-horizontal);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--input-label-selected);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--input-icon-width);
+    height: var(--input-icon-height);
+    z-index: 1;
+    pointer-events: none;
+
+    .error & {
+        color: var(--input-label-destructive);
+    }
+
+    &:disabled {
+        color: var(--input-label-disabled);
+    }
+}
+
+.suffix {
+    position: absolute;
+    right: var(--input-padding-horizontal);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--input-label-selected);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    pointer-events: none;
+
+    .error & {
+        color: var(--input-label-destructive);
+    }
+
+    &:disabled {
+        color: var(--input-label-disabled);
+    }
+}
+
+.inputContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--input-gap-vertical);
+}

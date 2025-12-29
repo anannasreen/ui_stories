@@ -1,0 +1,42 @@
+.avatar {
+    --avatar-border-radius-default: var(--border-radius-rd);
+    --avatar-size-sm: var(--size-6x);
+    --avatar-size-md: var(--size-7x);
+    --avatar-size-lg: var(--size-8x);
+    --avatar-size-xl: var(--size-9x);
+
+    border-radius: var(--avatar-border-radius-default);
+    width: var(--avatar-md);
+    height: var(--avatar-md);
+    object-fit: cover;
+
+    &.sizeSM {
+        width: var(--avatar-size-sm);
+        height: var(--avatar-size-sm);
+    }
+
+    &.sizeMD {
+        width: var(--avatar-size-md);
+        height: var(--avatar-size-md);
+    }
+
+    &.sizeLG {
+        width: var(--avatar-size-lg);
+        height: var(--avatar-size-lg);
+    }
+
+    &.sizeXL {
+        width: var(--avatar-size-xl);
+        height: var(--avatar-size-xl);
+    }
+}
+
+.initialsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--typography-color-secondary-deepest);
+    text-transform: uppercase;
+    user-select: none;
+    background-color: var(--surface-primary-lightest);
+}

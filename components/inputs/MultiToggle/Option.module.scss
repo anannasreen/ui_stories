@@ -1,0 +1,10 @@
+.option {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.button {
+    border-radius: var(--border-radius-rd) !important;
+    padding-block: var(--spacing-padding-4x) !important;
+}

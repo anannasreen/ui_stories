@@ -1,0 +1,16 @@
+.actionGroup {
+    --action-group-gap-vertical: var(--spacing-2x);
+    --action-group-gap-horizontal: var(--spacing-2x);
+    --action-group-padding-vertical: var(--spacing-padding-4x);
+
+    display: flex;
+    gap: var(--action-group-gap-vertical);
+    padding: var(--action-group-padding-vertical) var(--action-group-padding-horizontal);
+    align-items: center;
+    width: fit-content;
+
+    &.vertical {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

@@ -1,0 +1,21 @@
+.Stripes {
+    background-image: var(--bg-image);
+
+    box-sizing: border-box;
+
+    mask: var(--border-mask, none);
+
+    // fixes a bug that prevents LogRocket recordings from rendering properly
+    -webkit-mask-image: var(--border-mask, none);
+
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: var(--border-mask-size, 100% 100%);
+
+    opacity: 0;
+    transition: all 0.25s ease-in-out;
+
+    &.visible {
+        opacity: 1;
+    }
+}

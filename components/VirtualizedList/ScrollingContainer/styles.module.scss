@@ -1,0 +1,81 @@
+.ScrollingContainer {
+    overflow: hidden;
+    position: relative;
+}
+
+.contentWrap {
+    left: 0;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+.horizontal .contentWrap {
+    height: 100%;
+    max-width: 100%;
+}
+
+.vertical .contentWrap {
+    max-height: 100%;
+}
+
+.content {
+    display: flex;
+    height: 100%;
+    padding-bottom: 0.5rem;
+    will-change: transform;
+}
+
+.horizontal .content {
+    flex-direction: row;
+}
+
+.horizontal:not(.reversed) .content {
+    transform: translate3d(calc(-1 * var(--content-offset)), 0, 0);
+}
+
+.horizontal.reversed .content {
+    transform: translate3d(var(--content-offset), 0, 0);
+}
+
+.vertical .content {
+    flex-direction: column;
+}
+
+.vertical:not(.reversed) .content {
+    transform: translate3d(0, calc(-1 * var(--content-offset)), 0);
+}
+
+.vertical.reversed .content {
+    transform: translate3d(0, var(--content-offset), 0);
+}
+
+.content > * {
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: black;
+}
+
+.horizontal .viewport {
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.vertical .viewport {
+    overflow-x: hidden;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.horizontal .scroll {
+    height: 1px;
+    margin-bottom: -1px;
+    width: var(--scroll-size);
+}
+
+.vertical .scroll {
+    height: var(--scroll-size);
+    margin-left: -1px;
+    width: 1px;
+}

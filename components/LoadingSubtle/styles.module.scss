@@ -1,0 +1,61 @@
+.LoadingSubtle {
+    display: inline-block;
+    height: var(--height);
+    position: relative;
+    width: calc(10 * var(--dot-size));
+
+    .dot {
+        animation-timing-function: cubic-bezier(0, 1, 1, 0);
+        background: currentColor;
+        border-radius: 50%;
+        height: var(--dot-size);
+        position: absolute;
+        top: calc(var(--height) - (var(--dot-size) / 2));
+        width: var(--dot-size);
+
+        &:nth-child(1) {
+            animation: Loading1 var(--duration) infinite;
+            left: var(--dot-size);
+        }
+
+        &:nth-child(2) {
+            animation: Loading2 var(--duration) infinite;
+            left: var(--dot-size);
+        }
+
+        &:nth-child(3) {
+            animation: Loading2 var(--duration) infinite;
+            left: calc(4 * var(--dot-size));
+        }
+
+        &:nth-child(4) {
+            animation: Loading3 var(--duration) infinite;
+            left: calc(7 * var(--dot-size));
+        }
+    }
+
+    @keyframes Loading1 {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    @keyframes Loading3 {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(0);
+        }
+    }
+    @keyframes Loading2 {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(calc(3 * var(--dot-size)), 0);
+        }
+    }
+}

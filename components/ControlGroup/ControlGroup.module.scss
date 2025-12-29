@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    position: relative;
+
+    > * {
+        border-radius: 0 !important;
+        &:not(:first-child) {
+            margin-left: 1px;
+        }
+    }
+}

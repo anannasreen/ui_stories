@@ -1,0 +1,22 @@
+.eventContainer {
+    --status-typography-on-hold: var(--typography-color-status-on-hold);
+    --status-typography-in-progress: var(--typography-color-status-in-progress);
+    --status-typography-resolved: var(--typography-color-status-resolved);
+    --status-typography-open: var(--typography-color-status-open);
+
+    .open {
+        color: var(--status-typography-open);
+    }
+
+    .onHold {
+        color: var(--status-typography-on-hold);
+    }
+
+    .inProgress {
+        color: var(--status-typography-in-progress);
+    }
+
+    .resolved {
+        color: var(--status-typography-resolved);
+    }
+}

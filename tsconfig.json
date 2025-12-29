@@ -1,7 +1,16 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+    "compilerOptions": {
+        "strict": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "lib": ["dom", "es2015", "es2016", "es2017", "es2020"],
+        "jsx": "react",
+        "baseUrl": ".",
+        "paths": {
+            "@cobalt/ui/*": ["./*"]
+        },
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": ["components", "styles", "hooks", "utils", "stories", "types", "vite.config.ts"]
 }

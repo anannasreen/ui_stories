@@ -1,0 +1,81 @@
+@import '@cobalt/ui/styles/variables.scss';
+
+.Slider {
+    max-width: 300px;
+    cursor: pointer;
+
+    .Label {
+        width: 100%;
+    }
+
+    .SliderOutput {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .SliderTrack {
+        position: relative;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            background: var(--fg);
+        }
+    }
+
+    .SliderThumb {
+        width: 1.429rem;
+        height: 1.429rem;
+        border-radius: 50%;
+        background: var(--fg);
+        border: 2px solid var(--fg);
+        forced-color-adjust: none;
+    }
+
+    &[data-orientation='horizontal'] {
+        flex-direction: column;
+        width: 300px;
+
+        .SliderTrack {
+            height: 30px;
+            width: 100%;
+
+            &:before {
+                height: 3px;
+                width: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .SliderThumb {
+            top: 50%;
+        }
+    }
+
+    .Input {
+        border-radius: 6px;
+        width: 4ch;
+    }
+
+    &[data-disabled] {
+        .SliderTrack:before {
+            background: $grey4;
+        }
+
+        .SliderThumb {
+            background: $grey4;
+            border: 2px solid $grey4;
+        }
+    }
+
+    .TickMark {
+        position: 'absolute';
+        top: 14px;
+        width: 2px;
+        height: 10px;
+        background: $grey4;
+    }
+}

@@ -1,0 +1,116 @@
+.leftNavBar {
+    --left-navigation-bar-header-gap-horizontal: var(--spacing-3x);
+    --left-navigation-bar-header-padding-horizontal: var(--spacing-padding-3x);
+    --left-navigation-bar-header-padding-vertical: var(--spacing-padding-5x);
+    --left-navigation-bar-header-icon-size-height: var(--size-6x);
+    --left-navigation-bar-color-bg: var(--surface-secondary-light);
+    --left-navigation-bar-padding-horizontal: var(--spacing-padding-3x);
+    --left-navigation-bar-gap-horizontal: var(--spacing-padding-3x);
+    --left-navigation-bar-gap-vertical: var(--spacing-padding-4x);
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--left-navigation-bar-color-bg);
+    position: relative;
+    padding: 0;
+}
+
+.expanded {
+    .navItem {
+        .label {
+            width: auto;
+        }
+    }
+}
+
+.collapsed {
+    .title {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .navItem {
+        width: fit-content;
+        .label {
+            width: 0;
+        }
+    }
+}
+
+.header {
+    display: flex;
+    padding: var(--left-navigation-bar-header-padding-vertical) var(--left-navigation-bar-header-padding-horizontal);
+    align-items: center;
+    gap: var(--left-navigation-bar-header-gap-horizontal);
+    margin-left: 2px;
+}
+
+.title {
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    img,
+    svg {
+        max-height: var(--left-navigation-bar-header-icon-size-height);
+        width: auto;
+        object-fit: contain;
+        path {
+            fill: var(--typography-color-primary-very-dark);
+        }
+    }
+}
+
+.hamburger {
+    svg {
+        width: 100%;
+        height: 100%;
+
+        path {
+            fill: currentColor;
+        }
+    }
+}
+
+.content {
+    flex: 1;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--left-navigation-bar-gap-vertical);
+    width: 100%;
+    padding: var(--left-navigation-bar-padding-horizontal);
+}
+
+.navItem {
+    display: flex !important;
+    justify-content: flex-start !important;
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: var(--left-navigation-bar-gap-horizontal);
+    justify-content: center;
+}

@@ -1,0 +1,91 @@
+.helpText {
+    width: 100%;
+    color: var(--input-label-default);
+}
+
+.formGroup {
+    --input-label-default: var(--typography-color-secondary-darker);
+    --input-label-hover: var(--typography-color-secondary-deepest);
+    --input-label-selected: var(--typography-color-secondary-darker);
+    --input-label-disabled: var(--typography-color-secondary-medium-dark);
+    --input-label-destructive: var(--typography-color-state-destructive);
+    --input-gap-vertical: var(--spacing-padding-2x);
+    --input-padding-vertical: var(--spacing-padding-3x);
+    --input-padding-horizontal: var(--spacing-padding-3x);
+
+    align-items: flex-start;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    gap: var(--input-gap-vertical);
+    height: 100%;
+
+    &:hover:not(.disabled):not(.hasError) {
+        .label {
+            color: var(--input-label-hover);
+        }
+    }
+
+    &.disabled {
+        cursor: not-allowed;
+        opacity: var(--opacity-75);
+
+        .helpText,
+        .suffix,
+        .label {
+            color: var(--input-label-disabled);
+        }
+
+        input,
+        textarea,
+        select {
+            cursor: not-allowed;
+        }
+    }
+
+    &.hasError {
+        .helpText,
+        .suffix,
+        .label {
+            color: var(--input-label-destructive);
+        }
+    }
+}
+
+.labelRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.label {
+    color: var(--input-label-default);
+}
+
+// Handle cases where form groups are nested
+.formGroup .formGroup {
+    margin: 0;
+    width: 100%;
+}
+
+.error {
+    color: var(--input-label-destructive);
+}
+
+.suffix {
+    color: var(--input-label-default);
+    margin: var(--input-padding-vertical) var(--input-padding-horizontal) 0 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
+
+.suffixIcon {
+    margin-top: var(--input-padding-vertical);
+}
+
+// Make space for the up/down step buttons on number inputs
+.formGroup input[type='number']:not(.disabled):focus + .suffix {
+    margin-right: calc(var(--input-padding-horizontal) * 2);
+}

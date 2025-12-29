@@ -1,0 +1,18 @@
+@import 'reset-css/reset';
+@import 'semantic';
+@import 'generic';
+@import 'base';
+@import 'utility';
+@import 'typography';
+@import 'variables';
+@import 'inputs';
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--typography-font-family-secondary);
+}

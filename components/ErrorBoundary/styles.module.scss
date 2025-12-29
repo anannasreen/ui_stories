@@ -1,0 +1,10 @@
+.ErrorBoundary {
+    background-color: var(--layer2-bg);
+    border-radius: var(--rounding);
+    color: var(--fg-subtle);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 3em;
+    place-items: center;
+}

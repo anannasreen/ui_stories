@@ -1,0 +1,11 @@
+.Framer {
+    --base-z-index: 15;
+    .content {
+        height: 100%;
+
+        // padding: calc(var(--visible, 0) * var(--thickness, 0)); // enable to animate the border thickness/container resize
+        padding: 0;
+        transition: all 0.25s ease-in-out;
+        width: 100%;
+    }
+}

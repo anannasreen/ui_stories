@@ -1,0 +1,11 @@
+export type Styles = {
+    container: string;
+    hotkey: string;
+    root: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

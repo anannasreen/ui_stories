@@ -1,0 +1,38 @@
+@import 'variables';
+
+$error-background: rgba($red, 0.3);
+$input-height: 2.5em;
+
+:global {
+    ::placeholder {
+        color: var(--fg-subtle);
+        opacity: 1;
+    }
+
+    .label-row {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        font-size: var(--font-size-S);
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .label-row > * {
+        line-height: 1;
+    }
+
+    .inputGroup {
+        > :first-child {
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+        }
+        > :last-child {
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+        }
+        > :not(:first-child):not(:last-child) {
+            border-radius: 0;
+        }
+    }
+}

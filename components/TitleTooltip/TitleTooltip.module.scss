@@ -1,0 +1,92 @@
+.button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.toolTip {
+    --tooltip-color-bg: var(--surface-primary-very-dark);
+    --tooltip-color-text: var(--typography-color-secondary-lightest);
+    --tooltip-border-radius-default: var(--border-radius-xs);
+    --tooltip-padding-vertical: var(--spacing-padding-x);
+    --tooltip-padding-horizontal: var(--spacing-padding-3x);
+
+    border-radius: var(--tooltip-border-radius-default);
+    background: var(--tooltip-color-bg);
+    padding: var(--tooltip-padding-vertical) var(--tooltip-padding-horizontal);
+    outline: none;
+    transform: translate3d(0, 0, 0);
+    border: 1px solid var(--tooltip-color-bg);
+    transition:
+        transform 200ms,
+        opacity 200ms;
+
+    [data-overlay-arrow] {
+        position: absolute;
+    }
+
+    .overlayArrow {
+        position: relative;
+
+        svg {
+            display: block;
+        }
+    }
+
+    &[data-entering],
+    &[data-exiting] {
+        transform: var(--origin);
+        opacity: 0;
+    }
+
+    &[data-placement='top'] {
+        margin-bottom: 4px;
+        --origin: translateY(4px);
+        & .overlayArrow {
+            margin-top: -2px;
+        }
+    }
+
+    &[data-placement='bottom'] {
+        margin-top: 4px;
+        --origin: translateY(-4px);
+        & .overlayArrow {
+            margin-bottom: -2px;
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &[data-placement='right'] {
+        margin-left: 4px;
+        --origin: translateX(-4px);
+        & .overlayArrow {
+            margin-right: -4px;
+            svg {
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    &[data-placement='left'] {
+        margin-right: 4px;
+        --origin: translateX(4px);
+        & .overlayArrow {
+            margin-left: -4px;
+            svg {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+
+    .overlayArrow {
+        display: block;
+        fill: var(--tooltip-color-bg);
+    }
+
+    div {
+        color: var(--tooltip-color-text);
+    }
+}

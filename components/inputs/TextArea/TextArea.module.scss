@@ -1,0 +1,35 @@
+.textArea {
+    --input-label-default: var(--typography-color-secondary-darker);
+    --input-border-stroke-default: var(--border-stroke-one);
+    --input-colors-border-default: var(--border-color-secondary-soft-light);
+    --input-border-radius-default: var(--border-radius-xs);
+    --input-colors-bg-default: var(--surface-secondary-lightest);
+    --input-colors-border-hover: var(--border-color-primary-very-dark);
+    --input-colors-bg-hover: var(--surface-secondary-lightest);
+    --input-colors-border-selected: var(--border-color-primary-very-dark);
+
+    padding: 12px;
+    font-size: var(--typography-font-size-body-md);
+    font-family: var(--typography-font-family-secondary);
+    line-height: var(--typography-line-height-body-md);
+    color: var(--typography-color-primary);
+    font-weight: var(--typography-font-weight-medium);
+    border: var(--input-border-stroke-default) solid var(--input-colors-border-default);
+    border-radius: var(--input-border-radius-default);
+    background: var(--input-colors-bg-default);
+    width: 100%;
+
+    &::placeholder {
+        color: var(--typography-color-secondary-darker);
+    }
+
+    &:hover:not(:disabled) {
+        border-color: var(--input-colors-border-hover);
+        background: var(--input-colors-bg-hover);
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--input-colors-border-selected);
+    }
+}

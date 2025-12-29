@@ -1,0 +1,20 @@
+.section {
+    --event-details-color-text-deepest: var(--typography-color-secondary-deepest);
+    --event-details-color-text-darker: var(--typography-color-secondary-darker);
+    --event-details-padding-horizontal: var(--spacing-padding-none);
+    --event-details-padding-vertical: var(--spacing-padding-4x);
+    --event-details-gap-vertical: var(--spacing-padding-2x);
+
+    display: flex;
+    flex-direction: column;
+    padding: var(--event-details-padding-vertical) var(--event-details-padding-horizontal);
+    gap: var(--event-details-gap-vertical);
+    align-items: stretch;
+
+    .title {
+        color: var(--event-details-color-text-darker);
+    }
+    .description {
+        color: var(--event-details-color-text-deepest);
+    }
+}

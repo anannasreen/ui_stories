@@ -1,0 +1,50 @@
+.datepickerInput {
+    cursor: pointer;
+
+    //chrome calendar icon
+    &::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+    }
+
+    border: none !important;
+    font-family: var(--fonts-family-secondary);
+    width: 100%;
+    background-color: var(--surface-secondary-transparent) !important;
+    padding: 0 !important;
+    &:focus,
+    &:active,
+    &:hover {
+        outline: none;
+        border: none;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+}
+
+.container {
+    --input-padding-vertical: var(--spacing-padding-2x);
+    --input-padding-horizontal: var(--spacing-padding-2x);
+    --input-item-gap: var(--spacing-padding-x);
+    --input-item-radius: var(--border-radius-xs);
+    --input-border-stroke-default: var(--border-stroke-one);
+    --input-colors-border-default: var(--border-color-secondary-soft-light);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: var(--input-padding-horizontal) var(--input-padding-vertical);
+    gap: var(--input-item-gap);
+    border-radius: var(--input-item-radius);
+    border: var(--input-border-stroke-default) solid var(--input-colors-border-default);
+    background-color: var(--surface-secondary-transparent);
+    z-index: 9999;
+    overflow: visible;
+    width: 100%;
+    cursor: pointer;
+
+    input {
+        color: var(--typography-color-secondary-deepest);
+    }
+}

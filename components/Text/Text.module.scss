@@ -1,0 +1,158 @@
+.text {
+    font-family: var(--typography-font-family-secondary);
+    letter-spacing: 0;
+    margin: 0;
+    padding: 0;
+    color: var(--typography-color-secondary-deepest);
+}
+
+.headingDisplay {
+    font-size: var(--typography-font-size-heading-display);
+    line-height: var(--typography-line-height-display);
+    font-weight: var(--typography-font-weight-bold);
+}
+
+.headingTitle {
+    font-size: var(--typography-font-size-heading-title);
+    line-height: var(--typography-line-height-title);
+    font-weight: var(--typography-font-weight-bold);
+}
+
+.headingH1 {
+    font-size: var(--typography-font-size-heading-h1);
+    line-height: var(--typography-line-height-h1);
+    font-weight: var(--typography-font-weight-semibold);
+}
+
+.headingH2 {
+    font-size: var(--typography-font-size-heading-h2);
+    line-height: var(--typography-line-height-h2);
+    font-weight: var(--typography-font-weight-semibold);
+}
+
+.headingH3 {
+    font-size: var(--typography-font-size-heading-h3);
+    line-height: var(--typography-line-height-h3);
+    font-weight: var(--typography-font-weight-semibold);
+}
+
+.headingH4 {
+    font-size: var(--typography-font-size-heading-h4);
+    line-height: var(--typography-line-height-h4);
+    font-weight: var(--typography-font-weight-semibold);
+}
+
+.headingH5 {
+    font-size: var(--typography-font-size-heading-h5);
+    line-height: var(--typography-line-height-h5);
+    font-weight: var(--typography-font-weight-semibold);
+}
+
+.headingH6 {
+    font-size: var(--typography-font-size-heading-h6);
+    line-height: var(--typography-line-height-h6);
+    font-weight: var(--typography-font-weight-semibold);
+}
+
+.bodyXxlRegular {
+    font-size: var(--typography-font-size-body-xxl);
+    line-height: var(--typography-line-height-body-xxl);
+    font-weight: var(--typography-font-weight-regular);
+}
+
+.bodyXxlMed {
+    font-size: var(--typography-font-size-body-xxl);
+    line-height: var(--typography-line-height-body-xxl);
+    font-weight: var(--typography-font-weight-medium);
+}
+
+.bodyXxlBold {
+    font-size: var(--typography-font-size-body-xxl);
+    line-height: var(--typography-line-height-body-xxl);
+    font-weight: var(--typography-font-weight-bold);
+}
+
+.bodyXlRegular {
+    font-size: var(--typography-font-size-body-xl);
+    line-height: var(--typography-line-height-body-xl);
+    font-weight: var(--typography-font-weight-regular);
+}
+
+.bodyXlMed {
+    font-size: var(--typography-font-size-body-xl);
+    line-height: var(--typography-line-height-body-xl);
+    font-weight: var(--typography-font-weight-medium);
+}
+
+.bodyXlBold {
+    font-size: var(--typography-font-size-body-xl);
+    line-height: var(--typography-line-height-body-xl);
+    font-weight: var(--typography-font-weight-bold);
+}
+
+.bodyLgRegular {
+    font-size: var(--typography-font-size-body-lg);
+    line-height: var(--typography-line-height-body-lg);
+    font-weight: var(--typography-font-weight-regular);
+}
+
+.bodyLgMed {
+    font-size: var(--typography-font-size-body-lg);
+    line-height: var(--typography-line-height-body-lg);
+    font-weight: var(--typography-font-weight-medium);
+}
+
+.bodyLgBold {
+    font-size: var(--typography-font-size-body-lg);
+    line-height: var(--typography-line-height-body-lg);
+    font-weight: var(--typography-font-weight-bold);
+}
+
+.bodyMdRegular {
+    font-size: var(--typography-font-size-body-md);
+    line-height: var(--typography-line-height-body-md);
+    font-weight: var(--typography-font-weight-regular);
+}
+
+.bodyMdMed {
+    font-size: var(--typography-font-size-body-md);
+    line-height: var(--typography-line-height-body-md);
+    font-weight: var(--typography-font-weight-medium);
+}
+
+.bodyMdBold {
+    font-size: var(--typography-font-size-body-md);
+    line-height: var(--typography-line-height-body-md);
+    font-weight: var(--typography-font-weight-bold);
+}
+
+.bodySmRegular {
+    font-size: var(--typography-font-size-body-sm);
+    line-height: var(--typography-line-height-body-sm);
+    font-weight: var(--typography-font-weight-regular);
+}
+
+.bodySmMed {
+    font-size: var(--typography-font-size-body-sm);
+    line-height: var(--typography-line-height-body-sm);
+    font-weight: var(--typography-font-weight-medium);
+}
+
+.bodySmBold {
+    font-size: var(--typography-font-size-body-sm);
+    line-height: var(--typography-line-height-body-sm);
+    font-weight: var(--typography-font-weight-bold);
+}
+
+.bodySmMdUpperCase {
+    font-size: var(--typography-font-size-body-sm);
+    line-height: var(--typography-line-height-body-sm);
+    font-weight: var(--typography-font-weight-medium);
+    text-transform: uppercase;
+}
+
+.bodyXsRegular {
+    font-size: var(--typography-font-size-body-xs);
+    line-height: var(--typography-line-height-body-xs);
+    font-weight: var(--typography-font-weight-regular);
+}

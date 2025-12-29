@@ -1,0 +1,23 @@
+.divider {
+    --divider-border-width-default: var(--border-stroke-one);
+    --divider-color-color: var(--border-color-secondary-soft-light);
+
+    display: flex;
+    position: relative;
+
+    &.horizontal {
+        width: 100%;
+        min-height: var(--divider-border-width-default);
+        background-color: var(--divider-color-color);
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &.vertical {
+        height: 100%;
+        min-width: var(--divider-border-width-default);
+        background-color: var(--divider-color-color);
+        flex-direction: column;
+        align-items: center;
+    }
+}

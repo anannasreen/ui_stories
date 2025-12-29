@@ -1,0 +1,41 @@
+.container {
+    @media (prefers-color-scheme: light) {
+        --time-color-dark: var(--typography-color-secondary-deepest);
+        --time-color-light: var(--typography-color-secondary-lightest);
+        --time-color-muted: var(--typography-color-secondary-darker);
+        --time-gap-vertical: var(--spacing-2x);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        --time-color-dark: var(--typography-color-secondary-deepest);
+        --time-color-light: var(--typography-color-secondary-deepest);
+        --time-color-muted: var(--typography-color-secondary-darker);
+        --time-gap-vertical: var(--spacing-2x);
+    }
+
+    display: inline-flex;
+    align-items: center;
+    gap: var(--time-gap-vertical);
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    flex: 1;
+    white-space: nowrap;
+}
+
+.dark {
+    color: var(--time-color-dark);
+}
+
+.light {
+    color: var(--time-color-light);
+}
+
+.muted {
+    color: var(--time-color-muted);
+}

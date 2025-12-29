@@ -1,0 +1,230 @@
+$transition: 0.1s;
+
+.videoWrapper {
+    --play-color-bg: var(--color-secondary-deepest-50-opacity);
+    --play-size-height: var(--size-6x);
+    --play-size-width: var(--size-6x);
+    --play-padding-vertical: var(--spacing-padding-x);
+    --play-padding-horizontal: var(--spacing-padding-x);
+    --video-player-padding-vertical: var(--spacing-padding-3x);
+    --video-player-padding-horizontal: var(--spacing-padding-4x);
+    --activity-status-icons-surface-bg-normal: var(--surface-priority-normal-normal);
+    --activity-status-icons-surface-border-radius-default: var(--border-radius-rd);
+    --timeline-font-size-lg: var(--typography-font-size-body-lg);
+
+    @media (prefers-color-scheme: light) {
+        --timeline-color-lightest: var(--color-secondary-lightest);
+        --timeline-color-very-dark: var(--color-primary-very-dark);
+        --timeline-border-color-very-dark: var(--color-secondary-deepest-50-opacity);
+        --timeline-border-stroke-number: var(--border-stroke-one);
+        --timeline-border-radius-number: var(--border-radius-rd);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        --timeline-color-lightest: var(--color-secondary-deepest);
+        --timeline-color-very-dark: var(--color-primary-lighter);
+        --timeline-border-color-very-dark: var(--color-secondary-deepest-50-opacity);
+        --timeline-border-stroke-number: var(--border-stroke-one);
+        --timeline-border-radius-number: var(--border-radius-rd);
+    }
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.fullscreen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.videoOverlayContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(180deg, rgba(0, 0, 0, 0) 81.23%, rgba(0, 0, 0, 0.3) 100%),
+        var(--timeline-color-very-dark) 50% / cover no-repeat;
+
+    .controls,
+    .playButton {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:not(:hover) {
+        .controls,
+        .playButton {
+            opacity: 0;
+        }
+    }
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--video-player-padding-vertical) var(--video-player-padding-horizontal);
+    color: var(--timeline-color-lightest);
+    display: flex;
+    align-items: flex-end;
+    min-height: 100px;
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(0, 0, 0, 0.2) 40%,
+        rgba(0, 0, 0, 0.4) 60%,
+        rgba(0, 0, 0, 0.6) 100%
+    );
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    transform: translate(-50%, -50%);
+    background-color: var(--play-color-bg);
+    border: none;
+    border-radius: var(--timeline-border-radius-number);
+    color: var(--timeline-color-lightest);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--play-padding-vertical) var(--play-padding-horizontal);
+
+    opacity: 1;
+    transition: opacity $transition ease;
+
+    &.hidden {
+        opacity: 0;
+    }
+}
+
+.seekBar {
+    flex: 1;
+    margin: 0 8px;
+    padding: 6px 0;
+    position: relative;
+    width: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.seekIndicator {
+    --webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    height: 6px;
+    position: relative;
+    width: 100%;
+    transition: height $transition ease;
+    border-radius: 4px;
+
+    // Track styles
+    &::-webkit-slider-runnable-track {
+        background: linear-gradient(
+            to right,
+            var(--timeline-color-very-dark) 0%,
+            var(--timeline-color-very-dark) var(--thumb-pos),
+            var(--timeline-color-lightest) var(--thumb-pos),
+            var(--timeline-color-lightest) 100%
+        );
+        border-radius: 4px;
+        height: 6px;
+        width: 100%;
+    }
+
+    &::-moz-range-track {
+        background: linear-gradient(
+            to right,
+            var(--timeline-color-very-dark) 0%,
+            var(--timeline-color-very-dark) var(--thumb-pos),
+            var(--timeline-color-lightest) var(--thumb-pos),
+            var(--timeline-color-lightest) 100%
+        );
+        border-radius: 4px;
+        height: 6px;
+        width: 100%;
+    }
+
+    // Thumb styles
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        background-color: var(--timeline-color-very-dark) !important;
+        border: none;
+        border-radius: 50%;
+        height: var(--thumb-size);
+        margin-top: -2px;
+        position: relative;
+        width: var(--thumb-size);
+        z-index: 3;
+        cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+        background-color: var(--timeline-color-very-dark);
+        border: none;
+        border-radius: 50%;
+        height: var(--thumb-size);
+        margin-top: -5px;
+        position: relative;
+        width: var(--thumb-size);
+        z-index: 3;
+        cursor: pointer;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.pointOfInterest {
+    position: absolute;
+    border-radius: var(--activity-status-icons-surface-border-radius-default);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: all $transition ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--timeline-color-very-dark);
+    padding: 4px;
+    border: var(--timeline-border-stroke-number) solid var(--timeline-color-lightest);
+    z-index: 5;
+    &:hover {
+        transform: translate(-50%, -50%) scale(1.15);
+        opacity: 1;
+    }
+}
+
+.fullscreenButton {
+    border: none;
+    background: none;
+    color: var(--timeline-color-lightest);
+    cursor: pointer;
+}
+
+.control {
+    padding-bottom: 3px !important;
+}

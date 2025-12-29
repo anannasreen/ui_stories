@@ -1,0 +1,97 @@
+// primary colors
+$darkBlue: #0e113c; // cobalt branding
+$lessDarkBlue: rgb(7.3, 32.2, 130.2);
+$slightlyLessDarkBlue: #0d2658;
+$skyBlue: #0085c0; // headers, accent
+$lightningBlue: #00a3e0; // primary action items
+$brightStone: #efeeec;
+
+// secondary colors
+$lightBlue: #a2d6ec;
+$warmStone: #ccc8b4;
+$warmPink: #e2988a;
+
+// tertiary colors
+$green: #32ad88;
+$greenHighlight: #34d5a5;
+$greenShadow: #148c68;
+
+$yellow: #e5ba1f;
+$yellowHighlight: #fde797;
+$yellowShadow: #cda71e;
+
+$orange: #f59e4e;
+
+$red: #ff323e;
+$redHighlight: #faadad;
+$redShadow: #ca2020;
+
+$teal: #0f4e4b;
+$plum: #2d236f;
+$dustyPlum: #434856;
+
+// greys (darkest -> lightest)
+$grey1: #6e6e6e;
+$grey2: #807d79;
+$grey3: #a6a39e;
+$grey4: #ccc9c4;
+$grey5: #faf7f5;
+
+// panel colors (darkest -> lightest) (slight blue tint)
+$bg0: hsl(224, 12%, 6%);
+$bg1: hsl(224, 13%, 12%);
+$bg1-5: hsl(224, 13%, 15%);
+$bg2: hsl(224, 13%, 18%);
+$bg3: hsl(224, 13%, 24%);
+$bg4: hsl(224, 13%, 30%);
+$bg5: hsl(224, 12%, 37%);
+$bg6: hsl(0, 0%, 100%);
+
+// special use colors
+$brightGreen: #2def58;
+$brightBlue: lighten(saturate($lightningBlue, 25%), 10%);
+
+// functional colors
+$videoChat: #f3d772;
+$videoChatHighlight: #fff2c3;
+
+$teleop: lighten($lightningBlue, 7%);
+
+// spatial
+$base: 8px;
+
+$primaryFont: 'Open Sans', sans-serif;
+
+// border radius
+$rounded: 5px;
+
+$transitionDuration: 0.15s;
+$transitionTimingFunction: ease-in-out;
+$transition: $transitionDuration $transitionTimingFunction;
+
+// fonts
+$font-size-s: 1.2rem;
+$font-size-m: 1.4rem;
+
+$font-family-sans: 'Open Sans', sans-serif;
+$font-family-mono: 'Red Hat Mono', monospace;
+
+// use css variables rather than direct values so we can parameterize by theme
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+
+$stroke-width-regular: 2px;
+
+$disabled-opacity: 0.75;
+
+@function emphasize($base-font-size, $increment: 0.1rem /* this is 1px at our base config size */) {
+    @return calc(#{$base-font-size} + #{$increment});
+}
+
+@function deemphasize($base-font-size, $decrement: 0.1rem /* this is 1px at our base config size */) {
+    @return calc(#{$base-font-size} - #{$decrement});
+}

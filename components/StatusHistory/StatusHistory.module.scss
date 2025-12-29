@@ -1,0 +1,42 @@
+.statusWrapper {
+    --status-history-body-color-darker: var(--typography-color-secondary-deepest);
+    --status-history-header-color-deepest: var(--color-secondary-darker);
+    --status-history-padding-vertical: var(--spacing-padding-3x);
+    --status-history-padding-horizontal: var(--spacing-padding-none);
+    --status-history-gap-vertical: var(--spacing-3x);
+    --status-history-gap-horizontal: var(--spacing-2x);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--status-history-padding-vertical) var(--status-history-padding-horizontal);
+    gap: var(--status-history-gap-vertical) var(--status-history-gap-horizontal);
+
+    .statusTable {
+        width: 100%;
+        display: table;
+        border-collapse: separate;
+
+        th,
+        td {
+            text-align: left;
+            vertical-align: top;
+        }
+
+        td {
+            padding: var(--status-history-padding-vertical) var(--status-history-padding-horizontal);
+        }
+
+        tr {
+            vertical-align: top;
+        }
+    }
+
+    .headerCell {
+        color: var(--status-history-header-color-deepest);
+    }
+
+    .cell {
+        color: var(--status-history-body-color-darker);
+    }
+}

@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+
+.Tags {
+    border-bottom-left-radius: var(--rounding);
+    border-bottom-right-radius: var(--rounding);
+
+    color: $plum;
+
+    cursor: default;
+
+    display: flex;
+    font-size: 11px;
+    font-weight: bold;
+
+    height: 22px;
+    left: 50%;
+    overflow: hidden;
+
+    position: absolute;
+    top: 0;
+    transform: translate3d(-50%, calc((1 - var(--visible, 0)) * -100%), 0);
+    transition: all 0.25s ease-in-out;
+    z-index: calc(var(--base-z-index, 0) + 1);
+}

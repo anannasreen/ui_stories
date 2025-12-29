@@ -1,0 +1,42 @@
+.container {
+    --camera-details-container-padding-horizontal: var(--spacing-padding-none);
+    --camera-details-container-padding-vertical: var(--spacing-padding-2x);
+    --camera-details-container-gap-horizontal: var(--spacing-padding-2x);
+    --camera-details-container-color-icon-active: var(--color-state-success-medium-dark);
+    --camera-details-container-color-icon-inactive: var(--color-state-destructive-neutral);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--camera-details-container-padding-vertical) var(--camera-details-container-padding-horizontal);
+    width: 100%;
+    color: var(--typography-color-secondary-deepest);
+}
+
+.cameraInfo {
+    display: flex;
+    align-items: center;
+    gap: var(--camera-details-container-gap-horizontal);
+}
+
+.online {
+    fill: var(--camera-details-container-color-icon-active);
+}
+
+.offline {
+    fill: var(--camera-details-container-color-icon-inactive);
+}
+
+.fullScreenButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    svg {
+        fill: var(--typography-color-secondary-deepest);
+        path {
+            fill: var(--typography-color-secondary-deepest);
+        }
+    }
+}

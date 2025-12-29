@@ -1,0 +1,42 @@
+@use 'sass:math';
+@use './variables.scss' as *;
+
+// export for css modules
+:export {
+    base: math.div($base, 1px);
+    bg1: $bg1;
+    bg2: $bg2;
+    bg3: $bg3;
+    bg4: $bg4;
+    brightGreen: $brightGreen;
+    brightStone: $brightStone;
+    darkBlue: $darkBlue;
+    dustyPlum: $dustyPlum;
+    fontFamily: $font-family-sans;
+    green: $green;
+    greenHighlight: $greenHighlight;
+    greenShadow: $greenShadow;
+    grey1: $grey1;
+    grey2: $grey2;
+    grey3: $grey3;
+    grey4: $grey4;
+    grey5: $grey5;
+    lightBlue: $lightBlue;
+    lightningBlue: $lightningBlue;
+    orange: $orange;
+    plum: $plum;
+    red: $red;
+    redHighlight: $redHighlight;
+    redShadow: $redShadow;
+    rounded: $rounded;
+    skyBlue: $skyBlue;
+    teal: $teal;
+    teleop: $teleop;
+    videoChat: $videoChat;
+    videoChatHighlight: $videoChatHighlight;
+    warmPink: $warmPink;
+    warmStone: $warmStone;
+    yellow: $yellow;
+    yellowHighlight: $yellowHighlight;
+    yellowShadow: $yellowShadow;
+}
