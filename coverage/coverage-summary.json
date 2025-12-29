@@ -1,133 +1,800 @@
-{"total": {"lines":{"total":4775,"covered":4330,"skipped":0,"pct":90.68},"statements":{"total":4775,"covered":4330,"skipped":0,"pct":90.68},"functions":{"total":236,"covered":197,"skipped":0,"pct":83.47},"branches":{"total":1003,"covered":895,"skipped":0,"pct":89.23},"branchesTrue":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Accordion/index.tsx": {"lines":{"total":67,"covered":67,"skipped":0,"pct":100},"functions":{"total":3,"covered":3,"skipped":0,"pct":100},"statements":{"total":67,"covered":67,"skipped":0,"pct":100},"branches":{"total":15,"covered":14,"skipped":0,"pct":93.33}}
-,"/home/anan/vonnue/cobalt_ui/components/ActionGroup/index.tsx": {"lines":{"total":18,"covered":18,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":18,"covered":18,"skipped":0,"pct":100},"branches":{"total":1,"covered":1,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/AudioVolumeControl/AudioVolumeControl.tsx": {"lines":{"total":50,"covered":50,"skipped":0,"pct":100},"functions":{"total":5,"covered":4,"skipped":0,"pct":80},"statements":{"total":50,"covered":50,"skipped":0,"pct":100},"branches":{"total":17,"covered":17,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/AudioVolumeControl/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Avatar/index.tsx": {"lines":{"total":32,"covered":26,"skipped":0,"pct":81.25},"functions":{"total":2,"covered":1,"skipped":0,"pct":50},"statements":{"total":32,"covered":26,"skipped":0,"pct":81.25},"branches":{"total":2,"covered":1,"skipped":0,"pct":50}}
-,"/home/anan/vonnue/cobalt_ui/components/Button/Button.tsx": {"lines":{"total":84,"covered":84,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":84,"covered":84,"skipped":0,"pct":100},"branches":{"total":11,"covered":9,"skipped":0,"pct":81.81}}
-,"/home/anan/vonnue/cobalt_ui/components/Button/CopyButton.tsx": {"lines":{"total":28,"covered":26,"skipped":0,"pct":92.85},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":28,"covered":26,"skipped":0,"pct":92.85},"branches":{"total":3,"covered":2,"skipped":0,"pct":66.66}}
-,"/home/anan/vonnue/cobalt_ui/components/Button/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/CameraDetailsContainer/index.tsx": {"lines":{"total":27,"covered":27,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":27,"covered":27,"skipped":0,"pct":100},"branches":{"total":1,"covered":1,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Container/Container.tsx": {"lines":{"total":5,"covered":5,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":5,"covered":5,"skipped":0,"pct":100},"branches":{"total":1,"covered":1,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Container/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/ControlGroup/index.tsx": {"lines":{"total":7,"covered":7,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":7,"covered":7,"skipped":0,"pct":100},"branches":{"total":1,"covered":1,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/CountBadge/hooks.ts": {"lines":{"total":15,"covered":15,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":15,"covered":15,"skipped":0,"pct":100},"branches":{"total":9,"covered":9,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/CountBadge/index.tsx": {"lines":{"total":17,"covered":17,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":17,"covered":17,"skipped":0,"pct":100},"branches":{"total":2,"covered":2,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Countdown/Countdown.tsx": {"lines":{"total":22,"covered":22,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":22,"covered":22,"skipped":0,"pct":100},"branches":{"total":6,"covered":6,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Countdown/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/DataGrid/SortIcon.tsx": {"lines":{"total":7,"covered":7,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":7,"covered":7,"skipped":0,"pct":100},"branches":{"total":4,"covered":4,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/DataGrid/index.tsx": {"lines":{"total":105,"covered":102,"skipped":0,"pct":97.14},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":105,"covered":102,"skipped":0,"pct":97.14},"branches":{"total":26,"covered":22,"skipped":0,"pct":84.61}}
-,"/home/anan/vonnue/cobalt_ui/components/Divider/Divider.tsx": {"lines":{"total":15,"covered":15,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":15,"covered":15,"skipped":0,"pct":100},"branches":{"total":1,"covered":1,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Divider/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/ErrorBoundary/ErrorBoundary.tsx": {"lines":{"total":34,"covered":34,"skipped":0,"pct":100},"functions":{"total":3,"covered":3,"skipped":0,"pct":100},"statements":{"total":34,"covered":34,"skipped":0,"pct":100},"branches":{"total":9,"covered":9,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/ErrorBoundary/index.ts": {"lines":{"total":2,"covered":2,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":2,"covered":2,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/EventCard/EventCard.tsx": {"lines":{"total":97,"covered":91,"skipped":0,"pct":93.81},"functions":{"total":8,"covered":7,"skipped":0,"pct":87.5},"statements":{"total":97,"covered":91,"skipped":0,"pct":93.81},"branches":{"total":14,"covered":13,"skipped":0,"pct":92.85}}
-,"/home/anan/vonnue/cobalt_ui/components/EventDetails/index.tsx": {"lines":{"total":15,"covered":15,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":15,"covered":15,"skipped":0,"pct":100},"branches":{"total":1,"covered":1,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/EventInfo/index.tsx": {"lines":{"total":47,"covered":47,"skipped":0,"pct":100},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":47,"covered":47,"skipped":0,"pct":100},"branches":{"total":6,"covered":6,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/EventStatus/index.tsx": {"lines":{"total":44,"covered":44,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":44,"covered":44,"skipped":0,"pct":100},"branches":{"total":1,"covered":1,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/EventTimeline/index.tsx": {"lines":{"total":120,"covered":108,"skipped":0,"pct":90},"functions":{"total":8,"covered":5,"skipped":0,"pct":62.5},"statements":{"total":120,"covered":108,"skipped":0,"pct":90},"branches":{"total":12,"covered":8,"skipped":0,"pct":66.66}}
-,"/home/anan/vonnue/cobalt_ui/components/ExternalLink/ExternalLink.tsx": {"lines":{"total":8,"covered":8,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":8,"covered":8,"skipped":0,"pct":100},"branches":{"total":1,"covered":1,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/ExternalLink/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/FilterButton/index.tsx": {"lines":{"total":33,"covered":33,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":33,"covered":33,"skipped":0,"pct":100},"branches":{"total":4,"covered":4,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/FilterTabs/index.tsx": {"lines":{"total":44,"covered":35,"skipped":0,"pct":79.54},"functions":{"total":3,"covered":2,"skipped":0,"pct":66.66},"statements":{"total":44,"covered":35,"skipped":0,"pct":79.54},"branches":{"total":9,"covered":8,"skipped":0,"pct":88.88}}
-,"/home/anan/vonnue/cobalt_ui/components/Form/Form.tsx": {"lines":{"total":16,"covered":1,"skipped":0,"pct":6.25},"functions":{"total":1,"covered":0,"skipped":0,"pct":0},"statements":{"total":16,"covered":1,"skipped":0,"pct":6.25},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Form/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Framer/Border.tsx": {"lines":{"total":25,"covered":25,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":25,"covered":25,"skipped":0,"pct":100},"branches":{"total":5,"covered":5,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Framer/Frame.tsx": {"lines":{"total":27,"covered":27,"skipped":0,"pct":100},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":27,"covered":27,"skipped":0,"pct":100},"branches":{"total":11,"covered":11,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Framer/Framer.tsx": {"lines":{"total":23,"covered":23,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":23,"covered":23,"skipped":0,"pct":100},"branches":{"total":3,"covered":3,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Framer/StripedBorder.tsx": {"lines":{"total":17,"covered":17,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":17,"covered":17,"skipped":0,"pct":100},"branches":{"total":1,"covered":1,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Framer/Stripes.tsx": {"lines":{"total":49,"covered":45,"skipped":0,"pct":91.83},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":49,"covered":45,"skipped":0,"pct":91.83},"branches":{"total":12,"covered":11,"skipped":0,"pct":91.66}}
-,"/home/anan/vonnue/cobalt_ui/components/Framer/Tag.tsx": {"lines":{"total":24,"covered":24,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":24,"covered":24,"skipped":0,"pct":100},"branches":{"total":5,"covered":5,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Framer/Tags.tsx": {"lines":{"total":7,"covered":7,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":7,"covered":7,"skipped":0,"pct":100},"branches":{"total":1,"covered":1,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Framer/context.ts": {"lines":{"total":3,"covered":3,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":3,"covered":3,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Framer/index.tsx": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Framer/types.ts": {"lines":{"total":0,"covered":0,"skipped":0,"pct":0},"functions":{"total":1,"covered":1,"skipped":0,"pct":0},"statements":{"total":0,"covered":0,"skipped":0,"pct":0},"branches":{"total":1,"covered":1,"skipped":0,"pct":0}}
-,"/home/anan/vonnue/cobalt_ui/components/Framer/useActiveFrames.ts": {"lines":{"total":103,"covered":97,"skipped":0,"pct":94.17},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":103,"covered":97,"skipped":0,"pct":94.17},"branches":{"total":37,"covered":34,"skipped":0,"pct":91.89}}
-,"/home/anan/vonnue/cobalt_ui/components/FullScreen/FullScreen.tsx": {"lines":{"total":7,"covered":7,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":7,"covered":7,"skipped":0,"pct":100},"branches":{"total":3,"covered":3,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/FullScreen/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/HotkeyOverlay/index.tsx": {"lines":{"total":38,"covered":38,"skipped":0,"pct":100},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":38,"covered":38,"skipped":0,"pct":100},"branches":{"total":12,"covered":11,"skipped":0,"pct":91.66}}
-,"/home/anan/vonnue/cobalt_ui/components/Hotkeys/Hotkeys.tsx": {"lines":{"total":44,"covered":37,"skipped":0,"pct":84.09},"functions":{"total":3,"covered":2,"skipped":0,"pct":66.66},"statements":{"total":44,"covered":37,"skipped":0,"pct":84.09},"branches":{"total":9,"covered":8,"skipped":0,"pct":88.88}}
-,"/home/anan/vonnue/cobalt_ui/components/Hotkeys/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/LeftNavBar/index.tsx": {"lines":{"total":107,"covered":103,"skipped":0,"pct":96.26},"functions":{"total":9,"covered":9,"skipped":0,"pct":100},"statements":{"total":107,"covered":103,"skipped":0,"pct":96.26},"branches":{"total":27,"covered":24,"skipped":0,"pct":88.88}}
-,"/home/anan/vonnue/cobalt_ui/components/ListViewItem/index.tsx": {"lines":{"total":58,"covered":57,"skipped":0,"pct":98.27},"functions":{"total":3,"covered":2,"skipped":0,"pct":66.66},"statements":{"total":58,"covered":57,"skipped":0,"pct":98.27},"branches":{"total":7,"covered":6,"skipped":0,"pct":85.71}}
-,"/home/anan/vonnue/cobalt_ui/components/LoadingSubtle/index.tsx": {"lines":{"total":27,"covered":27,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":27,"covered":27,"skipped":0,"pct":100},"branches":{"total":1,"covered":1,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/LoadingTableRows/LoadingTableRows.tsx": {"lines":{"total":11,"covered":11,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":11,"covered":11,"skipped":0,"pct":100},"branches":{"total":2,"covered":2,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/LoadingTableRows/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Modal/Modal.tsx": {"lines":{"total":52,"covered":52,"skipped":0,"pct":100},"functions":{"total":2,"covered":1,"skipped":0,"pct":50},"statements":{"total":52,"covered":52,"skipped":0,"pct":100},"branches":{"total":5,"covered":5,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Modal/ModalCloseButton.tsx": {"lines":{"total":23,"covered":20,"skipped":0,"pct":86.95},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":23,"covered":20,"skipped":0,"pct":86.95},"branches":{"total":2,"covered":1,"skipped":0,"pct":50}}
-,"/home/anan/vonnue/cobalt_ui/components/Modal/ModalTitle.tsx": {"lines":{"total":12,"covered":12,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":12,"covered":12,"skipped":0,"pct":100},"branches":{"total":3,"covered":3,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Modal/context.ts": {"lines":{"total":4,"covered":4,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":4,"covered":4,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Modal/hooks.ts": {"lines":{"total":13,"covered":0,"skipped":0,"pct":0},"functions":{"total":1,"covered":0,"skipped":0,"pct":0},"statements":{"total":13,"covered":0,"skipped":0,"pct":0},"branches":{"total":1,"covered":0,"skipped":0,"pct":0}}
-,"/home/anan/vonnue/cobalt_ui/components/Modal/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Modal/ConfirmationModal/ConfirmationModal.tsx": {"lines":{"total":84,"covered":81,"skipped":0,"pct":96.42},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":84,"covered":81,"skipped":0,"pct":96.42},"branches":{"total":17,"covered":14,"skipped":0,"pct":82.35}}
-,"/home/anan/vonnue/cobalt_ui/components/Modal/ConfirmationModal/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/MonitorListItem/index.tsx": {"lines":{"total":80,"covered":79,"skipped":0,"pct":98.75},"functions":{"total":4,"covered":2,"skipped":0,"pct":50},"statements":{"total":80,"covered":79,"skipped":0,"pct":98.75},"branches":{"total":7,"covered":5,"skipped":0,"pct":71.42}}
-,"/home/anan/vonnue/cobalt_ui/components/Popover/Popover.tsx": {"lines":{"total":54,"covered":54,"skipped":0,"pct":100},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":54,"covered":54,"skipped":0,"pct":100},"branches":{"total":6,"covered":5,"skipped":0,"pct":83.33}}
-,"/home/anan/vonnue/cobalt_ui/components/Popover/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Portal/Portal.tsx": {"lines":{"total":23,"covered":23,"skipped":0,"pct":100},"functions":{"total":4,"covered":4,"skipped":0,"pct":100},"statements":{"total":23,"covered":23,"skipped":0,"pct":100},"branches":{"total":8,"covered":8,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Portal/hooks.tsx": {"lines":{"total":47,"covered":47,"skipped":0,"pct":100},"functions":{"total":4,"covered":4,"skipped":0,"pct":100},"statements":{"total":47,"covered":47,"skipped":0,"pct":100},"branches":{"total":22,"covered":19,"skipped":0,"pct":86.36}}
-,"/home/anan/vonnue/cobalt_ui/components/Portal/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/ProfileInfo/index.tsx": {"lines":{"total":20,"covered":20,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":20,"covered":20,"skipped":0,"pct":100},"branches":{"total":4,"covered":4,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Progress/Progress.tsx": {"lines":{"total":27,"covered":27,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":27,"covered":27,"skipped":0,"pct":100},"branches":{"total":1,"covered":1,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Progress/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/RangeSlider/index.tsx": {"lines":{"total":85,"covered":84,"skipped":0,"pct":98.82},"functions":{"total":5,"covered":4,"skipped":0,"pct":80},"statements":{"total":85,"covered":84,"skipped":0,"pct":98.82},"branches":{"total":16,"covered":14,"skipped":0,"pct":87.5}}
-,"/home/anan/vonnue/cobalt_ui/components/Spinner/Spinner.tsx": {"lines":{"total":3,"covered":3,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":3,"covered":3,"skipped":0,"pct":100},"branches":{"total":1,"covered":1,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Spinner/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/StatusHistory/index.tsx": {"lines":{"total":61,"covered":61,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":61,"covered":61,"skipped":0,"pct":100},"branches":{"total":11,"covered":11,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Table/Table.tsx": {"lines":{"total":121,"covered":61,"skipped":0,"pct":50.41},"functions":{"total":7,"covered":4,"skipped":0,"pct":57.14},"statements":{"total":121,"covered":61,"skipped":0,"pct":50.41},"branches":{"total":13,"covered":10,"skipped":0,"pct":76.92}}
-,"/home/anan/vonnue/cobalt_ui/components/Table/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Text/index.tsx": {"lines":{"total":53,"covered":53,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":53,"covered":53,"skipped":0,"pct":100},"branches":{"total":4,"covered":4,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Time/index.tsx": {"lines":{"total":24,"covered":24,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":24,"covered":24,"skipped":0,"pct":100},"branches":{"total":1,"covered":1,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Title/Title.tsx": {"lines":{"total":10,"covered":10,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":10,"covered":10,"skipped":0,"pct":100},"branches":{"total":2,"covered":2,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Title/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/TitleTooltip/TitleTooltip.tsx": {"lines":{"total":25,"covered":25,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":25,"covered":25,"skipped":0,"pct":100},"branches":{"total":5,"covered":5,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/TitleTooltip/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Transitions/index.tsx": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Transitions/FadeOnChange/FadeOnChange.tsx": {"lines":{"total":30,"covered":30,"skipped":0,"pct":100},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":30,"covered":30,"skipped":0,"pct":100},"branches":{"total":13,"covered":13,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Transitions/FadeOnChange/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Transitions/PulseOnChange/PulseOnChange.tsx": {"lines":{"total":43,"covered":43,"skipped":0,"pct":100},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":43,"covered":43,"skipped":0,"pct":100},"branches":{"total":14,"covered":14,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Transitions/PulseOnChange/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Video/Video.tsx": {"lines":{"total":40,"covered":40,"skipped":0,"pct":100},"functions":{"total":7,"covered":7,"skipped":0,"pct":100},"statements":{"total":40,"covered":40,"skipped":0,"pct":100},"branches":{"total":9,"covered":9,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/Video/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/VideoPlayer/index.tsx": {"lines":{"total":311,"covered":236,"skipped":0,"pct":75.88},"functions":{"total":13,"covered":4,"skipped":0,"pct":30.76},"statements":{"total":311,"covered":236,"skipped":0,"pct":75.88},"branches":{"total":42,"covered":37,"skipped":0,"pct":88.09}}
-,"/home/anan/vonnue/cobalt_ui/components/VirtualizedList/hooks.ts": {"lines":{"total":325,"covered":295,"skipped":0,"pct":90.76},"functions":{"total":14,"covered":14,"skipped":0,"pct":100},"statements":{"total":325,"covered":295,"skipped":0,"pct":90.76},"branches":{"total":94,"covered":86,"skipped":0,"pct":91.48}}
-,"/home/anan/vonnue/cobalt_ui/components/VirtualizedList/index.tsx": {"lines":{"total":193,"covered":173,"skipped":0,"pct":89.63},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":193,"covered":173,"skipped":0,"pct":89.63},"branches":{"total":49,"covered":39,"skipped":0,"pct":79.59}}
-,"/home/anan/vonnue/cobalt_ui/components/VirtualizedList/types.ts": {"lines":{"total":7,"covered":7,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":7,"covered":7,"skipped":0,"pct":100},"branches":{"total":2,"covered":2,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/VirtualizedList/utils.ts": {"lines":{"total":112,"covered":107,"skipped":0,"pct":95.53},"functions":{"total":11,"covered":11,"skipped":0,"pct":100},"statements":{"total":112,"covered":107,"skipped":0,"pct":95.53},"branches":{"total":23,"covered":20,"skipped":0,"pct":86.95}}
-,"/home/anan/vonnue/cobalt_ui/components/VirtualizedList/ScrollingContainer/index.tsx": {"lines":{"total":142,"covered":122,"skipped":0,"pct":85.91},"functions":{"total":2,"covered":1,"skipped":0,"pct":50},"statements":{"total":142,"covered":122,"skipped":0,"pct":85.91},"branches":{"total":26,"covered":24,"skipped":0,"pct":92.3}}
-,"/home/anan/vonnue/cobalt_ui/components/WorkFlowStatus/index.tsx": {"lines":{"total":32,"covered":32,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":32,"covered":32,"skipped":0,"pct":100},"branches":{"total":1,"covered":1,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/Checkbox/Checkbox.tsx": {"lines":{"total":53,"covered":53,"skipped":0,"pct":100},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":53,"covered":53,"skipped":0,"pct":100},"branches":{"total":6,"covered":5,"skipped":0,"pct":83.33}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/Checkbox/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/DateTimePicker/DateTimePicker.tsx": {"lines":{"total":33,"covered":33,"skipped":0,"pct":100},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":33,"covered":33,"skipped":0,"pct":100},"branches":{"total":9,"covered":8,"skipped":0,"pct":88.88}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/DateTimePicker/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/FormGroup/index.tsx": {"lines":{"total":77,"covered":74,"skipped":0,"pct":96.1},"functions":{"total":3,"covered":3,"skipped":0,"pct":100},"statements":{"total":77,"covered":74,"skipped":0,"pct":96.1},"branches":{"total":20,"covered":14,"skipped":0,"pct":70}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/MultiToggle/Group.tsx": {"lines":{"total":32,"covered":1,"skipped":0,"pct":3.12},"functions":{"total":1,"covered":0,"skipped":0,"pct":0},"statements":{"total":32,"covered":1,"skipped":0,"pct":3.12},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/MultiToggle/Option.tsx": {"lines":{"total":21,"covered":21,"skipped":0,"pct":100},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":21,"covered":21,"skipped":0,"pct":100},"branches":{"total":4,"covered":4,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/MultiToggle/groupName.tsx": {"lines":{"total":6,"covered":6,"skipped":0,"pct":100},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":6,"covered":6,"skipped":0,"pct":100},"branches":{"total":2,"covered":2,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/MultiToggle/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/NumberInput/NumberInput.tsx": {"lines":{"total":53,"covered":53,"skipped":0,"pct":100},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":53,"covered":53,"skipped":0,"pct":100},"branches":{"total":13,"covered":13,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/NumberInput/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/PillsList/PillsList.tsx": {"lines":{"total":49,"covered":49,"skipped":0,"pct":100},"functions":{"total":2,"covered":1,"skipped":0,"pct":50},"statements":{"total":49,"covered":49,"skipped":0,"pct":100},"branches":{"total":8,"covered":7,"skipped":0,"pct":87.5}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/PillsList/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/Select/Select.tsx": {"lines":{"total":459,"covered":367,"skipped":0,"pct":79.95},"functions":{"total":17,"covered":9,"skipped":0,"pct":52.94},"statements":{"total":459,"covered":367,"skipped":0,"pct":79.95},"branches":{"total":129,"covered":109,"skipped":0,"pct":84.49}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/Select/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/TextArea/TextArea.tsx": {"lines":{"total":52,"covered":52,"skipped":0,"pct":100},"functions":{"total":3,"covered":3,"skipped":0,"pct":100},"statements":{"total":52,"covered":52,"skipped":0,"pct":100},"branches":{"total":6,"covered":6,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/TextArea/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/TextInput/TextInput.tsx": {"lines":{"total":64,"covered":64,"skipped":0,"pct":100},"functions":{"total":3,"covered":3,"skipped":0,"pct":100},"statements":{"total":64,"covered":64,"skipped":0,"pct":100},"branches":{"total":8,"covered":6,"skipped":0,"pct":75}}
-,"/home/anan/vonnue/cobalt_ui/components/inputs/TextInput/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/notifications/store.ts": {"lines":{"total":30,"covered":30,"skipped":0,"pct":100},"functions":{"total":3,"covered":3,"skipped":0,"pct":100},"statements":{"total":30,"covered":30,"skipped":0,"pct":100},"branches":{"total":4,"covered":4,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/components/notifications/Notification/index.tsx": {"lines":{"total":24,"covered":22,"skipped":0,"pct":91.66},"functions":{"total":2,"covered":1,"skipped":0,"pct":50},"statements":{"total":24,"covered":22,"skipped":0,"pct":91.66},"branches":{"total":7,"covered":7,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/hooks/index.ts": {"lines":{"total":17,"covered":17,"skipped":0,"pct":100},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":17,"covered":17,"skipped":0,"pct":100},"branches":{"total":7,"covered":7,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/hooks/notifications.ts": {"lines":{"total":19,"covered":19,"skipped":0,"pct":100},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":19,"covered":19,"skipped":0,"pct":100},"branches":{"total":7,"covered":7,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/hooks/useCheckMounted.ts": {"lines":{"total":11,"covered":11,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":11,"covered":11,"skipped":0,"pct":100},"branches":{"total":4,"covered":4,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/hooks/useValueEqualityMemo.ts": {"lines":{"total":31,"covered":27,"skipped":0,"pct":87.09},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":31,"covered":27,"skipped":0,"pct":87.09},"branches":{"total":8,"covered":6,"skipped":0,"pct":75}}
-,"/home/anan/vonnue/cobalt_ui/types/index.ts": {"lines":{"total":0,"covered":0,"skipped":0,"pct":0},"functions":{"total":1,"covered":1,"skipped":0,"pct":0},"statements":{"total":0,"covered":0,"skipped":0,"pct":0},"branches":{"total":1,"covered":1,"skipped":0,"pct":0}}
-,"/home/anan/vonnue/cobalt_ui/utils/hotkeys.ts": {"lines":{"total":4,"covered":4,"skipped":0,"pct":100},"functions":{"total":1,"covered":1,"skipped":0,"pct":100},"statements":{"total":4,"covered":4,"skipped":0,"pct":100},"branches":{"total":3,"covered":3,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/utils/common/common.ts": {"lines":{"total":34,"covered":32,"skipped":0,"pct":94.11},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":34,"covered":32,"skipped":0,"pct":94.11},"branches":{"total":17,"covered":16,"skipped":0,"pct":94.11}}
-,"/home/anan/vonnue/cobalt_ui/utils/common/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/utils/format/index.ts": {"lines":{"total":1,"covered":1,"skipped":0,"pct":100},"functions":{"total":0,"covered":0,"skipped":0,"pct":100},"statements":{"total":1,"covered":1,"skipped":0,"pct":100},"branches":{"total":0,"covered":0,"skipped":0,"pct":100}}
-,"/home/anan/vonnue/cobalt_ui/utils/format/time.ts": {"lines":{"total":68,"covered":66,"skipped":0,"pct":97.05},"functions":{"total":4,"covered":4,"skipped":0,"pct":100},"statements":{"total":68,"covered":66,"skipped":0,"pct":97.05},"branches":{"total":40,"covered":36,"skipped":0,"pct":90}}
-,"/home/anan/vonnue/cobalt_ui/utils/tests/dom.ts": {"lines":{"total":17,"covered":14,"skipped":0,"pct":82.35},"functions":{"total":2,"covered":2,"skipped":0,"pct":100},"statements":{"total":17,"covered":14,"skipped":0,"pct":82.35},"branches":{"total":4,"covered":3,"skipped":0,"pct":75}}
+{
+  "total": {
+    "lines": { "total": 4775, "covered": 4330, "skipped": 0, "pct": 90.68 },
+    "statements": {
+      "total": 4775,
+      "covered": 4330,
+      "skipped": 0,
+      "pct": 90.68
+    },
+    "functions": { "total": 236, "covered": 197, "skipped": 0, "pct": 83.47 },
+    "branches": { "total": 1003, "covered": 895, "skipped": 0, "pct": 89.23 },
+    "branchesTrue": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Accordion/index.tsx": {
+    "lines": { "total": 67, "covered": 67, "skipped": 0, "pct": 100 },
+    "functions": { "total": 3, "covered": 3, "skipped": 0, "pct": 100 },
+    "statements": { "total": 67, "covered": 67, "skipped": 0, "pct": 100 },
+    "branches": { "total": 15, "covered": 14, "skipped": 0, "pct": 93.33 }
+  },
+  "/home/anan/vonnue/library_ui/components/ActionGroup/index.tsx": {
+    "lines": { "total": 18, "covered": 18, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 18, "covered": 18, "skipped": 0, "pct": 100 },
+    "branches": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/AudioVolumeControl/AudioVolumeControl.tsx": {
+    "lines": { "total": 50, "covered": 50, "skipped": 0, "pct": 100 },
+    "functions": { "total": 5, "covered": 4, "skipped": 0, "pct": 80 },
+    "statements": { "total": 50, "covered": 50, "skipped": 0, "pct": 100 },
+    "branches": { "total": 17, "covered": 17, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/AudioVolumeControl/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Avatar/index.tsx": {
+    "lines": { "total": 32, "covered": 26, "skipped": 0, "pct": 81.25 },
+    "functions": { "total": 2, "covered": 1, "skipped": 0, "pct": 50 },
+    "statements": { "total": 32, "covered": 26, "skipped": 0, "pct": 81.25 },
+    "branches": { "total": 2, "covered": 1, "skipped": 0, "pct": 50 }
+  },
+  "/home/anan/vonnue/library_ui/components/Button/Button.tsx": {
+    "lines": { "total": 84, "covered": 84, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 84, "covered": 84, "skipped": 0, "pct": 100 },
+    "branches": { "total": 11, "covered": 9, "skipped": 0, "pct": 81.81 }
+  },
+  "/home/anan/vonnue/library_ui/components/Button/CopyButton.tsx": {
+    "lines": { "total": 28, "covered": 26, "skipped": 0, "pct": 92.85 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 28, "covered": 26, "skipped": 0, "pct": 92.85 },
+    "branches": { "total": 3, "covered": 2, "skipped": 0, "pct": 66.66 }
+  },
+  "/home/anan/vonnue/library_ui/components/Button/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/CameraDetailsContainer/index.tsx": {
+    "lines": { "total": 27, "covered": 27, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 27, "covered": 27, "skipped": 0, "pct": 100 },
+    "branches": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Container/Container.tsx": {
+    "lines": { "total": 5, "covered": 5, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 5, "covered": 5, "skipped": 0, "pct": 100 },
+    "branches": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Container/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/ControlGroup/index.tsx": {
+    "lines": { "total": 7, "covered": 7, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 7, "covered": 7, "skipped": 0, "pct": 100 },
+    "branches": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/CountBadge/hooks.ts": {
+    "lines": { "total": 15, "covered": 15, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 15, "covered": 15, "skipped": 0, "pct": 100 },
+    "branches": { "total": 9, "covered": 9, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/CountBadge/index.tsx": {
+    "lines": { "total": 17, "covered": 17, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 17, "covered": 17, "skipped": 0, "pct": 100 },
+    "branches": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Countdown/Countdown.tsx": {
+    "lines": { "total": 22, "covered": 22, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 22, "covered": 22, "skipped": 0, "pct": 100 },
+    "branches": { "total": 6, "covered": 6, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Countdown/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/DataGrid/SortIcon.tsx": {
+    "lines": { "total": 7, "covered": 7, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 7, "covered": 7, "skipped": 0, "pct": 100 },
+    "branches": { "total": 4, "covered": 4, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/DataGrid/index.tsx": {
+    "lines": { "total": 105, "covered": 102, "skipped": 0, "pct": 97.14 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 105, "covered": 102, "skipped": 0, "pct": 97.14 },
+    "branches": { "total": 26, "covered": 22, "skipped": 0, "pct": 84.61 }
+  },
+  "/home/anan/vonnue/library_ui/components/Divider/Divider.tsx": {
+    "lines": { "total": 15, "covered": 15, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 15, "covered": 15, "skipped": 0, "pct": 100 },
+    "branches": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Divider/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/ErrorBoundary/ErrorBoundary.tsx": {
+    "lines": { "total": 34, "covered": 34, "skipped": 0, "pct": 100 },
+    "functions": { "total": 3, "covered": 3, "skipped": 0, "pct": 100 },
+    "statements": { "total": 34, "covered": 34, "skipped": 0, "pct": 100 },
+    "branches": { "total": 9, "covered": 9, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/ErrorBoundary/index.ts": {
+    "lines": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/EventCard/EventCard.tsx": {
+    "lines": { "total": 97, "covered": 91, "skipped": 0, "pct": 93.81 },
+    "functions": { "total": 8, "covered": 7, "skipped": 0, "pct": 87.5 },
+    "statements": { "total": 97, "covered": 91, "skipped": 0, "pct": 93.81 },
+    "branches": { "total": 14, "covered": 13, "skipped": 0, "pct": 92.85 }
+  },
+  "/home/anan/vonnue/library_ui/components/EventDetails/index.tsx": {
+    "lines": { "total": 15, "covered": 15, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 15, "covered": 15, "skipped": 0, "pct": 100 },
+    "branches": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/EventInfo/index.tsx": {
+    "lines": { "total": 47, "covered": 47, "skipped": 0, "pct": 100 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 47, "covered": 47, "skipped": 0, "pct": 100 },
+    "branches": { "total": 6, "covered": 6, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/EventStatus/index.tsx": {
+    "lines": { "total": 44, "covered": 44, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 44, "covered": 44, "skipped": 0, "pct": 100 },
+    "branches": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/EventTimeline/index.tsx": {
+    "lines": { "total": 120, "covered": 108, "skipped": 0, "pct": 90 },
+    "functions": { "total": 8, "covered": 5, "skipped": 0, "pct": 62.5 },
+    "statements": { "total": 120, "covered": 108, "skipped": 0, "pct": 90 },
+    "branches": { "total": 12, "covered": 8, "skipped": 0, "pct": 66.66 }
+  },
+  "/home/anan/vonnue/library_ui/components/ExternalLink/ExternalLink.tsx": {
+    "lines": { "total": 8, "covered": 8, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 8, "covered": 8, "skipped": 0, "pct": 100 },
+    "branches": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/ExternalLink/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/FilterButton/index.tsx": {
+    "lines": { "total": 33, "covered": 33, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 33, "covered": 33, "skipped": 0, "pct": 100 },
+    "branches": { "total": 4, "covered": 4, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/FilterTabs/index.tsx": {
+    "lines": { "total": 44, "covered": 35, "skipped": 0, "pct": 79.54 },
+    "functions": { "total": 3, "covered": 2, "skipped": 0, "pct": 66.66 },
+    "statements": { "total": 44, "covered": 35, "skipped": 0, "pct": 79.54 },
+    "branches": { "total": 9, "covered": 8, "skipped": 0, "pct": 88.88 }
+  },
+  "/home/anan/vonnue/library_ui/components/Form/Form.tsx": {
+    "lines": { "total": 16, "covered": 1, "skipped": 0, "pct": 6.25 },
+    "functions": { "total": 1, "covered": 0, "skipped": 0, "pct": 0 },
+    "statements": { "total": 16, "covered": 1, "skipped": 0, "pct": 6.25 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Form/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Framer/Border.tsx": {
+    "lines": { "total": 25, "covered": 25, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 25, "covered": 25, "skipped": 0, "pct": 100 },
+    "branches": { "total": 5, "covered": 5, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Framer/Frame.tsx": {
+    "lines": { "total": 27, "covered": 27, "skipped": 0, "pct": 100 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 27, "covered": 27, "skipped": 0, "pct": 100 },
+    "branches": { "total": 11, "covered": 11, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Framer/Framer.tsx": {
+    "lines": { "total": 23, "covered": 23, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 23, "covered": 23, "skipped": 0, "pct": 100 },
+    "branches": { "total": 3, "covered": 3, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Framer/StripedBorder.tsx": {
+    "lines": { "total": 17, "covered": 17, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 17, "covered": 17, "skipped": 0, "pct": 100 },
+    "branches": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Framer/Stripes.tsx": {
+    "lines": { "total": 49, "covered": 45, "skipped": 0, "pct": 91.83 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 49, "covered": 45, "skipped": 0, "pct": 91.83 },
+    "branches": { "total": 12, "covered": 11, "skipped": 0, "pct": 91.66 }
+  },
+  "/home/anan/vonnue/library_ui/components/Framer/Tag.tsx": {
+    "lines": { "total": 24, "covered": 24, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 24, "covered": 24, "skipped": 0, "pct": 100 },
+    "branches": { "total": 5, "covered": 5, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Framer/Tags.tsx": {
+    "lines": { "total": 7, "covered": 7, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 7, "covered": 7, "skipped": 0, "pct": 100 },
+    "branches": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Framer/context.ts": {
+    "lines": { "total": 3, "covered": 3, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 3, "covered": 3, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Framer/index.tsx": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Framer/types.ts": {
+    "lines": { "total": 0, "covered": 0, "skipped": 0, "pct": 0 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 0 },
+    "statements": { "total": 0, "covered": 0, "skipped": 0, "pct": 0 },
+    "branches": { "total": 1, "covered": 1, "skipped": 0, "pct": 0 }
+  },
+  "/home/anan/vonnue/library_ui/components/Framer/useActiveFrames.ts": {
+    "lines": { "total": 103, "covered": 97, "skipped": 0, "pct": 94.17 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 103, "covered": 97, "skipped": 0, "pct": 94.17 },
+    "branches": { "total": 37, "covered": 34, "skipped": 0, "pct": 91.89 }
+  },
+  "/home/anan/vonnue/library_ui/components/FullScreen/FullScreen.tsx": {
+    "lines": { "total": 7, "covered": 7, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 7, "covered": 7, "skipped": 0, "pct": 100 },
+    "branches": { "total": 3, "covered": 3, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/FullScreen/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/HotkeyOverlay/index.tsx": {
+    "lines": { "total": 38, "covered": 38, "skipped": 0, "pct": 100 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 38, "covered": 38, "skipped": 0, "pct": 100 },
+    "branches": { "total": 12, "covered": 11, "skipped": 0, "pct": 91.66 }
+  },
+  "/home/anan/vonnue/library_ui/components/Hotkeys/Hotkeys.tsx": {
+    "lines": { "total": 44, "covered": 37, "skipped": 0, "pct": 84.09 },
+    "functions": { "total": 3, "covered": 2, "skipped": 0, "pct": 66.66 },
+    "statements": { "total": 44, "covered": 37, "skipped": 0, "pct": 84.09 },
+    "branches": { "total": 9, "covered": 8, "skipped": 0, "pct": 88.88 }
+  },
+  "/home/anan/vonnue/library_ui/components/Hotkeys/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/LeftNavBar/index.tsx": {
+    "lines": { "total": 107, "covered": 103, "skipped": 0, "pct": 96.26 },
+    "functions": { "total": 9, "covered": 9, "skipped": 0, "pct": 100 },
+    "statements": { "total": 107, "covered": 103, "skipped": 0, "pct": 96.26 },
+    "branches": { "total": 27, "covered": 24, "skipped": 0, "pct": 88.88 }
+  },
+  "/home/anan/vonnue/library_ui/components/ListViewItem/index.tsx": {
+    "lines": { "total": 58, "covered": 57, "skipped": 0, "pct": 98.27 },
+    "functions": { "total": 3, "covered": 2, "skipped": 0, "pct": 66.66 },
+    "statements": { "total": 58, "covered": 57, "skipped": 0, "pct": 98.27 },
+    "branches": { "total": 7, "covered": 6, "skipped": 0, "pct": 85.71 }
+  },
+  "/home/anan/vonnue/library_ui/components/LoadingSubtle/index.tsx": {
+    "lines": { "total": 27, "covered": 27, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 27, "covered": 27, "skipped": 0, "pct": 100 },
+    "branches": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/LoadingTableRows/LoadingTableRows.tsx": {
+    "lines": { "total": 11, "covered": 11, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 11, "covered": 11, "skipped": 0, "pct": 100 },
+    "branches": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/LoadingTableRows/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Modal/Modal.tsx": {
+    "lines": { "total": 52, "covered": 52, "skipped": 0, "pct": 100 },
+    "functions": { "total": 2, "covered": 1, "skipped": 0, "pct": 50 },
+    "statements": { "total": 52, "covered": 52, "skipped": 0, "pct": 100 },
+    "branches": { "total": 5, "covered": 5, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Modal/ModalCloseButton.tsx": {
+    "lines": { "total": 23, "covered": 20, "skipped": 0, "pct": 86.95 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 23, "covered": 20, "skipped": 0, "pct": 86.95 },
+    "branches": { "total": 2, "covered": 1, "skipped": 0, "pct": 50 }
+  },
+  "/home/anan/vonnue/library_ui/components/Modal/ModalTitle.tsx": {
+    "lines": { "total": 12, "covered": 12, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 12, "covered": 12, "skipped": 0, "pct": 100 },
+    "branches": { "total": 3, "covered": 3, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Modal/context.ts": {
+    "lines": { "total": 4, "covered": 4, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 4, "covered": 4, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Modal/hooks.ts": {
+    "lines": { "total": 13, "covered": 0, "skipped": 0, "pct": 0 },
+    "functions": { "total": 1, "covered": 0, "skipped": 0, "pct": 0 },
+    "statements": { "total": 13, "covered": 0, "skipped": 0, "pct": 0 },
+    "branches": { "total": 1, "covered": 0, "skipped": 0, "pct": 0 }
+  },
+  "/home/anan/vonnue/library_ui/components/Modal/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Modal/ConfirmationModal/ConfirmationModal.tsx": {
+    "lines": { "total": 84, "covered": 81, "skipped": 0, "pct": 96.42 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 84, "covered": 81, "skipped": 0, "pct": 96.42 },
+    "branches": { "total": 17, "covered": 14, "skipped": 0, "pct": 82.35 }
+  },
+  "/home/anan/vonnue/library_ui/components/Modal/ConfirmationModal/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/MonitorListItem/index.tsx": {
+    "lines": { "total": 80, "covered": 79, "skipped": 0, "pct": 98.75 },
+    "functions": { "total": 4, "covered": 2, "skipped": 0, "pct": 50 },
+    "statements": { "total": 80, "covered": 79, "skipped": 0, "pct": 98.75 },
+    "branches": { "total": 7, "covered": 5, "skipped": 0, "pct": 71.42 }
+  },
+  "/home/anan/vonnue/library_ui/components/Popover/Popover.tsx": {
+    "lines": { "total": 54, "covered": 54, "skipped": 0, "pct": 100 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 54, "covered": 54, "skipped": 0, "pct": 100 },
+    "branches": { "total": 6, "covered": 5, "skipped": 0, "pct": 83.33 }
+  },
+  "/home/anan/vonnue/library_ui/components/Popover/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Portal/Portal.tsx": {
+    "lines": { "total": 23, "covered": 23, "skipped": 0, "pct": 100 },
+    "functions": { "total": 4, "covered": 4, "skipped": 0, "pct": 100 },
+    "statements": { "total": 23, "covered": 23, "skipped": 0, "pct": 100 },
+    "branches": { "total": 8, "covered": 8, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Portal/hooks.tsx": {
+    "lines": { "total": 47, "covered": 47, "skipped": 0, "pct": 100 },
+    "functions": { "total": 4, "covered": 4, "skipped": 0, "pct": 100 },
+    "statements": { "total": 47, "covered": 47, "skipped": 0, "pct": 100 },
+    "branches": { "total": 22, "covered": 19, "skipped": 0, "pct": 86.36 }
+  },
+  "/home/anan/vonnue/library_ui/components/Portal/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/ProfileInfo/index.tsx": {
+    "lines": { "total": 20, "covered": 20, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 20, "covered": 20, "skipped": 0, "pct": 100 },
+    "branches": { "total": 4, "covered": 4, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Progress/Progress.tsx": {
+    "lines": { "total": 27, "covered": 27, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 27, "covered": 27, "skipped": 0, "pct": 100 },
+    "branches": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Progress/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/RangeSlider/index.tsx": {
+    "lines": { "total": 85, "covered": 84, "skipped": 0, "pct": 98.82 },
+    "functions": { "total": 5, "covered": 4, "skipped": 0, "pct": 80 },
+    "statements": { "total": 85, "covered": 84, "skipped": 0, "pct": 98.82 },
+    "branches": { "total": 16, "covered": 14, "skipped": 0, "pct": 87.5 }
+  },
+  "/home/anan/vonnue/library_ui/components/Spinner/Spinner.tsx": {
+    "lines": { "total": 3, "covered": 3, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 3, "covered": 3, "skipped": 0, "pct": 100 },
+    "branches": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Spinner/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/StatusHistory/index.tsx": {
+    "lines": { "total": 61, "covered": 61, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 61, "covered": 61, "skipped": 0, "pct": 100 },
+    "branches": { "total": 11, "covered": 11, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Table/Table.tsx": {
+    "lines": { "total": 121, "covered": 61, "skipped": 0, "pct": 50.41 },
+    "functions": { "total": 7, "covered": 4, "skipped": 0, "pct": 57.14 },
+    "statements": { "total": 121, "covered": 61, "skipped": 0, "pct": 50.41 },
+    "branches": { "total": 13, "covered": 10, "skipped": 0, "pct": 76.92 }
+  },
+  "/home/anan/vonnue/library_ui/components/Table/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Text/index.tsx": {
+    "lines": { "total": 53, "covered": 53, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 53, "covered": 53, "skipped": 0, "pct": 100 },
+    "branches": { "total": 4, "covered": 4, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Time/index.tsx": {
+    "lines": { "total": 24, "covered": 24, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 24, "covered": 24, "skipped": 0, "pct": 100 },
+    "branches": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Title/Title.tsx": {
+    "lines": { "total": 10, "covered": 10, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 10, "covered": 10, "skipped": 0, "pct": 100 },
+    "branches": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Title/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/TitleTooltip/TitleTooltip.tsx": {
+    "lines": { "total": 25, "covered": 25, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 25, "covered": 25, "skipped": 0, "pct": 100 },
+    "branches": { "total": 5, "covered": 5, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/TitleTooltip/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Transitions/index.tsx": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Transitions/FadeOnChange/FadeOnChange.tsx": {
+    "lines": { "total": 30, "covered": 30, "skipped": 0, "pct": 100 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 30, "covered": 30, "skipped": 0, "pct": 100 },
+    "branches": { "total": 13, "covered": 13, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Transitions/FadeOnChange/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Transitions/PulseOnChange/PulseOnChange.tsx": {
+    "lines": { "total": 43, "covered": 43, "skipped": 0, "pct": 100 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 43, "covered": 43, "skipped": 0, "pct": 100 },
+    "branches": { "total": 14, "covered": 14, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Transitions/PulseOnChange/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Video/Video.tsx": {
+    "lines": { "total": 40, "covered": 40, "skipped": 0, "pct": 100 },
+    "functions": { "total": 7, "covered": 7, "skipped": 0, "pct": 100 },
+    "statements": { "total": 40, "covered": 40, "skipped": 0, "pct": 100 },
+    "branches": { "total": 9, "covered": 9, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/Video/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/VideoPlayer/index.tsx": {
+    "lines": { "total": 311, "covered": 236, "skipped": 0, "pct": 75.88 },
+    "functions": { "total": 13, "covered": 4, "skipped": 0, "pct": 30.76 },
+    "statements": { "total": 311, "covered": 236, "skipped": 0, "pct": 75.88 },
+    "branches": { "total": 42, "covered": 37, "skipped": 0, "pct": 88.09 }
+  },
+  "/home/anan/vonnue/library_ui/components/VirtualizedList/hooks.ts": {
+    "lines": { "total": 325, "covered": 295, "skipped": 0, "pct": 90.76 },
+    "functions": { "total": 14, "covered": 14, "skipped": 0, "pct": 100 },
+    "statements": { "total": 325, "covered": 295, "skipped": 0, "pct": 90.76 },
+    "branches": { "total": 94, "covered": 86, "skipped": 0, "pct": 91.48 }
+  },
+  "/home/anan/vonnue/library_ui/components/VirtualizedList/index.tsx": {
+    "lines": { "total": 193, "covered": 173, "skipped": 0, "pct": 89.63 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 193, "covered": 173, "skipped": 0, "pct": 89.63 },
+    "branches": { "total": 49, "covered": 39, "skipped": 0, "pct": 79.59 }
+  },
+  "/home/anan/vonnue/library_ui/components/VirtualizedList/types.ts": {
+    "lines": { "total": 7, "covered": 7, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 7, "covered": 7, "skipped": 0, "pct": 100 },
+    "branches": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/VirtualizedList/utils.ts": {
+    "lines": { "total": 112, "covered": 107, "skipped": 0, "pct": 95.53 },
+    "functions": { "total": 11, "covered": 11, "skipped": 0, "pct": 100 },
+    "statements": { "total": 112, "covered": 107, "skipped": 0, "pct": 95.53 },
+    "branches": { "total": 23, "covered": 20, "skipped": 0, "pct": 86.95 }
+  },
+  "/home/anan/vonnue/library_ui/components/VirtualizedList/ScrollingContainer/index.tsx": {
+    "lines": { "total": 142, "covered": 122, "skipped": 0, "pct": 85.91 },
+    "functions": { "total": 2, "covered": 1, "skipped": 0, "pct": 50 },
+    "statements": { "total": 142, "covered": 122, "skipped": 0, "pct": 85.91 },
+    "branches": { "total": 26, "covered": 24, "skipped": 0, "pct": 92.3 }
+  },
+  "/home/anan/vonnue/library_ui/components/WorkFlowStatus/index.tsx": {
+    "lines": { "total": 32, "covered": 32, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 32, "covered": 32, "skipped": 0, "pct": 100 },
+    "branches": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/Checkbox/Checkbox.tsx": {
+    "lines": { "total": 53, "covered": 53, "skipped": 0, "pct": 100 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 53, "covered": 53, "skipped": 0, "pct": 100 },
+    "branches": { "total": 6, "covered": 5, "skipped": 0, "pct": 83.33 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/Checkbox/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/DateTimePicker/DateTimePicker.tsx": {
+    "lines": { "total": 33, "covered": 33, "skipped": 0, "pct": 100 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 33, "covered": 33, "skipped": 0, "pct": 100 },
+    "branches": { "total": 9, "covered": 8, "skipped": 0, "pct": 88.88 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/DateTimePicker/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/FormGroup/index.tsx": {
+    "lines": { "total": 77, "covered": 74, "skipped": 0, "pct": 96.1 },
+    "functions": { "total": 3, "covered": 3, "skipped": 0, "pct": 100 },
+    "statements": { "total": 77, "covered": 74, "skipped": 0, "pct": 96.1 },
+    "branches": { "total": 20, "covered": 14, "skipped": 0, "pct": 70 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/MultiToggle/Group.tsx": {
+    "lines": { "total": 32, "covered": 1, "skipped": 0, "pct": 3.12 },
+    "functions": { "total": 1, "covered": 0, "skipped": 0, "pct": 0 },
+    "statements": { "total": 32, "covered": 1, "skipped": 0, "pct": 3.12 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/MultiToggle/Option.tsx": {
+    "lines": { "total": 21, "covered": 21, "skipped": 0, "pct": 100 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 21, "covered": 21, "skipped": 0, "pct": 100 },
+    "branches": { "total": 4, "covered": 4, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/MultiToggle/groupName.tsx": {
+    "lines": { "total": 6, "covered": 6, "skipped": 0, "pct": 100 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 6, "covered": 6, "skipped": 0, "pct": 100 },
+    "branches": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/MultiToggle/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/NumberInput/NumberInput.tsx": {
+    "lines": { "total": 53, "covered": 53, "skipped": 0, "pct": 100 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 53, "covered": 53, "skipped": 0, "pct": 100 },
+    "branches": { "total": 13, "covered": 13, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/NumberInput/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/PillsList/PillsList.tsx": {
+    "lines": { "total": 49, "covered": 49, "skipped": 0, "pct": 100 },
+    "functions": { "total": 2, "covered": 1, "skipped": 0, "pct": 50 },
+    "statements": { "total": 49, "covered": 49, "skipped": 0, "pct": 100 },
+    "branches": { "total": 8, "covered": 7, "skipped": 0, "pct": 87.5 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/PillsList/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/Select/Select.tsx": {
+    "lines": { "total": 459, "covered": 367, "skipped": 0, "pct": 79.95 },
+    "functions": { "total": 17, "covered": 9, "skipped": 0, "pct": 52.94 },
+    "statements": { "total": 459, "covered": 367, "skipped": 0, "pct": 79.95 },
+    "branches": { "total": 129, "covered": 109, "skipped": 0, "pct": 84.49 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/Select/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/TextArea/TextArea.tsx": {
+    "lines": { "total": 52, "covered": 52, "skipped": 0, "pct": 100 },
+    "functions": { "total": 3, "covered": 3, "skipped": 0, "pct": 100 },
+    "statements": { "total": 52, "covered": 52, "skipped": 0, "pct": 100 },
+    "branches": { "total": 6, "covered": 6, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/TextArea/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/TextInput/TextInput.tsx": {
+    "lines": { "total": 64, "covered": 64, "skipped": 0, "pct": 100 },
+    "functions": { "total": 3, "covered": 3, "skipped": 0, "pct": 100 },
+    "statements": { "total": 64, "covered": 64, "skipped": 0, "pct": 100 },
+    "branches": { "total": 8, "covered": 6, "skipped": 0, "pct": 75 }
+  },
+  "/home/anan/vonnue/library_ui/components/inputs/TextInput/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/notifications/store.ts": {
+    "lines": { "total": 30, "covered": 30, "skipped": 0, "pct": 100 },
+    "functions": { "total": 3, "covered": 3, "skipped": 0, "pct": 100 },
+    "statements": { "total": 30, "covered": 30, "skipped": 0, "pct": 100 },
+    "branches": { "total": 4, "covered": 4, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/components/notifications/Notification/index.tsx": {
+    "lines": { "total": 24, "covered": 22, "skipped": 0, "pct": 91.66 },
+    "functions": { "total": 2, "covered": 1, "skipped": 0, "pct": 50 },
+    "statements": { "total": 24, "covered": 22, "skipped": 0, "pct": 91.66 },
+    "branches": { "total": 7, "covered": 7, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/hooks/index.ts": {
+    "lines": { "total": 17, "covered": 17, "skipped": 0, "pct": 100 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 17, "covered": 17, "skipped": 0, "pct": 100 },
+    "branches": { "total": 7, "covered": 7, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/hooks/notifications.ts": {
+    "lines": { "total": 19, "covered": 19, "skipped": 0, "pct": 100 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 19, "covered": 19, "skipped": 0, "pct": 100 },
+    "branches": { "total": 7, "covered": 7, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/hooks/useCheckMounted.ts": {
+    "lines": { "total": 11, "covered": 11, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 11, "covered": 11, "skipped": 0, "pct": 100 },
+    "branches": { "total": 4, "covered": 4, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/hooks/useValueEqualityMemo.ts": {
+    "lines": { "total": 31, "covered": 27, "skipped": 0, "pct": 87.09 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 31, "covered": 27, "skipped": 0, "pct": 87.09 },
+    "branches": { "total": 8, "covered": 6, "skipped": 0, "pct": 75 }
+  },
+  "/home/anan/vonnue/library_ui/types/index.ts": {
+    "lines": { "total": 0, "covered": 0, "skipped": 0, "pct": 0 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 0 },
+    "statements": { "total": 0, "covered": 0, "skipped": 0, "pct": 0 },
+    "branches": { "total": 1, "covered": 1, "skipped": 0, "pct": 0 }
+  },
+  "/home/anan/vonnue/library_ui/utils/hotkeys.ts": {
+    "lines": { "total": 4, "covered": 4, "skipped": 0, "pct": 100 },
+    "functions": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "statements": { "total": 4, "covered": 4, "skipped": 0, "pct": 100 },
+    "branches": { "total": 3, "covered": 3, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/utils/common/common.ts": {
+    "lines": { "total": 34, "covered": 32, "skipped": 0, "pct": 94.11 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 34, "covered": 32, "skipped": 0, "pct": 94.11 },
+    "branches": { "total": 17, "covered": 16, "skipped": 0, "pct": 94.11 }
+  },
+  "/home/anan/vonnue/library_ui/utils/common/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/utils/format/index.ts": {
+    "lines": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "functions": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 },
+    "statements": { "total": 1, "covered": 1, "skipped": 0, "pct": 100 },
+    "branches": { "total": 0, "covered": 0, "skipped": 0, "pct": 100 }
+  },
+  "/home/anan/vonnue/library_ui/utils/format/time.ts": {
+    "lines": { "total": 68, "covered": 66, "skipped": 0, "pct": 97.05 },
+    "functions": { "total": 4, "covered": 4, "skipped": 0, "pct": 100 },
+    "statements": { "total": 68, "covered": 66, "skipped": 0, "pct": 97.05 },
+    "branches": { "total": 40, "covered": 36, "skipped": 0, "pct": 90 }
+  },
+  "/home/anan/vonnue/library_ui/utils/tests/dom.ts": {
+    "lines": { "total": 17, "covered": 14, "skipped": 0, "pct": 82.35 },
+    "functions": { "total": 2, "covered": 2, "skipped": 0, "pct": 100 },
+    "statements": { "total": 17, "covered": 14, "skipped": 0, "pct": 82.35 },
+    "branches": { "total": 4, "covered": 3, "skipped": 0, "pct": 75 }
+  }
 }

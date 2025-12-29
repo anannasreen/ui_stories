@@ -39,7 +39,7 @@ pkgs.mkShell {
     fi
     
     # Display project info
-    echo "🚀 Cobalt UI Development Environment"
+    echo "🚀 library UI Development Environment"
     echo "Node.js: $(node --version)"
     echo "NPM: $(npm --version)"
     echo "TypeScript: $(tsc --version)"

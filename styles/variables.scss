@@ -1,5 +1,5 @@
 // primary colors
-$darkBlue: #0e113c; // cobalt branding
+$darkBlue: #0e113c; // library branding
 $lessDarkBlue: rgb(7.3, 32.2, 130.2);
 $slightlyLessDarkBlue: #0d2658;
 $skyBlue: #0085c0; // headers, accent
@@ -60,7 +60,7 @@ $teleop: lighten($lightningBlue, 7%);
 // spatial
 $base: 8px;
 
-$primaryFont: 'Open Sans', sans-serif;
+$primaryFont: "Open Sans", sans-serif;
 
 // border radius
 $rounded: 5px;
@@ -73,8 +73,8 @@ $transition: $transitionDuration $transitionTimingFunction;
 $font-size-s: 1.2rem;
 $font-size-m: 1.4rem;
 
-$font-family-sans: 'Open Sans', sans-serif;
-$font-family-mono: 'Red Hat Mono', monospace;
+$font-family-sans: "Open Sans", sans-serif;
+$font-family-mono: "Red Hat Mono", monospace;
 
 // use css variables rather than direct values so we can parameterize by theme
 $font-weight-light: 300;
@@ -88,10 +88,16 @@ $stroke-width-regular: 2px;
 
 $disabled-opacity: 0.75;
 
-@function emphasize($base-font-size, $increment: 0.1rem /* this is 1px at our base config size */) {
-    @return calc(#{$base-font-size} + #{$increment});
+@function emphasize(
+  $base-font-size,
+  $increment: 0.1rem /* this is 1px at our base config size */
+) {
+  @return calc(#{$base-font-size} + #{$increment});
 }
 
-@function deemphasize($base-font-size, $decrement: 0.1rem /* this is 1px at our base config size */) {
-    @return calc(#{$base-font-size} - #{$decrement});
+@function deemphasize(
+  $base-font-size,
+  $decrement: 0.1rem /* this is 1px at our base config size */
+) {
+  @return calc(#{$base-font-size} - #{$decrement});
 }

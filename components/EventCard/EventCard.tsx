@@ -1,100 +1,100 @@
-import React, { useContext } from 'react';
-import styles from './EventCard.module.scss';
-import EventStatus, { EventStatusVariant } from '../EventStatus';
-import Time from '../Time';
-import EventInfo from '../EventInfo';
-import Button from '../Button';
-import { FiPlus } from 'react-icons/fi';
-import { TimelineEvent, VideoPlayer } from '../VideoPlayer';
-import CriticalPriorityIcon from '../assets/critical-priority-icon.svg';
-import HighPriorityIcon from '../assets/high-priority-icon.svg';
-import VideoCamIcon from '../assets/video-cam.svg';
-import LocationIcon from '../assets/location.svg';
-import { Text } from '../Text';
-import { EventPriority } from '@cobalt/ui/types';
-import clsx from 'clsx';
+import React, { useContext } from "react";
+import styles from "./EventCard.module.scss";
+import EventStatus, { EventStatusVariant } from "../EventStatus";
+import Time from "../Time";
+import EventInfo from "../EventInfo";
+import Button from "../Button";
+import { FiPlus } from "react-icons/fi";
+import { TimelineEvent, VideoPlayer } from "../VideoPlayer";
+import CriticalPriorityIcon from "../assets/critical-priority-icon.svg";
+import HighPriorityIcon from "../assets/high-priority-icon.svg";
+import VideoCamIcon from "../assets/video-cam.svg";
+import LocationIcon from "../assets/location.svg";
+import { Text } from "../Text";
+import { EventPriority } from "@library/ui/types";
+import clsx from "clsx";
 
 export interface EventCardContextType {
-    /** Priority of the event */
-    priority: EventPriority;
-    /** Size of the event card */
-    size: 'small' | 'large';
+  /** Priority of the event */
+  priority: EventPriority;
+  /** Size of the event card */
+  size: "small" | "large";
 }
 
 export const EventCardContext = React.createContext<EventCardContextType>({
-    priority: 'normal',
-    size: 'large',
+  priority: "normal",
+  size: "large",
 });
 
 export interface EventCardProps {
-    /** Priority of the event */
-    priority: EventPriority;
-    /** Size of the event card */
-    size?: 'small' | 'large';
-    /** Children components */
-    children: React.ReactNode;
-    /** Additional class name */
-    className?: string;
+  /** Priority of the event */
+  priority: EventPriority;
+  /** Size of the event card */
+  size?: "small" | "large";
+  /** Children components */
+  children: React.ReactNode;
+  /** Additional class name */
+  className?: string;
 }
 
 export interface EventCardVideoProps {
-    /** Source URL of the video */
-    videoSrc: string;
-    /** Start time of the video */
-    startTime: string;
-    /** End time of the video */
-    endTime: string;
-    /** Events associated with the video */
-    events?: TimelineEvent[];
+  /** Source URL of the video */
+  videoSrc: string;
+  /** Start time of the video */
+  startTime: string;
+  /** End time of the video */
+  endTime: string;
+  /** Events associated with the video */
+  events?: TimelineEvent[];
 }
 
 export interface EventCardHeaderProps {
-    /** Title of the event */
-    title: string;
-    /** Callback when options button is clicked */
-    onOptionsClick?: () => void;
-    /** Priority level of the event */
-    priority?: EventPriority;
-    /** Source device that triggered the event */
-    sourceDevice?: string;
+  /** Title of the event */
+  title: string;
+  /** Callback when options button is clicked */
+  onOptionsClick?: () => void;
+  /** Priority level of the event */
+  priority?: EventPriority;
+  /** Source device that triggered the event */
+  sourceDevice?: string;
 }
 
 export interface EventCardFooterProps {
-    /** Time when the event occurred */
-    timestamp: string | Date;
-    /** Status of the event */
-    status: EventStatusVariant;
+  /** Time when the event occurred */
+  timestamp: string | Date;
+  /** Status of the event */
+  status: EventStatusVariant;
 }
 
 export interface EventCardDetailsProps {
-    /** Location of the event */
-    location: string;
-    /** Additional information about the event */
-    additionalInfo: string;
+  /** Location of the event */
+  location: string;
+  /** Additional information about the event */
+  additionalInfo: string;
 }
 
 export interface EventCardDescriptionProps {
-    /** Child components */
-    children: React.ReactNode;
+  /** Child components */
+  children: React.ReactNode;
 }
 
 export interface EventCardContentProps {
-    /** Child components */
-    children: React.ReactNode;
+  /** Child components */
+  children: React.ReactNode;
 }
 
 /**
  * Helper function to get the appropriate priority icon based on event priority
  */
 const getPriorityIcon = (priority?: EventPriority) => {
-    switch (priority) {
-        case 'high':
-            return <HighPriorityIcon data-testid="high-priority-icon" />;
-        case 'critical':
-            return <CriticalPriorityIcon data-testid="critical-priority-icon" />;
-        default:
-            return null;
-    }
+  switch (priority) {
+    case "high":
+      return <HighPriorityIcon data-testid="high-priority-icon" />;
+    case "critical":
+      return <CriticalPriorityIcon data-testid="critical-priority-icon" />;
+    default:
+      return null;
+  }
 };
 
 /**
@@ -139,22 +139,27 @@ const getPriorityIcon = (priority?: EventPriority) => {
  * </EventCard>
  * ```
  */
-function EventCard({ children, priority = 'normal', size = 'large', className }: EventCardProps) {
-    return (
-        <EventCardContext.Provider value={{ priority, size }}>
-            <div
-                className={clsx(
-                    className,
-                    styles.eventCard,
-                    priority === 'critical' && styles.criticalPriority,
-                    priority === 'high' && styles.highPriority,
-                    styles[size],
-                )}
-            >
-                {children}
-            </div>
-        </EventCardContext.Provider>
-    );
+function EventCard({
+  children,
+  priority = "normal",
+  size = "large",
+  className,
+}: EventCardProps) {
+  return (
+    <EventCardContext.Provider value={{ priority, size }}>
+      <div
+        className={clsx(
+          className,
+          styles.eventCard,
+          priority === "critical" && styles.criticalPriority,
+          priority === "high" && styles.highPriority,
+          styles[size]
+        )}
+      >
+        {children}
+      </div>
+    </EventCardContext.Provider>
+  );
 }
 
 /**
@@ -170,29 +175,43 @@ function EventCard({ children, priority = 'normal', size = 'large', className }:
  * />
  * ```
  */
-function EventCardHeader({ title, onOptionsClick, priority, sourceDevice }: EventCardHeaderProps) {
-    const { size } = useContext(EventCardContext);
+function EventCardHeader({
+  title,
+  onOptionsClick,
+  priority,
+  sourceDevice,
+}: EventCardHeaderProps) {
+  const { size } = useContext(EventCardContext);
 
-    return (
-        <div className={styles.header}>
-            <div className={styles.titleRow}>
-                <EventInfo text={title} variant="title" icon={getPriorityIcon(priority)} />
-                <EventInfo text={sourceDevice} variant="body" icon={<VideoCamIcon />} iconPosition="left" />
-            </div>
-            {size === 'large' && (
-                <Button
-                    variant="outline"
-                    size="small"
-                    icon={<FiPlus />}
-                    onClick={onOptionsClick}
-                    className={styles.button}
-                    aria-label="Add note"
-                >
-                    Add note
-                </Button>
-            )}
-        </div>
-    );
+  return (
+    <div className={styles.header}>
+      <div className={styles.titleRow}>
+        <EventInfo
+          text={title}
+          variant="title"
+          icon={getPriorityIcon(priority)}
+        />
+        <EventInfo
+          text={sourceDevice}
+          variant="body"
+          icon={<VideoCamIcon />}
+          iconPosition="left"
+        />
+      </div>
+      {size === "large" && (
+        <Button
+          variant="outline"
+          size="small"
+          icon={<FiPlus />}
+          onClick={onOptionsClick}
+          className={styles.button}
+          aria-label="Add note"
+        >
+          Add note
+        </Button>
+      )}
+    </div>
+  );
 }
 
 /**
@@ -208,21 +227,26 @@ function EventCardHeader({ title, onOptionsClick, priority, sourceDevice }: Even
  * />
  * ```
  */
-function EventCardVideo({ videoSrc, startTime, endTime, events = [] }: EventCardVideoProps) {
-    const { size } = useContext(EventCardContext);
+function EventCardVideo({
+  videoSrc,
+  startTime,
+  endTime,
+  events = [],
+}: EventCardVideoProps) {
+  const { size } = useContext(EventCardContext);
 
-    return (
-        <div className={styles.thumbnail}>
-            <VideoPlayer
-                videoUrl={videoSrc}
-                videoStartTime={startTime}
-                videoEndTime={endTime}
-                showFullscreenButton={size === 'large'}
-                showTimestamps={size === 'large'}
-                events={size === 'large' ? events : []}
-            />
-        </div>
-    );
+  return (
+    <div className={styles.thumbnail}>
+      <VideoPlayer
+        videoUrl={videoSrc}
+        videoStartTime={startTime}
+        videoEndTime={endTime}
+        showFullscreenButton={size === "large"}
+        showTimestamps={size === "large"}
+        events={size === "large" ? events : []}
+      />
+    </div>
+  );
 }
 
 /**
@@ -237,15 +261,20 @@ function EventCardVideo({ videoSrc, startTime, endTime, events = [] }: EventCard
  * ```
  */
 function EventCardDetails({ location, additionalInfo }: EventCardDetailsProps) {
-    return (
-        <div className={styles.details}>
-            <EventInfo text={location} variant="body" icon={<LocationIcon />} iconPosition="left" />
+  return (
+    <div className={styles.details}>
+      <EventInfo
+        text={location}
+        variant="body"
+        icon={<LocationIcon />}
+        iconPosition="left"
+      />
 
-            <Text variant="body-sm-med" className={styles.additionalInfo}>
-                {additionalInfo}
-            </Text>
-        </div>
-    );
+      <Text variant="body-sm-med" className={styles.additionalInfo}>
+        {additionalInfo}
+      </Text>
+    </div>
+  );
 }
 
 /**
@@ -260,12 +289,12 @@ function EventCardDetails({ location, additionalInfo }: EventCardDetailsProps) {
  * ```
  */
 function EventCardFooter({ timestamp, status }: EventCardFooterProps) {
-    return (
-        <div className={styles.footer}>
-            <Time timestamp={timestamp} variant="dark" />
-            <EventStatus status={status} />
-        </div>
-    );
+  return (
+    <div className={styles.footer}>
+      <Time timestamp={timestamp} variant="dark" />
+      <EventStatus status={status} />
+    </div>
+  );
 }
 
 /**
@@ -280,7 +309,7 @@ function EventCardFooter({ timestamp, status }: EventCardFooterProps) {
  * ```
  */
 function EventCardContent({ children }: EventCardContentProps) {
-    return <div className={styles.content}>{children}</div>;
+  return <div className={styles.content}>{children}</div>;
 }
 
 /**
@@ -294,13 +323,13 @@ function EventCardContent({ children }: EventCardContentProps) {
  * ```
  */
 function EventCardDescription({ children }: EventCardDescriptionProps) {
-    const { size } = useContext(EventCardContext);
+  const { size } = useContext(EventCardContext);
 
-    if (size !== 'large') {
-        return null;
-    }
+  if (size !== "large") {
+    return null;
+  }
 
-    return <div>{children}</div>;
+  return <div>{children}</div>;
 }
 
 // Attach subcomponents to main component

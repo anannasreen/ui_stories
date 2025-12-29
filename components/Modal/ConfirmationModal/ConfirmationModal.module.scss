@@ -1,19 +1,19 @@
-@import '@cobalt/ui/styles/variables';
+@import "@library/ui/styles/variables";
 
 .title {
-    margin-bottom: 3.25rem;
+  margin-bottom: 3.25rem;
 }
 
 .message {
-    margin-bottom: 1.5rem;
-    max-width: 350px;
+  margin-bottom: 1.5rem;
+  max-width: 350px;
 }
 
 .errorMessage {
-    color: $red;
+  color: $red;
 }
 
 .buttons {
-    justify-content: flex-end;
-    margin-top: 1rem;
+  justify-content: flex-end;
+  margin-top: 1rem;
 }

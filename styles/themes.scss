@@ -1,200 +1,204 @@
-@import 'variables';
-@import 'utility';
+@import "variables";
+@import "utility";
 
 // These values are largely copied over from the javascript theme constants.
 // We're slowly consolidating those themes and moving them into (S)CSS.
 
 :global {
-    // Default light theme
-    body {
-        --fg: black;
-        --fg-subtle: #{rgba(black, 0.4)};
-        --layer0-bg: hsl(210deg 7% 84%);
-        --layer1-bg: hsl(200deg 5% 89%);
-        --layer2-bg: hsl(180deg 2% 94%);
-        --layer3-bg: hsl(180deg 1% 97%);
-        --layer4-bg: hsl(0deg 0% 100%);
+  // Default light theme
+  body {
+    --fg: black;
+    --fg-subtle: #{rgba(black, 0.4)};
+    --layer0-bg: hsl(210deg 7% 84%);
+    --layer1-bg: hsl(200deg 5% 89%);
+    --layer2-bg: hsl(180deg 2% 94%);
+    --layer3-bg: hsl(180deg 1% 97%);
+    --layer4-bg: hsl(0deg 0% 100%);
 
-        --font-size-xs: 1.4rem;
-        --font-size-s: 1.6rem;
-        --font-size-m: 2rem;
-        --font-size-l: 2.2rem;
-        --font-size-xl: 2.6rem;
-        --font-size-xxl: 3.2rem;
+    --font-size-xs: 1.4rem;
+    --font-size-s: 1.6rem;
+    --font-size-m: 2rem;
+    --font-size-l: 2.2rem;
+    --font-size-xl: 2.6rem;
+    --font-size-xxl: 3.2rem;
 
-        --header-color: #{$darkBlue};
+    --header-color: #{$darkBlue};
 
-        --rounding: 3px;
+    --rounding: 3px;
 
-        // These shadow definitions are based on the technique described in this article:
-        // https://www.joshwcomeau.com/css/designing-shadows/
-        //
-        // TLDR: stacking multiple shadows makes them look better, you should use hsl colors,
-        // shadows need to get less opaque and more spread out as the get "closer" to the user.
+    // These shadow definitions are based on the technique described in this article:
+    // https://www.joshwcomeau.com/css/designing-shadows/
+    //
+    // TLDR: stacking multiple shadows makes them look better, you should use hsl colors,
+    // shadows need to get less opaque and more spread out as the get "closer" to the user.
 
-        --shadow-color: 0deg 0% 0%;
-        --shadow-s-alpha: 0.4;
-        --shadow-m-alpha: 0.16;
-        --shadow-l-alpha: 0.12;
-        --shadow-xl-alpha: 0.08;
+    --shadow-color: 0deg 0% 0%;
+    --shadow-s-alpha: 0.4;
+    --shadow-m-alpha: 0.16;
+    --shadow-l-alpha: 0.12;
+    --shadow-xl-alpha: 0.08;
 
-        --shadow-s: 1px 1px 2px hsl(var(--shadow-color) / var(--shadow-s-alpha));
+    --shadow-s: 1px 1px 2px hsl(var(--shadow-color) / var(--shadow-s-alpha));
 
-        --shadow-m: 1px 1px 2px hsl(var(--shadow-color) / var(--shadow-m-alpha)),
-            2px 2px 4px hsl(var(--shadow-color) / var(--shadow-m-alpha)),
-            3px 3px 8px hsl(var(--shadow-color) / var(--shadow-m-alpha));
+    --shadow-m: 1px 1px 2px hsl(var(--shadow-color) / var(--shadow-m-alpha)),
+      2px 2px 4px hsl(var(--shadow-color) / var(--shadow-m-alpha)),
+      3px 3px 8px hsl(var(--shadow-color) / var(--shadow-m-alpha));
 
-        --shadow-l: 1px 1px 2px hsl(var(--shadow-color) / var(--shadow-l-alpha)),
-            2px 2px 4px hsl(var(--shadow-color) / var(--shadow-l-alpha)),
-            4px 4px 8px hsl(var(--shadow-color) / var(--shadow-l-alpha)),
-            7px 7px 14px hsl(var(--shadow-color) / var(--shadow-l-alpha));
+    --shadow-l: 1px 1px 2px hsl(var(--shadow-color) / var(--shadow-l-alpha)),
+      2px 2px 4px hsl(var(--shadow-color) / var(--shadow-l-alpha)),
+      4px 4px 8px hsl(var(--shadow-color) / var(--shadow-l-alpha)),
+      7px 7px 14px hsl(var(--shadow-color) / var(--shadow-l-alpha));
 
-        --shadow-xl: 1px 1px 2px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
-            2px 2px 4px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
-            4px 4px 8px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
-            8px 8px 16px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
-            16px 16px 32px hsl(var(--shadow-color) / var(--shadow-xl-alpha));
-        @include layer0;
+    --shadow-xl: 1px 1px 2px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
+      2px 2px 4px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
+      4px 4px 8px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
+      8px 8px 16px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
+      16px 16px 32px hsl(var(--shadow-color) / var(--shadow-xl-alpha));
+    @include layer0;
 
-        // Inherited properties
-        color: var(--fg);
-        font-size: var(--font-size-s);
-    }
+    // Inherited properties
+    color: var(--fg);
+    font-size: var(--font-size-s);
+  }
 
-    // Internal dark theme
-    .cobalt-internal {
-        --fg: #{$grey5};
-        --fg-subtle: #{rgba($grey5, 0.5)};
-        --layer0-bg: #{$bg1};
-        --layer1-bg: #{$bg2};
-        --layer2-bg: #{$bg3};
-        --layer3-bg: #{$bg4};
-        --layer4-bg: #{$bg5};
+  // Internal dark theme
+  .library-internal {
+    --fg: #{$grey5};
+    --fg-subtle: #{rgba($grey5, 0.5)};
+    --layer0-bg: #{$bg1};
+    --layer1-bg: #{$bg2};
+    --layer2-bg: #{$bg3};
+    --layer3-bg: #{$bg4};
+    --layer4-bg: #{$bg5};
 
-        --font-size-xs: 1.2rem;
-        --font-size-s: 1.4rem;
-        --font-size-m: 1.8rem;
-        --font-size-l: 2rem;
-        --font-size-xl: 2.4rem;
-        --font-size-xxl: 3rem;
+    --font-size-xs: 1.2rem;
+    --font-size-s: 1.4rem;
+    --font-size-m: 1.8rem;
+    --font-size-l: 2rem;
+    --font-size-xl: 2.4rem;
+    --font-size-xxl: 3rem;
 
-        --spacing: 6px;
+    --spacing: 6px;
 
-        --header-color: #{$grey5};
+    --header-color: #{$grey5};
 
-        --rounding: 6px;
+    --rounding: 6px;
 
-        // These shadow definitions are based on the technique described in this article:
-        // https://www.joshwcomeau.com/css/designing-shadows/
-        //
-        // TLDR: stacking multiple shadows makes them look better, you should use hsl colors,
-        // shadows need to get less opaque and more spread out as the get "closer" to the user.
+    // These shadow definitions are based on the technique described in this article:
+    // https://www.joshwcomeau.com/css/designing-shadows/
+    //
+    // TLDR: stacking multiple shadows makes them look better, you should use hsl colors,
+    // shadows need to get less opaque and more spread out as the get "closer" to the user.
 
-        --shadow-s: 1px 2px 4px hsl(var(--shadow-color) / var(--shadow-s-alpha));
+    --shadow-s: 1px 2px 4px hsl(var(--shadow-color) / var(--shadow-s-alpha));
 
-        --shadow-m-alpha: 0.14;
-        --shadow-m: 1px 2px 4px hsl(var(--shadow-color) / var(--shadow-m-alpha)),
-            2px 4px 8px hsl(var(--shadow-color) / var(--shadow-m-alpha)),
-            3px 6px 12px hsl(var(--shadow-color) / var(--shadow-m-alpha));
+    --shadow-m-alpha: 0.14;
+    --shadow-m: 1px 2px 4px hsl(var(--shadow-color) / var(--shadow-m-alpha)),
+      2px 4px 8px hsl(var(--shadow-color) / var(--shadow-m-alpha)),
+      3px 6px 12px hsl(var(--shadow-color) / var(--shadow-m-alpha));
 
-        --shadow-l: 1px 2px 4px hsl(var(--shadow-color) / var(--shadow-l-alpha)),
-            2px 4px 8px hsl(var(--shadow-color) / var(--shadow-l-alpha)),
-            3px 6px 12px hsl(var(--shadow-color) / var(--shadow-l-alpha)),
-            8px 16px 32px hsl(var(--shadow-color) / var(--shadow-l-alpha));
+    --shadow-l: 1px 2px 4px hsl(var(--shadow-color) / var(--shadow-l-alpha)),
+      2px 4px 8px hsl(var(--shadow-color) / var(--shadow-l-alpha)),
+      3px 6px 12px hsl(var(--shadow-color) / var(--shadow-l-alpha)),
+      8px 16px 32px hsl(var(--shadow-color) / var(--shadow-l-alpha));
 
-        --shadow-xl: 1px 2px 4px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
-            2px 4px 8px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
-            4px 8px 16px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
-            8px 16px 32px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
-            12px 24px 44px hsl(var(--shadow-color) / var(--shadow-xl-alpha));
+    --shadow-xl: 1px 2px 4px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
+      2px 4px 8px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
+      4px 8px 16px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
+      8px 16px 32px hsl(var(--shadow-color) / var(--shadow-xl-alpha)),
+      12px 24px 44px hsl(var(--shadow-color) / var(--shadow-xl-alpha));
 
-        // Themed scrollbars
-        --scrollbar-width: 16px;
-        --scrollbar-padding: 2px;
+    // Themed scrollbars
+    --scrollbar-width: 16px;
+    --scrollbar-padding: 2px;
 
-        --scrollbar-track-color: var(--layer0-bg);
-        --scrollbar-thumb-color: var(--layer1-bg);
-        --scrollbar-thumb-highlighted-color: #373c4a; // needs increased contrast, also to be different from existing bg colors
-        --scrollbar-thumb-border-width: 2px;
-        --scrollbar-thumb-border-color: var(--scrollbar-thumb-highlighted-color);
-        @include layer0;
+    --scrollbar-track-color: var(--layer0-bg);
+    --scrollbar-thumb-color: var(--layer1-bg);
+    --scrollbar-thumb-highlighted-color: #373c4a; // needs increased contrast, also to be different from existing bg colors
+    --scrollbar-thumb-border-width: 2px;
+    --scrollbar-thumb-border-color: var(--scrollbar-thumb-highlighted-color);
+    @include layer0;
 
-        // Inherited properties
-        color: var(--fg);
-        font-size: var(--font-size-s);
+    // Inherited properties
+    color: var(--fg);
+    font-size: var(--font-size-s);
 
-        *:not(:global(.unstyled-scrollbars)) {
-            &::-webkit-scrollbar {
-                width: var(--scrollbar-width) !important;
-            }
+    *:not(:global(.unstyled-scrollbars)) {
+      &::-webkit-scrollbar {
+        width: var(--scrollbar-width) !important;
+      }
 
-            &::-webkit-scrollbar-track {
-                background: var(--scrollbar-track-color);
-                background-clip: content-box;
-                border: var(--scrollbar-padding) solid transparent;
-                border-radius: calc(var(--scrollbar-width) / 2);
-            }
+      &::-webkit-scrollbar-track {
+        background: var(--scrollbar-track-color);
+        background-clip: content-box;
+        border: var(--scrollbar-padding) solid transparent;
+        border-radius: calc(var(--scrollbar-width) / 2);
+      }
 
-            &::-webkit-scrollbar-thumb {
-                background: var(--scrollbar-thumb-color);
-                background-clip: content-box;
-                border: var(--scrollbar-padding) solid transparent;
-                border-radius: calc(var(--scrollbar-width) / 2);
+      &::-webkit-scrollbar-thumb {
+        background: var(--scrollbar-thumb-color);
+        background-clip: content-box;
+        border: var(--scrollbar-padding) solid transparent;
+        border-radius: calc(var(--scrollbar-width) / 2);
 
-                // The thumb width can't be set directly, so we have to use a transparent
-                // border to make it appear smaller. Since the border prop is already
-                // being used, the thumb outline is faked using an inset shadow with no blur.
-                box-shadow: inset 0 0 0 var(--scrollbar-thumb-border-width) var(--scrollbar-thumb-border-color);
+        // The thumb width can't be set directly, so we have to use a transparent
+        // border to make it appear smaller. Since the border prop is already
+        // being used, the thumb outline is faked using an inset shadow with no blur.
+        box-shadow: inset 0 0 0 var(--scrollbar-thumb-border-width)
+          var(--scrollbar-thumb-border-color);
 
-                &:hover {
-                    --scrollbar-thumb-color: var(--scrollbar-thumb-highlighted-color);
-                    --scrollbar-thumb-border-color: var(--scrollbar-thumb-highlighted-color);
-                }
-            }
-
-            &::-webkit-scrollbar-corner {
-                background: transparent;
-            }
-
-            // Firefox-specific styling
-            scrollbar-color: var(--scrollbar-thumb-highlighted-color) var(--scrollbar-track-color);
-            scrollbar-width: thin;
+        &:hover {
+          --scrollbar-thumb-color: var(--scrollbar-thumb-highlighted-color);
+          --scrollbar-thumb-border-color: var(
+            --scrollbar-thumb-highlighted-color
+          );
         }
+      }
+
+      &::-webkit-scrollbar-corner {
+        background: transparent;
+      }
+
+      // Firefox-specific styling
+      scrollbar-color: var(--scrollbar-thumb-highlighted-color)
+        var(--scrollbar-track-color);
+      scrollbar-width: thin;
+    }
+  }
+
+  .robot-screen {
+    --font-size-xs: 1.2rem;
+    --font-size-s: 1.5rem;
+    --font-size-m: 2rem;
+    --font-size-l: 3rem;
+    --font-size-xl: 4rem;
+    --font-size-xxl: 5.2rem;
+
+    --layer0-bg: #{$darkBlue linear-gradient($lessDarkBlue 30%, $darkBlue)};
+    --layer1-bg: #ffffff19;
+    --layer2-bg: #{$grey5};
+    --layer3-bg: #{$brightStone};
+
+    --rounding: 16px;
+
+    h1 {
+      font-weight: $font-weight-bold;
     }
 
-    .robot-screen {
-        --font-size-xs: 1.2rem;
-        --font-size-s: 1.5rem;
-        --font-size-m: 2rem;
-        --font-size-l: 3rem;
-        --font-size-xl: 4rem;
-        --font-size-xxl: 5.2rem;
+    @extend .library-internal;
+  }
 
-        --layer0-bg: #{$darkBlue linear-gradient($lessDarkBlue 30%, $darkBlue)};
-        --layer1-bg: #ffffff19;
-        --layer2-bg: #{$grey5};
-        --layer3-bg: #{$brightStone};
+  .robot-screen-light {
+    --layer0-bg: #{white linear-gradient(white, $brightStone)};
+    --layer1-bg: #{$grey5};
 
-        --rounding: 16px;
+    --fg: #{$darkBlue};
+    --fg-subtle: #{rgba(black, 0.4)};
+    --header-color: #{$darkBlue};
+    @extend .robot-screen;
+  }
 
-        h1 {
-            font-weight: $font-weight-bold;
-        }
-
-        @extend .cobalt-internal;
-    }
-
-    .robot-screen-light {
-        --layer0-bg: #{white linear-gradient(white, $brightStone)};
-        --layer1-bg: #{$grey5};
-
-        --fg: #{$darkBlue};
-        --fg-subtle: #{rgba(black, 0.4)};
-        --header-color: #{$darkBlue};
-        @extend .robot-screen;
-    }
-
-    .cobalt-external-light {
-        --spacing: 8px;
-    }
+  .library-external-light {
+    --spacing: 8px;
+  }
 }

@@ -1,9 +1,9 @@
 {
-  "name": "@cobalt/ui",
+  "name": "@library/ui",
   "version": "1.0.0",
-  "description": "Cobalt's design system & UI library",
+  "description": "library's design system & UI library",
   "scripts": {
-    "codegen": "typed-scss-modules . -e default -n none -i components -i styles -i node_modules --aliasPrefixes.@cobalt/ui .",
+    "codegen": "typed-scss-modules . -e default -n none -i components -i styles -i node_modules --aliasPrefixes.@library/ui .",
     "codegen:watch": "watchexec --exts scss --watch . npm run codegen",
     "types": "tsc --noEmit",
     "test": "TZ=UTC vitest",
@@ -13,7 +13,7 @@
     "docs": "npx ts-node scripts/generate-docs.ts",
     "prepare": "husky install"
   },
-  "author": "Cobalt Engineers",
+  "author": "library Engineers",
   "license": "UNLICENSED",
   "peerDependencies": {
     "clsx": "^2.1.1",

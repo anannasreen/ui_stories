@@ -1,24 +1,24 @@
-import React from 'react';
-import styles from './CameraDetailsContainer.module.scss';
-import FullScreen from '@cobalt/ui/components/assets/full-screen.svg';
-import { Text } from '../Text';
-import ActiveCameraStatus from '@cobalt/ui/components/assets/active-camera-status.svg';
+import React from "react";
+import styles from "./CameraDetailsContainer.module.scss";
+import FullScreen from "@library/ui/components/assets/full-screen.svg";
+import { Text } from "../Text";
+import ActiveCameraStatus from "@library/ui/components/assets/active-camera-status.svg";
 
 /**
  * Interface for the CameraDetailsContainer component.
  */
 export interface CameraDetailsContainerProps {
-    /** Name of the camera */
-    cameraName: string;
+  /** Name of the camera */
+  cameraName: string;
 
-    /** Status of the camera (online, offline) */
-    status?: 'online' | 'offline';
+  /** Status of the camera (online, offline) */
+  status?: "online" | "offline";
 
-    /** Custom class name for additional styling */
-    className?: string;
+  /** Custom class name for additional styling */
+  className?: string;
 
-    /** Callback function when full screen button is clicked */
-    onFullScreenClick?: () => void;
+  /** Callback function when full screen button is clicked */
+  onFullScreenClick?: () => void;
 }
 
 /**
@@ -48,25 +48,28 @@ export interface CameraDetailsContainerProps {
  * ```
  */
 export default function CameraDetailsContainer({
-    cameraName,
-    status = 'online',
-    className = '',
-    onFullScreenClick,
+  cameraName,
+  status = "online",
+  className = "",
+  onFullScreenClick,
 }: CameraDetailsContainerProps): JSX.Element {
-    return (
-        <div className={`${styles.container} ${className}`} data-testid="camera-details-container">
-            <div className={styles.cameraInfo}>
-                <ActiveCameraStatus className={styles[status]} />
-                <Text variant="body-lg-med">{cameraName}</Text>
-            </div>
-            <button
-                className={styles.fullScreenButton}
-                onClick={onFullScreenClick}
-                aria-label="Full Screen"
-                data-testid="full-screen-button"
-            >
-                <FullScreen />
-            </button>
-        </div>
-    );
+  return (
+    <div
+      className={`${styles.container} ${className}`}
+      data-testid="camera-details-container"
+    >
+      <div className={styles.cameraInfo}>
+        <ActiveCameraStatus className={styles[status]} />
+        <Text variant="body-lg-med">{cameraName}</Text>
+      </div>
+      <button
+        className={styles.fullScreenButton}
+        onClick={onFullScreenClick}
+        aria-label="Full Screen"
+        data-testid="full-screen-button"
+      >
+        <FullScreen />
+      </button>
+    </div>
+  );
 }
